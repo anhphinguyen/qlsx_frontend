@@ -1,0 +1,185 @@
+/*STYLE*/
+/*FONTS*/
+@font-face {
+  font-family: 'Segoe';
+  src: url("../../fonts/Segoe/segoeui.ttf");
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+header {
+  font-size: 1rem;
+}
+
+header #wp-header {
+  position: relative;
+  width: 100%;
+  height: 128px;
+}
+
+header #wp-header .top-header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #FFFFFF;
+}
+
+header #wp-header .top-header .certification {
+  position: absolute;
+  width: 126px;
+  height: 48px;
+  left: 59.43%;
+  top: 8px;
+}
+
+header #wp-header .top-header .iso {
+  position: absolute;
+  width: 78px;
+  height: 48px;
+  left: 70.05%;
+  top: 8px;
+}
+
+header #wp-header .top-header .phone-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+  position: absolute;
+  width: 248px;
+  height: 32px;
+  left: 79.49%;
+  top: 16px;
+}
+
+header #wp-header .top-header .phone-contact > div > img {
+  width: 32px;
+  height: 32px;
+}
+
+header #wp-header .top-header .phone-contact div {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+header #wp-header .bot-header {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #333333;
+  color: #F6F6F6;
+}
+
+header #wp-header .bot-header a {
+  font-size: 1em;
+  color: #F6F6F6;
+}
+
+header #wp-header .bot-header #main-menu {
+  position: absolute;
+  top: 21px;
+  left: 33.3%;
+  width: 45.24%;
+  height: 67.2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header #wp-header .bot-header #main-menu .item {
+  margin: 0 20px;
+}
+
+header #wp-header .bot-header #main-menu .item:first-child {
+  margin-right: 0 20px;
+}
+
+header #wp-header .bot-header #main-menu .item:last-child {
+  margin-left: 0 20px;
+}
+
+header #wp-header .bot-header #main-menu .item:hover {
+  border-bottom: 2px solid #FDF100;
+}
+
+header #wp-header .bot-header #main-menu .item:hover a {
+  font-weight: 600;
+  color: #FDF100;
+}
+
+header #wp-header .bot-header .dir-user {
+  position: relative;
+  width: 14.12%;
+  height: 62.5%;
+  left: 82.94%;
+  top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #wp-header .bot-header .dir-user .dir-tx {
+  position: absolute;
+  top: 3px;
+  right: 35.23%;
+  letter-spacing: 0.02em;
+}
+
+header #wp-header .bot-header .dir-user .dir-tx div {
+  margin-bottom: 6px;
+}
+
+header #wp-header .bot-header .dir-user .dir-tx div a {
+  font-size: 0.75em;
+}
+
+header #wp-header .bot-header .dir-user .icon {
+  position: absolute;
+  top: 0;
+  left: 68.91%;
+  width: 40px;
+  height: 40px;
+}
+
+header #wp-header .bot-header .dir-user .arrow-down {
+  position: absolute;
+  left: 94.81%;
+}
+
+header #wp-header .logo {
+  position: absolute;
+  left: 5.27%;
+  top: 14.06%;
+  width: 10.24%;
+  height: 71.09%;
+}
+/*# sourceMappingURL=style.css.map */
