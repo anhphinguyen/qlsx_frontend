@@ -14,6 +14,8 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header {
@@ -37,16 +39,16 @@ header #wp-header .top-header {
 
 header #wp-header .top-header .certification {
   position: absolute;
-  width: 126px;
-  height: 48px;
+  width: 9.22%;
+  height: 70.59%;
   left: 59.43%;
   top: 8px;
 }
 
 header #wp-header .top-header .iso {
   position: absolute;
-  width: 78px;
-  height: 48px;
+  width: 5.71%;
+  height: 70.59%;
   left: 70.05%;
   top: 8px;
 }
@@ -67,8 +69,8 @@ header #wp-header .top-header .phone-contact {
           align-items: center;
   padding: 0px;
   position: absolute;
-  width: 248px;
-  height: 32px;
+  width: 18.15%;
+  height: 2.34%;
   left: 79.49%;
   top: 16px;
 }
@@ -80,7 +82,6 @@ header #wp-header .top-header .phone-contact > div > img {
 
 header #wp-header .top-header .phone-contact div {
   font-weight: 600;
-  font-size: 1.5em;
 }
 
 header #wp-header .bot-header {
@@ -151,7 +152,6 @@ header #wp-header .bot-header .dir-user .dir-tx {
   position: absolute;
   top: 3px;
   right: 35.23%;
-  letter-spacing: 0.02em;
 }
 
 header #wp-header .bot-header .dir-user .dir-tx div {
@@ -173,6 +173,23 @@ header #wp-header .bot-header .dir-user .icon {
 header #wp-header .bot-header .dir-user .arrow-down {
   position: absolute;
   left: 94.81%;
+}
+
+header #wp-header .bot-header .dir-box {
+  position: absolute;
+  left: 0px;
+  top: 6px;
+  width: 193px;
+  height: 124px;
+  background-color: #FFFFFF;
+  padding: 16px 0;
+}
+
+header #wp-header .bot-header .dir-box a {
+  display: block;
+  padding: 16px 61px;
+  text-align: center;
+  color: #000000;
 }
 
 header #wp-header .logo {

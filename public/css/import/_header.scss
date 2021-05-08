@@ -7,6 +7,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 header {
@@ -24,16 +25,16 @@ header {
             background-color: $topHeader;
             .certification {
                 position: absolute;
-                width: 126px;
-                height: 48px;
+                width: 9.22%;
+                height: 70.59%;
                 // left: 794px;
                 left: 59.43%;
                 top: 8px;
             }
             .iso {
                 position: absolute;
-                width: 78px;
-                height: 48px;
+                width: 5.71%;
+                height: 70.59%;
                 // left: 936px;
                 left: 70.05%;
                 top: 8px;
@@ -45,8 +46,8 @@ header {
                 align-items: center;
                 padding: 0px;
                 position: absolute;
-                width: 248px;
-                height: 32px;
+                width: 18.15%;
+                height: 2.34%;
                 // left: 1062px;
                 left: 79.49%;
                 top: 16px;
@@ -55,7 +56,7 @@ header {
                 }
                 div {
                     font-weight: 600;
-                    font-size: 1.5em;
+                    // font-size: 1.5em;
                 }
             }
         }
@@ -109,7 +110,7 @@ header {
                     position: absolute;
                     top: 3px;
                     right: 35.23%;
-                    letter-spacing: 0.02em;
+                    // letter-spacing: 0.02em;
                     div {
                         margin-bottom: 6px;
                         a {
@@ -128,6 +129,20 @@ header {
                     left: 94.81%;
                     // top: 45%;
                     // @include wh(5px, 8px);
+                }
+            }
+            .dir-box {
+                position: absolute;
+                left: 0px;
+                top: 6px;
+                @include wh(193px, 124px);
+                background-color: $topHeader;
+                padding: 16px 0;
+                a {
+                    display: block;
+                    padding: 16px 61px;
+                    text-align: center;
+                    color: $txBlack;
                 }
             }
         }
