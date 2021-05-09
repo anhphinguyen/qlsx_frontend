@@ -1,8 +1,39 @@
 footer {
-    min-height: 200px;
-    background-color: #e9ecef;
-    #footer-bot {
-        background-color: #dee2e6;
+    width: 100%;
+    min-height: 309px;
+    background-color: $mainColor;
+    .wp-container {
+        width: 100%;
+        padding: 48px 10.68% 41px 10.68%;
+        display: flex;
+        justify-content: space-between;
+        .box-content {
+            width: 23.05%;
+            color: $topHeader;
+            .title {
+                min-height: 78px;
+                .logo {
+                    display: block;
+                    width: 46.15%;
+                }
+            }
+            .content {
+                margin-top: 8px;
+                p {
+                    margin-bottom: 16px;
+                    line-height: 1.6rem;
+                }
+                a {
+                    color: $topHeader;
+                    display: block;
+                    margin-bottom: 24px;
+                    &.brand {
+                        width: 54.74%;
+                        margin-bottom: 32px;
+                    }
+                }
+            }
+        }
     }
 }
 

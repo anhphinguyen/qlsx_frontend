@@ -26,12 +26,20 @@ img {
     font-size: 1rem;
 }
 
+.fz-125rem {
+    font-size: 1.25rem;
+}
+
 .fz-175rem {
     font-size: 1.75rem;
 }
 
 .fz-2rem {
     font-size: 2rem;
+}
+
+.fz-25rem {
+    font-size: 2.5rem;
 }
 
 .fz-11 {
@@ -114,9 +122,16 @@ a:hover {
     text-transform: capitalize;
 }
 
-.t-title {
-    background-color: #009432;
-    color: #fff;
+.t-center {
+    text-align: center;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-right {
+    text-align: right;
 }
 
 .t-line-throught {
@@ -126,6 +141,9 @@ a:hover {
 .cursor-pointer {
     cursor: pointer;
 }
+
+
+/* border */
 
 .border-radius-tr-50px {
     border-top-right-radius: 50px;
@@ -145,4 +163,40 @@ a:hover {
 
 .border-radius-50px {
     border-radius: 50px!important;
+}
+
+
+/* display */
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+
+/* justify-conten flex */
+
+.justify-content-center {
+    justify-content: center;
+}
+
+
+/* margin */
+
+.mg-t-2rem {
+    margin-top: 2rem;
+}
+
+
+/* triangle */
+
+.triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
