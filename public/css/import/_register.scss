@@ -38,6 +38,15 @@
                         form {
                             &.box-request {
                                 text-align: center;
+                                div {
+                                    position: relative;
+                                    span {
+                                        position: absolute;
+                                        top: 0.95rem;
+                                        right: 1rem;
+                                        @include widthIcon(24px)
+                                    }
+                                }
                                 input {
                                     &[type=submit] {
                                         display: block;

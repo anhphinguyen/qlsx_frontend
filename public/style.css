@@ -697,6 +697,18 @@ header #wp-header .logo {
   text-align: center;
 }
 
+#wrapper.register .bot-content .wp-content .box-content .box-right .box-item form.box-request div {
+  position: relative;
+}
+
+#wrapper.register .bot-content .wp-content .box-content .box-right .box-item form.box-request div span {
+  position: absolute;
+  top: 0.95rem;
+  right: 1rem;
+  width: 24px;
+  height: 24px;
+}
+
 #wrapper.register .bot-content .wp-content .box-content .box-right .box-item form.box-request input[type=submit] {
   display: block;
   width: 100%;
