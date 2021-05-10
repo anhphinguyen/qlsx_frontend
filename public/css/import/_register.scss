@@ -1,0 +1,95 @@
+.btn-submit {
+    display: block;
+    width: 100%;
+    background-color: #6CBE1B;
+    color: #F6F6F6;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+#wrapper.register {
+    .short-desc {
+        margin-top: 1rem;
+    }
+    .bot-content {
+        .wp-content {
+            .box-content {
+                .box-left {
+                    width: 56.92%;
+                }
+                .box-right {
+                    width: 38.05%;
+                    .box-item {
+                        padding: 3.5rem 2.5rem;
+                        .item-title {
+                            position: relative;
+                            span.icon {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                @include widthIcon(24px);
+                            }
+                        }
+                        form {
+                            &.box-request {
+                                text-align: center;
+                                input {
+                                    &[type=submit] {
+                                        display: block;
+                                        width: 100%;
+                                        background-color: #6CBE1B;
+                                        color: #F6F6F6;
+                                        font-weight: 600;
+                                        font-size: 1.25rem;
+                                        padding-top: 0.75rem;
+                                        padding-bottom: 0.75rem;
+                                    }
+                                }
+                            }
+                            &.digit-group {
+                                @import url('https://fonts.googleapis.com/css?family=Raleway:200');
+                                display: flex;
+                                justify-content: center;
+                                input {
+                                    width: 38px;
+                                    height: 56px;
+                                    background-color: lighten($topHeader, 5%);
+                                    border: none;
+                                    line-height: 50px;
+                                    text-align: center;
+                                    font-size: 1.125rem;
+                                    font-weight: 600;
+                                    text-align: center;
+                                    color: $txBlack;
+                                    margin: 0 2px;
+                                    border: 1px solid #EBEBEB;
+                                    margin-left: 4px;
+                                    margin-right: 4px;
+                                }
+                                .splitter {
+                                    padding: 0.9375rem 0.8125rem;
+                                    color: white;
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                        .item-content {
+                            a:hover {
+                                text-decoration: underline;
+                                color: $bgIconContact;
+                            }
+                        }
+                    }
+                }
+                &.step-2 {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

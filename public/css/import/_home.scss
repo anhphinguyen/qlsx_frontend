@@ -30,7 +30,7 @@
             }
         }
         span.box-contact-shadow {
-            position: absolute;
+            position: fixed;
             right: 52.26px;
             bottom: 19.89px;
             width: 120px;
@@ -41,7 +41,7 @@
             border-radius: 50%;
         }
         .box-contact {
-            position: absolute;
+            position: fixed;
             width: 110px;
             height: 110px;
             background-color: $bgIconContact;
@@ -68,9 +68,9 @@
                 }
             }
             .menu-contact {
-                position: relative;
-                right: 96px;
-                bottom: 316px;
+                position: fixed;
+                right: 48px;
+                bottom: 149px;
                 @include wh(216px,
                 auto);
                 background-color: $topHeader;
@@ -108,7 +108,7 @@
             }
         }
         .box-contact-close {
-            position: absolute;
+            position: fixed;
             background-image: url('images/x.png');
             right: 98.26px;
             bottom: 66.89px;

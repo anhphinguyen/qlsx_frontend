@@ -1,6 +1,6 @@
-#wrapper {
+#wrapper.process {
     .bot-content {
-        .wp-content.process {
+        .wp-content {
             .box-content {
                 .box-item {
                     background-color: $botContent;
@@ -26,5 +26,19 @@
                 }
             }
         }
+    }
+}
+
+.show-thumb-nail {
+    position: fixed;
+    left: 29.5%;
+    bottom: 124px;
+    @include widthIcon(560px);
+    z-index: 110;
+    .close {
+        position: absolute;
+        top: -2rem;
+        right: 0;
+        cursor: pointer;
     }
 }
