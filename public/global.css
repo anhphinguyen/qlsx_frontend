@@ -235,11 +235,15 @@ a:hover {
 /* justify-conten flex */
 
 .justify-content-center {
-    justify-content: center;
+    justify-content: center!important;
 }
 
 .justify-content-space-between {
     justify-content: space-between!important;
+}
+
+.justify-content-end {
+    justify-content: flex-end!important;
 }
 
 
@@ -261,31 +265,35 @@ a:hover {
 /* margin */
 
 .mg-t-075rem {
-    margin-top: 0.75rem;
+    margin-top: 0.75rem!important;
 }
 
 .mg-t-1rem {
-    margin-top: 1rem;
+    margin-top: 1rem!important;
 }
 
 .mg-t-2rem {
-    margin-top: 2rem;
+    margin-top: 2rem!important;
 }
 
 .mg-t-25rem {
-    margin-top: 2.5rem;
+    margin-top: 2.5rem!important;
 }
 
 .mg-l-05rem {
-    margin-left: 0.5rem;
+    margin-left: 0.5rem!important;
 }
 
 .mg-r-3rem {
-    margin-left: 3rem;
+    margin-left: 3rem!important;
 }
 
 .mg-b-05rem {
-    margin-left: 0.5rem;
+    margin-left: 0.5rem!important;
+}
+
+.mg-b-1rem {
+    margin-left: 1rem!important;
 }
 
 
@@ -362,4 +370,9 @@ a:hover {
 
 .triangle {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.tick-success {
+    width: 134px;
+    height: 134px;
 }

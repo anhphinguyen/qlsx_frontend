@@ -629,6 +629,13 @@ header #wp-header .logo {
   min-height: 214px;
 }
 
+#wrapper.contact .bot-content .wp-content .box-content .box-right .box-item form.box-request select[type=radio],
+#wrapper.contact .bot-content .wp-content .box-content .box-right .box-item form.box-request input[type=radio],
+#wrapper.register .bot-content .wp-content .box-content .box-right .box-item form.box-request select[type=radio],
+#wrapper.register .bot-content .wp-content .box-content .box-right .box-item form.box-request input[type=radio] {
+  width: 10%;
+}
+
 #wrapper.contact .bot-content .wp-content .box-content .box-right .box-item form.box-request select[type=submit],
 #wrapper.contact .bot-content .wp-content .box-content .box-right .box-item form.box-request input[type=submit],
 #wrapper.register .bot-content .wp-content .box-content .box-right .box-item form.box-request select[type=submit],
@@ -700,7 +707,6 @@ header #wp-header .logo {
 }
 
 .fill .input-content input {
-  width: 100%;
   margin: 0 !important;
 }
 
@@ -719,7 +725,7 @@ header #wp-header .logo {
 }
 
 .fill .fill-box select {
-  width: 33% !important;
+  width: 33%;
   border: 1px solid #C4C4C4;
   outline: none;
   color: #AEABAB;
@@ -824,17 +830,17 @@ header #wp-header .logo {
   color: #6CBE1B;
 }
 
-#wrapper.register .bot-content .wp-content .box-content.step-2 {
+#wrapper.register .bot-content .wp-content .box-content.form-create-password {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-#wrapper.register .bot-content .wp-content .step-3 .box-content .box-right {
+#wrapper.register .bot-content .wp-content .form-create-info .box-content .box-right {
   width: 64.34%;
 }
 
-#wrapper.register .bot-content .wp-content .step-3 .box-content .box-right .box-item form.box-request {
+#wrapper.register .bot-content .wp-content .form-create-info .box-content .box-right .box-item form.box-request {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -844,14 +850,14 @@ header #wp-header .logo {
           justify-content: space-between;
 }
 
-#wrapper.register .bot-content .wp-content .step-3 .box-content .box-right .box-item form.box-request .box-left {
+#wrapper.register .bot-content .wp-content .form-create-info .box-content .box-right .box-item form.box-request .box-left {
   -webkit-box-flex: 36%;
       -ms-flex: 36%;
           flex: 36%;
   border-right: 1px solid #C4C4C4;
 }
 
-#wrapper.register .bot-content .wp-content .step-3 .box-content .box-right .box-item form.box-request .box-left .request-item.avatar {
+#wrapper.register .bot-content .wp-content .form-create-info .box-content .box-right .box-item form.box-request .box-left .request-item.avatar {
   position: relative;
   display: block;
   width: 100%;
@@ -861,7 +867,7 @@ header #wp-header .logo {
   text-align: center;
 }
 
-#wrapper.register .bot-content .wp-content .step-3 .box-content .box-right .box-item form.box-request .box-left .request-item.avatar input#avatar {
+#wrapper.register .bot-content .wp-content .form-create-info .box-content .box-right .box-item form.box-request .box-left .request-item.avatar input#avatar {
   position: absolute;
   top: 1.625rem;
   left: 3.6875rem;
@@ -874,13 +880,13 @@ header #wp-header .logo {
   cursor: pointer;
 }
 
-#wrapper.register .bot-content .wp-content .step-3 .box-content .box-right .box-item form.box-request .box-left .request-item.avatar span {
+#wrapper.register .bot-content .wp-content .form-create-info .box-content .box-right .box-item form.box-request .box-left .request-item.avatar span {
   position: relative;
   top: 10.95rem;
   left: -0.85%;
 }
 
-#wrapper.register .bot-content .wp-content .step-3 .box-content .box-right .box-item form.box-request .box-left .request-item.avatar span.avatar {
+#wrapper.register .bot-content .wp-content .form-create-info .box-content .box-right .box-item form.box-request .box-left .request-item.avatar span.avatar {
   position: absolute;
   top: 1.625rem;
   left: 3.6875rem;
@@ -889,17 +895,17 @@ header #wp-header .logo {
   z-index: 110;
 }
 
-#wrapper.register .bot-content .wp-content .step-3 .box-content .box-right .box-item form.box-request .box-right {
+#wrapper.register .bot-content .wp-content .form-create-info .box-content .box-right .box-item form.box-request .box-right {
   -webkit-box-flex: 64%;
       -ms-flex: 64%;
           flex: 64%;
 }
 
-#wrapper.register .bot-content .wp-content .step-3 .box-content .box-right .box-item form.box-request .box-right .request-item {
+#wrapper.register .bot-content .wp-content .form-create-info .box-content .box-right .box-item form.box-request .box-right .request-item {
   margin-bottom: 1rem;
 }
 
-#wrapper.register .bot-content .wp-content .step-3 .box-content .box-right .box-item form.box-request .box-right .request-item.is_business {
+#wrapper.register .bot-content .wp-content .form-create-info .box-content .box-right .box-item form.box-request .box-right .request-item.is_business {
   position: relative;
   top: 0;
   left: 2.5rem;
@@ -907,7 +913,7 @@ header #wp-header .logo {
   height: 1rem;
 }
 
-#wrapper.register .bot-content .wp-content .step-3 .box-content .box-right .box-item form.box-request .box-right .request-item.is_business input#is_business {
+#wrapper.register .bot-content .wp-content .form-create-info .box-content .box-right .box-item form.box-request .box-right .request-item.is_business input#is_business {
   position: absolute;
   top: 0;
   left: 0;
@@ -915,13 +921,13 @@ header #wp-header .logo {
   width: 16px;
 }
 
-#wrapper.register .bot-content .wp-content .step-3 .box-content .box-right .box-item form.box-request .box-right .request-item.is_business label[for=is_business] {
+#wrapper.register .bot-content .wp-content .form-create-info .box-content .box-right .box-item form.box-request .box-right .request-item.is_business label[for=is_business] {
   position: absolute;
   top: -4px;
   left: 1.5rem;
 }
 
-#wrapper.register .bot-content .wp-content .step-3 .box-content .box-right .box-item .item-content {
+#wrapper.register .bot-content .wp-content .form-create-info .box-content .box-right .box-item .item-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

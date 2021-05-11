@@ -46,6 +46,9 @@
                                 &[name=messager] {
                                     min-height: 214px;
                                 }
+                                &[type=radio] {
+                                    width: 10%;
+                                }
                                 &[type=submit] {
                                     display: inline-block;
                                     width: 18.36%;

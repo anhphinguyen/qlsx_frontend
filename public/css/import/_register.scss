@@ -28,7 +28,7 @@
     .input-content {
         width: 67%;
         input {
-            width: 100%;
+            // width: 100%;
             margin: 0!important;
         }
     }
@@ -40,7 +40,7 @@
         }
         select {
             // @include wh(32%, 48px);
-            width: 33%!important;
+            width: 33%;
             border: 1px solid #C4C4C4;
             outline: none;
             color: #AEABAB;
@@ -138,11 +138,12 @@
                         }
                     }
                 }
-                &.step-2 {
+                &.form-create-password {
                     justify-content: center;
                 }
             }
-            .step-3 {
+            .form-create-info {
+                //
                 .box-content {
                     .box-right {
                         width: 64.34%;
