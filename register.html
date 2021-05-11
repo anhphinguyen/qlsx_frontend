@@ -27,8 +27,8 @@
         <div class="wp-container">
             <div class="bot-content my-0">
                 <div class="wp-content">
-                    <div class="step-start">
-                        <div class="box-content d-none">
+                    <div class="step-start d-none">
+                        <div class="box-content">
                             <div class="box-left">
                                 <div class="w-100">
                                     <img src="public/images/frame-reg.png" alt="">
@@ -39,7 +39,7 @@
                                     <div class="item-title">
                                         <h4 class="t-left fw-600 t-cap fz-2rem lh-2rem">Đăng ký</h4>
                                         <p class="short-desc fw-400 fz-125rem t-left">Đăng nhập hoặc tạo tài khoản của bạn</p>
-                                        <span class="icon"><img src="public/images/help-line.png" alt=""></span>
+                                        <span class="icon"><a href="#"><img src="public/images/help-line.png" alt=""></a></span>
 
                                     </div>
                                     <form action="" method="post" class="box-request mg-t-1rem">
@@ -60,14 +60,14 @@
                         <div class="progress-step t-center">
                             PROGRESS STEP
                         </div>
-                        <div class="step-1">
-                            <div class="box-content justify-content-center d-none">
+                        <div class="step-1 d-none">
+                            <div class="box-content justify-content-center">
                                 <div class="box-right">
                                     <div class="box-item w-100">
                                         <div class="item-title">
                                             <h4 class="t-left fw-600 t-cap fz-2rem lh-2rem">Xác nhận mã OTP</h4>
                                             <p class="short-desc fw-400 fz-125rem t-center mg-t-2rem">Nhập mã OTP đã gửi đến ********89</p>
-                                            <span class="icon"><img src="public/images/help-line.png" alt=""></span>
+                                            <span class="icon"><a href="#"><img src="public/images/help-line.png" alt=""></a></span>
 
                                         </div>
                                         <form method="get" class="digit-group mg-t-2rem" data-group-name="digits" data-autosubmit="false" autocomplete="off">
@@ -91,16 +91,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="step-2">
-                            <div class="box-content justify-content-center d-none">
+                        <div class="step-2 d-none">
+                            <div class="box-content justify-content-center">
                                 <div class="box-right">
-                                    <!-- d-none -->
                                     <div class="box-item w-100">
                                         <div class="item-title">
-                                            <h4 class="t-left fw-600 t-cap fz-2rem lh-2rem">Tạo mật khẩu</h4>
-                                            <span class="icon"><img src="public/images/help-line.png" alt=""></span>
-
+                                            <h4 class="t-left fw-600 t-cap fz-2rem lh-2rem">Thông tin cá nhân</h4>
+                                            <span class="icon"><a href="#"><img src="public/images/help-line.png" alt=""></a></span>
                                         </div>
+
                                         <form action="" method="post" class="box-request mg-t-1rem">
                                             <div>
                                                 <input type="password" name="password" id="password" class="mg-t-2rem" placeholder="Mật khẩu">
@@ -112,19 +111,9 @@
                                             </div>
                                         </form>
 
+
                                         <div class="item-content mg-t-2rem">
-                                            <small class="d-block fw-400 fz-075rem t-left t-success">
-                                                Ít nhất một kí tự viết thường
-                                            </small>
-                                            <small class="d-block fw-400 fz-075rem t-left t-error">
-                                                Ít nhất một kí tự viết hoa
-                                            </small>
-                                            <small class="d-block fw-400 fz-075rem t-left t-success">
-                                                8-16 kí tự
-                                            </small>
-
                                             <button class="btn-submit mg-t-2rem">Tiếp theo</button>
-
                                             <a href="#" class="d-block t-green-main fw-600 fz-1rem t-center mg-t-2rem">Quay lại</a>
                                         </div>
 
@@ -135,33 +124,155 @@
                         <div class="step-3">
                             <div class="box-content justify-content-center">
                                 <div class="box-right">
+                                    <!-- d-none -->
                                     <div class="box-item w-100">
                                         <div class="item-title">
                                             <h4 class="t-left fw-600 t-cap fz-2rem lh-2rem">Thông tin cá nhân</h4>
-                                            <span class="icon"><img src="public/images/help-line.png" alt=""></span>
-                                        </div>
+                                            <span class="icon"><a href="#"><img src="public/images/help-line.png" alt=""></a></span>
 
+                                        </div>
                                         <form action="" method="post" class="box-request mg-t-1rem">
-                                            <div>
-                                                <input type="password" name="password" id="password" class="mg-t-2rem" placeholder="Mật khẩu">
-                                                <span><img src="public/images/eye.png" alt=""></span>
+                                            <div class="box-left">
+                                                <div class="request-item avatar">
+                                                    <input type="file" name="avatar" id="avatar">
+                                                    <span class="avatar"><img src="public/images/account-reg.png" alt=""></span>
+                                                    <span class="fw-400 lh-12rem">Dụng lượng file tối đa 1 MB
+                                                        Định dạng:.JPEG, .PNG</span>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <input type="password" name="password_confirm" id="password_confirm" class="mg-t-2rem" placeholder="Nhập lại mật khẩu">
-                                                <span><img src="public/images/eye.png" alt=""></span>
+
+                                            <div class="box-right">
+                                                <div class="request-item is_business">
+                                                    <input type="checkbox" name="is_business" id="is_business" placeholder="Mật khẩu">
+                                                    <label for="is_business" class="fw-400 lh-12rem">Bạn là doanh nghiệp?</label>
+                                                </div>
+                                                <div class="request-item fill">
+                                                    <div class="input-title">
+                                                        <label for="name_business" class="fw-400 lh-12rem">Tên công ty</label>
+                                                    </div>
+                                                    <div class="input-content">
+                                                        <input type="text" name="name_business" id="name_business" placeholder="Nhập tên công ty">
+                                                    </div>
+                                                </div>
+                                                <div class="request-item fill">
+                                                    <div class="input-title">
+                                                        <label for="name_user" class="fw-400 lh-12rem">Họ và tên</label>
+                                                    </div>
+                                                    <div class="input-content">
+                                                        <input type="text" name="name_user" id="name_user" placeholder="Nhập họ và tên">
+                                                    </div>
+                                                </div>
+                                                <div class="request-item fill">
+                                                    <div class="input-title">
+                                                        <label for="email_user" class="fw-400 lh-12rem">Email</label>
+                                                    </div>
+                                                    <div class="input-content">
+                                                        <input type="text" name="email_user" id="email_user" placeholder="Nhập địa chỉ email">
+                                                    </div>
+                                                </div>
+                                                <div class="request-item fill radio-box">
+                                                    <div class="input-title">
+                                                        <label class="fw-400 lh-12rem">Giới tính</label>
+                                                    </div>
+
+                                                    <div class="fill-box input-content">
+                                                        <input type="radio" id="male" name="gender" value="male" checked>
+                                                        <label for="male">Nam</label>
+                                                        <input type="radio" id="female" name="gender" value="female">
+                                                        <label for="female">Nữ</label>
+                                                        <input type="radio" id="other" name="gender" value="other">
+                                                        <label for="other">Khác</label>
+                                                    </div>
+
+                                                </div>
+                                                <div class="request-item fill">
+                                                    <div class="input-title">
+                                                        <label class="fw-400 lh-12rem">Ngày sinh</label>
+                                                    </div>
+                                                    <div class="fill-box input-content">
+                                                        <select name="day" id="day">
+                                                            <option value="0">Ngày</option>
+                                                            <option value="1">01</option>
+                                                            <option value="2">02</option>
+                                                            <option value="3">03</option>
+                                                        </select>
+                                                        <select name="month" id="month">
+                                                            <option value="0">Tháng</option>
+                                                            <option value="1">01</option>
+                                                            <option value="2">02</option>
+                                                            <option value="3">03</option>
+                                                        </select>
+                                                        <select name="year" id="year">
+                                                            <option value="0">Năm</option>
+                                                            <option value="1">01</option>
+                                                            <option value="2">02</option>
+                                                            <option value="3">03</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </form>
 
-
                                         <div class="item-content mg-t-2rem">
-                                            <button class="btn-submit mg-t-2rem">Tiếp theo</button>
-                                            <a href="#" class="d-block t-green-main fw-600 fz-1rem t-center mg-t-2rem">Quay lại</a>
+                                            <a href="#" class="d-block t-green-main fw-600 fz-1rem t-center mg-t-2rem w-20 py-075rem">Quay lại</a>
+                                            <button class="btn-submit mg-t-2rem w-20">Tiếp theo</button>
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="step-4 d-none">
+                            <div class="box-content justify-content-center">
+                                <div class="box-right">
+                                    <!-- d-none -->
+
+                                    <div class="box-item w-100">
+                                        <div class="item-title">
+                                            <h4 class="t-left fw-600 t-cap fz-2rem lh-2rem">Thêm địa chỉ</h4>
+                                            <span class="icon"><a href="#"><img src="public/images/help-line.png" alt=""></a></span>
+                                        </div>
+                                        <form action="" method="post" class="box-request mg-t-2rem">
+                                            <div>
+                                                <label class="fw-400 t-left d-block">Thành phố</label>
+                                                <select name="city" id="city" class="mg-t-075rem t-placeholder">
+                                                    <option value="0">Chọn thành phố</option>
+                                                </select>
+                                            </div>
+                                            <div class="request-item fill input-content ">
+                                                <div class="fill-box justify-content-space-between w-100">
+                                                    <div class="w-45">
+                                                        <label class="fw-400 t-left d-block">Quận/huyện</label>
+                                                        <select name="district" id="district" class="mg-t-075rem t-placeholder">
+                                                            <option value="0">Chọn quận/huyện</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="w-45">
+                                                        <label class="fw-400 t-left d-block">Phường/xã</label>
+                                                        <select name="ward" id="ward" class="mg-t-075rem t-placeholder">
+                                                            <option value="0">Chọn phường/xã</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <label class="fw-400 t-left d-block">Địa chỉ</label>
+                                                <select name="address" id="address" class="mg-t-075rem t-placeholder">
+                                                    <option value="0">Nhập địa chỉ cụ thể</option>
+                                                </select>
+                                            </div>
+                                        </form>
+
+                                        <div class="item-content mg-t-2rem">
+                                            <a href="#" class="d-block t-green-main fw-600 fz-1rem t-center mg-t-2rem w-20 py-075rem">Quay lại</a>
+                                            <button class="btn-submit mg-t-2rem w-20">Tiếp theo</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
 
                     </div>
 

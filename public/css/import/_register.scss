@@ -12,6 +12,49 @@
     border: none;
 }
 
+// fomart input
+.fill {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    align-items: center;
+    .input-title {
+        flex: 20%;
+        label {
+            margin-right: 1.75rem;
+            text-align: right;
+        }
+    }
+    .input-content {
+        width: 67%;
+        input {
+            width: 100%;
+            margin: 0!important;
+        }
+    }
+    .fill-box {
+        display: flex;
+        justify-content: flex-start;
+        input[type=radio] {
+            @include widthIcon(24px);
+        }
+        select {
+            // @include wh(32%, 48px);
+            width: 33%!important;
+            border: 1px solid #C4C4C4;
+            outline: none;
+            color: #AEABAB;
+            margin-right: 0.5rem;
+            // padding: 0.5rem 0.75rem!important;
+            font-size: 1rem;
+        }
+        label {
+            padding: 3px 0px 0px 3px;
+            margin-right: 1.05rem;
+        }
+    }
+}
+
 #wrapper.register {
     .short-desc {
         margin-top: 1rem;
@@ -97,6 +140,88 @@
                 }
                 &.step-2 {
                     justify-content: center;
+                }
+            }
+            .step-3 {
+                .box-content {
+                    .box-right {
+                        width: 64.34%;
+                        .box-item {
+                            form.box-request {
+                                position: relative;
+                                display: flex;
+                                justify-content: space-between;
+                                .box-left {
+                                    flex: 36%;
+                                    border-right: 1px solid #C4C4C4;
+                                    .request-item {
+                                        &.avatar {
+                                            position: relative;
+                                            display: block;
+                                            width: 100%;
+                                            height: 311px;
+                                            top: 1rem;
+                                            left: 0;
+                                            text-align: center;
+                                            input#avatar {
+                                                position: absolute;
+                                                top: 1.625rem;
+                                                left: 3.6875rem;
+                                                display: inline-block;
+                                                @include widthIcon(120px);
+                                                z-index: 111;
+                                                border-radius: 50%;
+                                                opacity: 0;
+                                                cursor: pointer;
+                                            }
+                                            span {
+                                                &.avatar {
+                                                    position: absolute;
+                                                    top: 1.625rem;
+                                                    left: 3.6875rem;
+                                                    @include widthIcon(120px);
+                                                    z-index: 110;
+                                                }
+                                                position: relative;
+                                                top: 10.95rem;
+                                                left: -0.85%;
+                                            }
+                                        }
+                                        // 
+                                    }
+                                }
+                                .box-right {
+                                    flex: 64%;
+                                    .request-item {
+                                        margin-bottom: 1rem;
+                                        &.is_business {
+                                            position: relative;
+                                            top: 0;
+                                            left: 2.5rem;
+                                            width: 100%;
+                                            height: 1rem;
+                                            input#is_business {
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                margin: 0;
+                                                width: 16px;
+                                            }
+                                            label[for=is_business] {
+                                                position: absolute;
+                                                top: -4px;
+                                                left: 1.5rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .item-content {
+                                display: flex;
+                                justify-content: flex-end;
+                            }
+                        }
+                    }
                 }
             }
         }
