@@ -106,7 +106,7 @@ header {
                 left: 93.55%;
                 z-index: 110;
                 .icon {
-                    @include widthIcon(1.5rem);
+                    @include widthIcon(2rem);
                 }
                 .amount {
                     position: absolute;
@@ -122,6 +122,29 @@ header {
                     border-radius: 100px;
                     color: $txBlack;
                     font-size: 8px;
+                }
+            }
+            .dir-box.header-cart-box {
+                position: absolute;
+                left: 70.39%;
+                @include wh(27.67%, 124px);
+                span.triangle {
+                    right: 10.48%;
+                }
+                .wp-header-cart-box {
+                    height: 216px;
+                    overflow-y: scroll;
+                    .header-cart-item {
+                        .thumb-nail {
+                            @include widthIcon(2.5rem);
+                        }
+                        .item-content {
+                            text-align: left;
+                        }
+                    }
+                }
+                .btn-submit {
+                    width: 37.3%;
                 }
             }
             .logo {

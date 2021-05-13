@@ -1,0 +1,114 @@
+// ==========================================================
+// ============== EMPTY CLASS ===============================
+// ==========================================================
+.empty-box {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: block!important;
+    text-align: center
+}
+
+.empty-box .empty-box-icon {
+    display: inline-block;
+    width: 245px;
+    height: 200px;
+}
+
+.empty-box .empty-box-text {
+    display: block;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.empty-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 4px dashed #15A4DD;
+}
+
+.empty-item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 71%;
+    border-bottom: 2px dashed #15A4DD;
+    background-image: url('images/none_img.png');
+    background-repeat: no-repeat;
+    background-size: 120px 105px;
+    background-position: center;
+}
+
+.empty-item::after {
+    position: absolute;
+    top: 75%;
+    left: 1rem;
+    content: "Nothing to show here right now";
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #15A4DD;
+}
+
+// ==========================================================
+// ============== FORM INFO CLASS ===========================
+// ==========================================================
+.form-info {
+    width: 100%;
+    padding: 0.5rem;
+    input,
+    select,
+    textarea {
+        border: none;
+        outline: none;
+    }
+    .form-info-content {
+        display: flex;
+        .form-info-left {
+            position: relative;
+            flex: 30%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border-right: 1px solid #C4C4C4;
+            .form-info-input-file,
+            .form-info-input-img {
+                position: absolute!important;
+                top: 4.2rem;
+                left: 4.2rem;
+                display: block;
+                @include widthIcon(7.5rem);
+                border-radius: 50%;
+            }
+            .form-info-lable {
+                display: inline-block;
+                text-align: center;
+                font-weight: 400;
+                font-size: 1rem;
+                color: #818181;
+            }
+        }
+        .form-info-right {
+            flex: 70%;
+        }
+    }
+    .form-info-submit {
+        text-align: right;
+        input[type=submit] {
+            display: inline-block;
+            font-size: 1rem;
+            color: #FFFFFF;
+            background-color: #6CBE1B;
+            padding: 0.75rem;
+        }
+    }
+}

@@ -23,11 +23,14 @@
 
 <body>
     <header>
-        <div id="wp-header">
+        <div id="wp-header" class="header-customer">
             <nav class="bot-header">
                 <div class="search">
-                    <input type="text" placeholder="Tìm kiếm...">
-                    <button><span><img src="public/images/search.png" alt=""></span><span>Tìm kiếm</span></button>
+                    <input type="text" name="search" id="search" placeholder="Tìm kiếm..." class="input" value="">
+                    <button class="input d-flex">
+                        <span class="icon d-block"><img src="public/images/search.png" alt=""></span>
+                        <span class="d-block">Tìm kiếm</span>
+                    </button>
                 </div>
                 <div class="dir-user">
                     <div class="dir-tx">
@@ -42,12 +45,11 @@
                     </div>
                 </div>
                 <div class="header-cart">
-                    <span><img src="public/images/header-cart.png" alt=""></span>
-                    <span>4</span>
-
+                    <span class="d-block icon"><img src="public/images/header-cart.png" alt=""></span>
+                    <span class="amount">4</span>
                 </div>
 
-                <div class="dir-box">
+                <div class="dir-box d-none">
                     <span class="triangle"></span>
                     <div class="box-text">
                         <a href="my-order.html">Đơn hàng của tôi</a>
@@ -60,53 +62,57 @@
                     <span class="triangle"></span>
                     <div class="box-text">
                         <div class="wp-header-cart-box">
-                            <div class="d-flex header-cart-item">
+                            <a href="#" class="d-flex header-cart-item px-1rem">
                                 <div class="thumb-nail">
                                     <img src="public/images/product_1.png" alt="">
                                 </div>
-                                <div class="item-content pd-2rem mg-t-1rem">
-                                    <h4 class="t-left fw-600 t-cap fz-1rem lh-2rem">Bao bì kem 2 dòng kem 2 dòng</h4>
-                                    <span class="t-left fw-400 t-cap fz-1rem lh-2rem">Bao bì nhựa</span>
+                                <div class="item-content px-1rem">
+                                    <h4 class="t-left fw-600 t-cap fz-1rem lh-1rem">Bao bì kem 2 dòng kem 2 dòng</h4>
+                                    <span class="t-left fw-400 t-cap fz-1rem lh-1rem">Bao bì nhựa</span>
                                 </div>
-                                <div class="cost">
-                                    <span class="fw-400 fz-125rem">x10000</span>
+                                <div class="cost t-left">
+                                    <span class="fw-400 fz-1rem">x10000 Cái</span>
                                 </div>
-                            </div>
-                            <div class="d-flex header-cart-item">
+
+                            </a>
+                            <a href="#" class="d-flex header-cart-item px-1rem">
                                 <div class="thumb-nail">
                                     <img src="public/images/product_1.png" alt="">
                                 </div>
-                                <div class="item-content pd-2rem mg-t-1rem">
-                                    <h4 class="t-left fw-600 t-cap fz-1rem lh-2rem">Bao bì kem 2 dòng kem 2 dòng</h4>
-                                    <span class="t-left fw-400 t-cap fz-1rem lh-2rem">Bao bì nhựa</span>
+                                <div class="item-content px-1rem">
+                                    <h4 class="t-left fw-600 t-cap fz-1rem lh-1rem">Bao bì kem 2 dòng kem 2 dòng</h4>
+                                    <span class="t-left fw-400 t-cap fz-1rem lh-1rem">Bao bì nhựa</span>
                                 </div>
-                                <div class="cost">
-                                    <span class="fw-400 fz-125rem">x10000</span>
+                                <div class="cost t-left">
+                                    <span class="fw-400 fz-1rem">x10000 Cái</span>
                                 </div>
-                            </div>
-                            <div class="d-flex header-cart-item">
+
+                            </a>
+                            <a href="#" class="d-flex header-cart-item px-1rem">
                                 <div class="thumb-nail">
                                     <img src="public/images/product_1.png" alt="">
                                 </div>
-                                <div class="item-content pd-2rem mg-t-1rem">
-                                    <h4 class="t-left fw-600 t-cap fz-1rem lh-2rem">Bao bì kem 2 dòng kem 2 dòng</h4>
-                                    <span class="t-left fw-400 t-cap fz-1rem lh-2rem">Bao bì nhựa</span>
+                                <div class="item-content px-1rem">
+                                    <h4 class="t-left fw-600 t-cap fz-1rem lh-1rem">Bao bì kem 2 dòng kem 2 dòng</h4>
+                                    <span class="t-left fw-400 t-cap fz-1rem lh-1rem">Bao bì nhựa</span>
                                 </div>
-                                <div class="cost">
-                                    <span class="fw-400 fz-125rem">x10000</span>
+                                <div class="cost t-left">
+                                    <span class="fw-400 fz-1rem">x10000 Cái</span>
                                 </div>
-                            </div>
+
+                            </a>
 
                         </div>
-
-                        <button class="btn-submit mg-t-1rem">Xem đơn hàng</button>
+                        <div class="item-content t-right">
+                            <button class="btn-submit d-inline-block mg-t-1rem mg-r-1rem"><span>Xem đơn hàng</span></button>
+                        </div>
 
                     </div>
                 </div>
+                <div class="logo">
+                    <a href="#"><img src="public/images/logo.png" alt=""></a>
+                </div>
             </nav>
-            <div class="logo">
-                <a href="#"><img src="public/images/logo.png" alt=""></a>
-            </div>
         </div>
     </header>
 
@@ -116,13 +122,12 @@
             <!-- slider -->
 
             <!-- top content -->
-
             <!-- bot content -->
             <div class="bot-content mt-0">
                 <div class="wp-content">
                     <div class="box-content">
                         <!-- Menu of user -->
-                        <div class="box-left">
+                        <div class="box-left side-bar w-35">
                             <!-- breadcurmb -->
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
@@ -174,9 +179,9 @@
                                             </ul>
                                         </li>
                                         <li class="item">
-                                            <a href="#my_invoice_buy" class="d-flex">
+                                            <a href="#my_announce" class="d-flex">
                                                 <span class="icon">
-                                                    <img src="public/images/icon-invoice.png" alt="">
+                                                    <img src="public/images/icon-announce.png" alt="">
                                                 </span>
                                                 <span class="mg-l-05rem lh-12rem">Đơn mua</span>
                                             </a>
@@ -186,109 +191,112 @@
                             </div>
                         </div>
                         <!-- my profile -->
-                        <div class="box-right" id="my_profile">
+                        <div class="content">
                             <div class="item-title">
                                 <h4 class="t-left fw-600 t-cap fz-2rem lh-2rem">Thông tin cá nhân</h4>
                             </div>
 
-                            <div class="box-item w-100">
-
-                                <form action="" method="post" class="box-request mg-t-2rem">
-                                    <div class="box-left">
-                                        <div class="request-item avatar">
-                                            <input type="file" name="avatar" id="avatar">
-                                            <span class="avatar"><img src="public/images/account-reg.png" alt=""></span>
-                                            <span class="fw-400 lh-12rem">Dụng lượng file tối đa 1 MB
-                                                Định dạng:.JPEG, .PNG</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="box-right">
-
-                                        <div class="request-item fill">
-                                            <div class="input-title">
-                                                <label for="name_business" class="fw-400 lh-12rem">Tên công ty</label>
-                                            </div>
-                                            <div class="input-content">
-                                                <input type="text" name="name_business" id="name_business" placeholder="Nhập tên công ty" value="Công ty Cổ Phần XYZ">
-                                            </div>
-                                        </div>
-                                        <div class="request-item fill">
-                                            <div class="input-title">
-                                                <label for="name_user" class="fw-400 lh-12rem">Họ và tên</label>
-                                            </div>
-                                            <div class="input-content">
-                                                <input type="text" name="name_user" id="name_user" placeholder="Nhập họ và tên" value="Jemis Kevin">
-                                            </div>
-                                        </div>
-                                        <div class="request-item fill">
-                                            <div class="input-title">
-                                                <label for="phone_user" class="fw-400 lh-12rem">Số điện thoại</label>
-                                            </div>
-                                            <div class="input-content">
-                                                <input type="text" name="phone_user" id="phone_user" class="read-only" readonly value="(+84) 944810055">
-                                            </div>
-                                        </div>
-                                        <div class="request-item fill">
-                                            <div class="input-title">
-                                                <label for="email_user" class="fw-400 lh-12rem">Email</label>
-                                            </div>
-                                            <div class="input-content">
-                                                <input type="text" name="email_user" id="email_user" class="read-only" readonly value="Jemis.Kevin@qtctek.com">
-                                            </div>
-                                        </div>
-                                        <div class="request-item fill radio-box">
-                                            <div class="input-title">
-                                                <label class="fw-400 lh-12rem">Giới tính</label>
+                            <div class="box-right w-100" id="my_profile">
+                                <div class="box-item w-100">
+                                    <!-- FORM INFO -->
+                                    <form action="" method="post" class="box-request form-info">
+                                        <div class="form-info-content">
+                                            <div class="form-info-left">
+                                                <input type="file" name="avatar" class="form-info-input-file" id="avatar">
+                                                <span class="form-info-input-img"><img src="public/images/account-reg.png" alt=""></span>
+                                                <label for="avatar" class="form-info-lable">Dụng lượng file tối đa 1 MB
+                                                            Định dạng:.JPEG, .PNG</label>
                                             </div>
 
-                                            <div class="fill-box input-content">
-                                                <input type="radio" id="male" name="gender" value="male" checked>
-                                                <label for="male">Nam</label>
-                                                <input type="radio" id="female" name="gender" value="female">
-                                                <label for="female">Nữ</label>
-                                                <input type="radio" id="other" name="gender" value="other">
-                                                <label for="other">Khác</label>
-                                            </div>
+                                            <div class="form-info-right">
+                                                <div class="form-info-row">
+                                                    <div class="form-info-lable">
+                                                        <label for="name_business" class="fw-400 lh-12rem">Tên công ty</label>
+                                                    </div>
+                                                    <div class="form-info-input-content">
+                                                        <input type="text" name="name_business" id="name_business" placeholder="Nhập tên công ty" value="Công ty Cổ Phần XYZ">
+                                                    </div>
+                                                </div>
+                                                <div class="form-info-row">
+                                                    <div class="form-info-lable">
+                                                        <label for="name_user" class="fw-400 lh-12rem">Họ và tên</label>
+                                                    </div>
+                                                    <div class="form-info-input-content">
+                                                        <input type="text" name="name_user" id="name_user" placeholder="Nhập họ và tên" value="Jemis Kevin">
+                                                    </div>
+                                                </div>
+                                                <div class="form-info-row">
+                                                    <div class="form-info-lable">
+                                                        <label for="phone_user" class="fw-400 lh-12rem">Số điện thoại</label>
+                                                    </div>
+                                                    <div class="form-info-input-content">
+                                                        <input type="text" name="phone_user" id="phone_user" class="read-only" readonly value="(+84) 944810055">
+                                                    </div>
+                                                </div>
+                                                <div class="form-info-row">
+                                                    <div class="form-info-lable">
+                                                        <label for="email_user" class="fw-400 lh-12rem">Email</label>
+                                                    </div>
+                                                    <div class="form-info-input-content">
+                                                        <input type="text" name="email_user" id="email_user" class="read-only" readonly value="Jemis.Kevin@qtctek.com">
+                                                    </div>
+                                                </div>
+                                                <div class="form-info-row form-info-radio-box">
+                                                    <div class="form-info-lable">
+                                                        <label class="fw-400 lh-12rem">Giới tính</label>
+                                                    </div>
 
-                                        </div>
-                                        <div class="request-item fill">
-                                            <div class="input-title">
-                                                <label class="fw-400 lh-12rem">Ngày sinh</label>
-                                            </div>
-                                            <div class="fill-box input-content">
-                                                <select name="day" id="day">
-                                                    <option value="0">Ngày</option>
-                                                    <option value="1">01</option>
-                                                    <option value="2">02</option>
-                                                    <option value="3">03</option>
-                                                </select>
-                                                <select name="month" id="month">
-                                                    <option value="0">Tháng</option>
-                                                    <option value="1">01</option>
-                                                    <option value="2">02</option>
-                                                    <option value="3">03</option>
-                                                </select>
-                                                <select name="year" id="year">
-                                                    <option value="0">Năm</option>
-                                                    <option value="1">01</option>
-                                                    <option value="2">02</option>
-                                                    <option value="3">03</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                                                    <div class="form-info-input-content form-info-radio-input">
+                                                        <input type="radio" id="male" name="gender" value="male" checked>
+                                                        <label for="male">Nam</label>
+                                                        <input type="radio" id="female" name="gender" value="female">
+                                                        <label for="female">Nữ</label>
+                                                        <input type="radio" id="other" name="gender" value="other">
+                                                        <label for="other">Khác</label>
+                                                    </div>
 
-                                <div class="item-content mg-t-2rem">
-                                    <button class="btn-submit w-20">Lưu</button>
+                                                </div>
+                                                <div class="form-info-row">
+                                                    <div class="form-info-lable">
+                                                        <label class="fw-400 lh-12rem">Ngày sinh</label>
+                                                    </div>
+                                                    <div class="form-info-input-content">
+                                                        <select name="day" id="day" class="form-info-select">
+                                                                <option value="0">Ngày</option>
+                                                                <option value="1">01</option>
+                                                                <option value="2">02</option>
+                                                                <option value="3">03</option>
+                                                            </select>
+                                                        <select name="month" id="month" class="form-info-select">
+                                                                <option value="0">Tháng</option>
+                                                                <option value="1">01</option>
+                                                                <option value="2">02</option>
+                                                                <option value="3">03</option>
+                                                            </select>
+                                                        <select name="year" id="year" class="form-info-select">
+                                                                <option value="0">Năm</option>
+                                                                <option value="1">01</option>
+                                                                <option value="2">02</option>
+                                                                <option value="3">03</option>
+                                                            </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-info-submit">
+                                            <input type="submit" class="btn-submit w-20" value="Lưu">
+                                        </div>
+                                    </form>
+
+
+
                                 </div>
-
                             </div>
                         </div>
 
+
                         <!-- my address send -->
-                        <div class="box-right" id="my_address_send">
+                        <div class="box-right d-none" id="my_address_send">
                             <div class="item-title">
                                 <h4 class="t-left fw-600 t-cap fz-175rem lh-2rem">Địa chỉ gửi</h4>
                                 <a href="#my_add_address_send" class="fw-400 fz-125rem">+ Thêm địa chỉ</a>
@@ -366,7 +374,7 @@
                         </div>
                         <!-- MODAL my address send-->
                         <!-- Modal edit my address send-->
-                        <div class="modal" id="modal_edit_address_send">
+                        <div class="modal d-none" id="modal_edit_address_send">
                             <div class="box-content justify-content-center">
                                 <div class="box-right">
                                     <div class="box-item w-100">
@@ -433,7 +441,7 @@
                             </div>
                         </div>
                         <!-- Modal add my address send-->
-                        <div class="modal" id="modal_add_address_send">
+                        <div class="modal d-none" id="modal_add_address_send">
                             <div class="box-content justify-content-center">
                                 <div class="box-right">
                                     <div class="box-item w-100">
@@ -500,7 +508,7 @@
                             </div>
                         </div>
                         <!-- Modal delete my address send-->
-                        <div class="modal" id="modal_add_address_send">
+                        <div class="modal d-none" id="modal_add_address_send">
                             <div class="box-content justify-content-center">
                                 <div class="box-right">
                                     <div class="box-item w-100">
@@ -526,7 +534,7 @@
                         <!-- ========================================================== -->
 
                         <!-- my address receive -->
-                        <div class="box-right" id="my_address_receive">
+                        <div class="box-right d-none" id="my_address_receive">
                             <div class="item-title">
                                 <h4 class="t-left fw-600 t-cap fz-175rem lh-2rem">Địa chỉ nhận</h4>
                                 <a href="#my_add_address_receive" class="fw-400 fz-125rem">+ Thêm địa chỉ</a>
@@ -604,7 +612,7 @@
                         </div>
                         <!-- MODAL my address send-->
                         <!-- Modal edit my address send-->
-                        <div class="modal" id="modal_edit_address_receive">
+                        <div class="modal d-none" id="modal_edit_address_receive">
                             <div class="box-content justify-content-center">
                                 <div class="box-right">
                                     <div class="box-item w-100">
@@ -671,7 +679,7 @@
                             </div>
                         </div>
                         <!-- Modal add my address send-->
-                        <div class="modal" id="modal_add_address_receive">
+                        <div class="modal d-none" id="modal_add_address_receive">
                             <div class="box-content justify-content-center">
                                 <div class="box-right">
                                     <div class="box-item w-100">
@@ -738,7 +746,7 @@
                             </div>
                         </div>
                         <!-- Modal delete my address send-->
-                        <div class="modal" id="modal_add_address_receive">
+                        <div class="modal d-none" id="modal_add_address_receive">
                             <div class="box-content justify-content-center">
                                 <div class="box-right">
                                     <div class="box-item w-100">
@@ -763,7 +771,7 @@
                         <!-- ========================================================== -->
 
                         <!-- Change password-->
-                        <div class="box-right" id="my_reset_password">
+                        <div class="box-right d-none" id="my_reset_password">
                             <div class="item-title">
                                 <h4 class="t-left fw-600 t-cap fz-2rem lh-2rem">Đổi mật khẩu</h4>
                             </div>
@@ -798,7 +806,7 @@
                         </div>
 
                         <!-- my announce-->
-                        <div class="box-right" id="my_announce">
+                        <div class="box-right d-none" id="my_announce">
                             <div class="item-title">
                                 <h4 class="t-left fw-600 t-cap fz-175rem lh-2rem">Thông báo</h4>
                             </div>
