@@ -60,8 +60,9 @@
 }
 
 // ==========================================================
-// ============== FORM INFO CLASS ===========================
+// =================== FORM CLASS ===========================
 // ==========================================================
+// -----------------   Form info user -----------------------
 .form-info {
     width: 100%;
     padding: 0.5rem;
@@ -83,13 +84,19 @@
             .form-info-input-file,
             .form-info-input-img {
                 position: absolute!important;
-                top: 4.2rem;
-                left: 4.2rem;
+                top: 5.2rem;
+                left: 25%;
                 display: block;
                 @include widthIcon(7.5rem);
                 border-radius: 50%;
             }
+            .form-info-input-file {
+                opacity: 0;
+            }
             .form-info-lable {
+                position: relative;
+                top: 3.2rem;
+                left: 0;
                 display: inline-block;
                 text-align: center;
                 font-weight: 400;
@@ -101,6 +108,8 @@
             flex: 70%;
             .form-info-row {
                 display: flex;
+                align-items: center;
+                margin: 0.75rem 0;
                 .form-info-lable {
                     flex: 20%;
                     text-align: right;
@@ -122,34 +131,28 @@
             }
             .form-info-row-radio {
                 .form-info-input-radio {
+                    display: flex;
+                    align-items: center;
                     border: none!important;
                     padding: none!important;
                     input[type=radio] {
                         @include widthIcon(1.5rem);
                         padding-left: 0!important;
                     }
-                    input[type=radio]:checked {
-                        @include widthIcon(1.5rem);
-                        border-radius: 50%;
-                        border: 1px solid red!important;
-                    }
-                    input[type=radio]:before {
-                        content: '';
-                        display: block;
-                        width: 60%;
-                        height: 60%;
-                        margin: 20% auto;
-                        border-radius: 50%;
-                    }
-                    input[type=radio]:checked:before {
-                        background: red;
-                    }
                     label {
                         font-size: 1rem;
                         font-weight: 400;
                         margin-left: 0.5rem;
+                        margin-right: 0.5rem;
                     }
                 }
+            }
+            .form-info-select {
+                width: 32.5%;
+                height: 2.5rem;
+                border: 1px solid #C4C4C4;
+                padding: 0.5rem 1.25rem;
+                font-size: 1rem;
             }
         }
     }
@@ -163,4 +166,215 @@
             padding: 0.75rem;
         }
     }
+}
+
+// -----------------   Form edit ----------------------------
+.form-edit {
+    width: 100%;
+    height: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 1.5rem 2.5rem;
+    .form-edit-row {
+        margin: .5rem 0;
+    }
+    .form-edit-row-flex {
+        display: flex;
+        justify-content: space-between;
+        .form-box-flex {
+            width: 48%;
+        }
+    }
+    .form-lable {
+        display: block;
+        text-align: left;
+        margin-bottom: .5rem;
+    }
+    .form-input,
+    .form-select {
+        width: 100%;
+        padding: .75rem 1rem;
+        border: 1px solid #C4C4C4;
+        background: #FFFFFF;
+    }
+    .form-edits-row-check {
+        text-align: left;
+        .form-input-check {
+            display: inline-block;
+            @include widthIcon(1rem);
+            margin-right: .5rem;
+        }
+        .form-lable-check {
+            display: inline-block;
+        }
+    }
+}
+
+// -----------------   Form login ---------------------------
+.form-login {
+    width: 100%;
+    padding: 1rem;
+    .form-box {
+        position: relative;
+        margin: .75rem 0;
+    }
+    .form-input {
+        position: relative;
+        width: 100%;
+        padding: .75rem 1rem;
+        border: 1px solid #C4C4C4;
+        background: #FFFFFF;
+    }
+    .form-icon {
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display: block;
+        @include widthIcon(1.5rem);
+    }
+}
+
+// -----------------   waring ---------------------------
+.warning {
+    position: relative;
+    width: 70%;
+    height: 56px;
+    text-align: center;
+    display: inline-block;
+    .warning-retangle {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: #DE2D2D;
+        opacity: 0.05;
+    }
+    .warning-icon {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        @include widthIcon(1.5rem);
+        display: inline-block;
+    }
+    .warning-text {
+        position: absolute;
+        top: 1.25rem;
+        left: 3rem;
+        display: inline-block;
+        font-weight: 400;
+    }
+}
+
+// ==========================================================
+// ======================== A BTN ===========================
+// ==========================================================
+.btn {
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0;
+}
+
+.btn-green {
+    background-color: #6CBE1B;
+}
+
+// ==========================================================
+// ======================== MODAL ===========================
+// ==========================================================
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal-box {
+        width: 70%;
+        height: auto;
+    }
+}
+
+// ==========================================================
+// ======================== PROGRESS BAR ====================
+// ==========================================================
+.progressbar,
+.progressbar-point {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progressbar li,
+.progressbar-point li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    position: relative;
+    text-align: center;
+    width: calc(100% / 5);
+}
+
+.progressbar li .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    padding: 12px;
+    border: 2px solid #818181;
+    border-radius: 50%;
+    z-index: 10;
+    background-color: #E5E5E5;
+    cursor: pointer;
+}
+
+.progressbar-point li .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+    cursor: pointer;
+}
+
+.progressbar li:after,
+.progressbar-point li:after {
+    position: absolute;
+    top: 1.6rem;
+    left: -45%;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #818181;
+    z-index: 0;
+}
+
+.progressbar-point li:after {
+    top: .5rem;
+    left: -25%;
+    width: 50%;
+    background-color: #C4C4C4;
+}
+
+.progressbar li:first-child:after,
+.progressbar-point li:first-child:after {
+    content: none;
+}
+
+.progressbar li.active .icon {
+    border: 2px solid #15A4DD;
+    transition: border .25s;
+}
+
+.progressbar li.active .icon+span,
+.progressbar-point li.active .icon+span {
+    color: #15A4DD;
+    transition: color .25s;
+}
+
+.progressbar li.active::after,
+.progressbar-point li.active::after {
+    background-color: #15A4DD;
+    transition: all .25s;
 }
