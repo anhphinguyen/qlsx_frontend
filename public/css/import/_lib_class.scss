@@ -248,22 +248,50 @@
     .form-file-box {
         position: relative;
         width: 100%;
-        height: 250px;
+        // height: 250px;
+        height: auto;
         text-align: center;
     }
     .form-file-input,
     .form-file-img {
         position: absolute;
-        top: 2rem;
+        top: 0;
         left: 20%;
         display: block;
         width: 60%;
-        height: 75%;
-        border: 1px dashed #6CBE1B;
+        height: 200px;
+        border: 2px dashed #6CBE1B;
         border-radius: 15px;
     }
     .form-file-input {
         z-index: 10;
+        opacity: 0;
+    }
+    .form-file-img {
+        position: absolute;
+    }
+    .form-file-view-img {
+        position: relative;
+        top: -1.2rem;
+        left: 20%;
+        display: block;
+        width: 60%;
+        height: 200px;
+        border-radius: 15px;
+        z-index: 9;
+        img {
+            height: 100%;
+        }
+        opacity: 0;
+    }
+    .form-file-view-img-close {
+        position: absolute;
+        top: 0;
+        right: 20%;
+        display: block;
+        @include widthIcon(1rem);
+        cursor: pointer;
+        z-index: 20;
         opacity: 0;
     }
     .form-file-img::before {
@@ -277,10 +305,11 @@
         background-size: 5.5rem 5rem;
     }
     .form-file-img::after {
-        position: absolute;
-        bottom: .5rem;
-        left: 40%;
+        bottom: 2rem;
         content: "JPG, JPG2000, PNG";
+        display: inline-block;
+        text-align: center;
+        position: relative;
         color: #818181;
         font-weight: 400;
         font-style: italic;
@@ -292,7 +321,7 @@
         display: inline-block;
         text-align: center;
         position: relative;
-        top: 9.5rem;
+        top: 7.5rem;
         // left: 53%;
     }
     .form-input {

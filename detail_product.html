@@ -135,11 +135,11 @@
                         </nav>
                         <!-- end  breadcurmb-->
                         <div class="box-item w-100">
-                            <div class="box-head d-flex justify-content-space-between mg-b-1rem">
+                            <div class="box-head d-flex justify-content-space-between mg-b-1rem" style="min-height: 420px;">
                                 <div class="thumb-nails w-30">
                                     <img src="public/images/product_1.png" alt="">
                                 </div>
-                                <div class="w-60" style="height: 420px; position: relative;">
+                                <div class="w-60" style="min-height: 420px; position: relative;">
                                     <p class="fw-600 fz-3rem mg-b-15rem">Bao bì kem 2 dòng</p>
                                     <p class="fw-400 fz-2rem mg-b-15rem">Mã sản phẩm: QTR365</p>
                                     <div class="w-50 d-flex justify-content-space-between mg-b-15rem" style="align-items: center;">
@@ -151,7 +151,24 @@
                                         </div>
                                     </div>
                                     <a href="#add_attach_file" class="fw-400 t-green-main">+Thêm dữ liệu đính kèm sản phẩm</a>
-                                    <div style="position: absolute;bottom: 0;left: 0; width: 100%;">
+
+                                    <div id="show_info_file" class="visible-hidden" style="min-height: 120px;">
+                                        <div class="d-none">
+                                            <p class="fw-600">Dữ liệu đính kèm</p>
+                                            <p id="file_name" class="box-attach">
+                                                <span class="file-name"></span>
+                                                <a href="#delete_attach_file" class="file-close" id="">
+                                                    <img src="public/images/x_thumb_nail.png" alt="">
+                                                </a>
+                                            </p>
+                                            <p class="fw-600">Ghi chú</p>
+                                            <p id="note" class="box-attach">
+
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div style="position: relative;bottom: 0;left: 0; width: 100%;">
                                         <a href="#add_in_cart" class="btn btn-outline btn-green w-30 fz-125rem">Thêm vào giỏ hàng</a>
                                         <a href="#buy_now" class="btn btn-green w-30 fz-125rem">Mua ngay</a>
                                     </div>
@@ -201,28 +218,56 @@
                         </div>
 
                         <!-- modal insert file attach -->
-                        <div class="modal" id="add_attach_file">
+                        <div class="modal d-none" id="add_attach_file">
                             <div class="modal-box">
                                 <div class="box-content justify-content-center">
                                     <div class="box-item w-100 ">
                                         <div class="item-title ">
                                             <h4 class="t-left fw-600 t-cap fz-15rem lh-2rem">Thêm dữ liệu đính kèm sản phẩm</h4>
-                                            <span class="icon "><a href="# "><img src="public/images/x-black.png " alt=" "></a></span>
+                                            <span class="icon"><a href="#cancel_add_attach"><img src="public/images/x-black.png " alt=" "></a></span>
                                         </div>
                                         <form action="" method="post" class="form-file">
                                             <label for="attach" class="form-label">Dữ liệu đính kèm</label>
                                             <div class="form-file-box">
-                                                <input type="file" name="attach" id="attach" class="form-file-input">
-                                                <span class="form-file-img"></span>
+                                                <input type="file" name="attach" id="attach" onchange="readURL(this);" class="form-file-input">
+                                                <span class="form-file-img">
+                                                    
+                                                </span>
+                                                <img src="public/images/x_thumb_nail.png" class="form-file-view-img-close" alt="">
                                                 <strong class="form-file-img-title">Tải logo của bạn lên đây</strong>
+                                                <span class="form-file-view-img">
+                                                    <img src="public/images/product_1.png" alt="">
+                                                </span>
                                             </div>
 
                                             <label for="note" class="form-label">Ghi chú</label>
-                                            <input type="text" class="form-input">
+                                            <input type="text" id="note_input" class="form-input">
                                         </form>
 
                                         <div class="item-content t-right mg-t-175rem ">
-                                            <button class="btn-submit w-20 d-inline-block">Hoàn thành</button>
+                                            <button id="add_attach" class="btn-submit w-20 d-inline-block fz-1rem">Hoàn thành</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal delete file attach -->
+
+                        <div class="modal" id="delete_attach_file">
+                            <div class="modal-box">
+                                <div class="box-content justify-content-center">
+                                    <div class="box-item w-100 ">
+                                        <div class="item-title ">
+                                            <h4 class="t-left fw-600 t-cap fz-15rem lh-2rem ">Xóa địa chỉ</h4>
+                                            <span class="icon "><a href="#cancel_delete_attach"><img src="public/images/x-black.png " alt=" "></a></span>
+                                        </div>
+                                        <div class="item-content mg-t-2rem t-center">
+                                            <span class="d-inline-block tick-success "><img src="public/images/warning-del.png " alt=" "></span>
+                                            <p class="t-center mg-t-2rem fz-125rem">Bạn có chắc muốn xóa địa chỉ này?</p>
+                                        </div>
+
+                                        <div class="item-content t-center mg-t-175rem ">
+                                            <button id="delete_attach" class="btn-submit w-30 d-inline-block fz-1rem">Hoàn thành</button>
                                         </div>
                                     </div>
                                 </div>
@@ -279,6 +324,7 @@
 
     <script src="public/js/main.js " type="text/javascript "></script>
     <script src="public/js/progress_bar.js " type="text/javascript "></script>
+    <script src="public/js/view_img.js " type="text/javascript "></script>
 
     <script>
     </script>

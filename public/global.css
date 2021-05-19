@@ -71,31 +71,31 @@ img {
 }
 
 .fz-1rem {
-    font-size: 1rem;
+    font-size: 1rem!important;
 }
 
 .fz-125rem {
-    font-size: 1.25rem;
+    font-size: 1.25rem!important;
 }
 
 .fz-15rem {
-    font-size: 1.5rem;
+    font-size: 1.5rem!important;
 }
 
 .fz-175rem {
-    font-size: 1.75rem;
+    font-size: 1.75rem!important;
 }
 
 .fz-2rem {
-    font-size: 2rem;
+    font-size: 2rem!important;
 }
 
 .fz-25rem {
-    font-size: 2.5rem;
+    font-size: 2.5rem!important;
 }
 
 .fz-3rem {
-    font-size: 2.5rem;
+    font-size: 2.5rem!important;
 }
 
 .fz-11 {
