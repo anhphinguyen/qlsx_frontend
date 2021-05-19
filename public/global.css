@@ -296,6 +296,10 @@ a:hover {
     margin-top: 1.5rem!important;
 }
 
+.mg-t-175rem {
+    margin-top: 1.75rem!important;
+}
+
 .mg-t-2rem {
     margin-top: 2rem!important;
 }
@@ -322,6 +326,14 @@ a:hover {
 
 .mg-l-125rem {
     margin-left: 1.25rem!important;
+}
+
+.mg-l-175rem {
+    margin-left: 1.75rem!important;
+}
+
+.mg-l-2rem {
+    margin-left: 2rem!important;
 }
 
 .mg-l-35rem {
@@ -413,6 +425,10 @@ a:hover {
     color: #818181;
 }
 
+.t-black {
+    color: #333333;
+}
+
 
 /* padding */
 
@@ -492,4 +508,13 @@ a:hover {
 .tick-success {
     width: 134px;
     height: 134px;
+}
+
+
+/* icon */
+
+span.icon {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
 }

@@ -151,7 +151,7 @@
                                         </div>
                                     </div>
                                     <a href="#add_attach_file" class="fw-400 t-green-main">+Thêm dữ liệu đính kèm sản phẩm</a>
-
+                                    <!-- show_info_file -->
                                     <div id="show_info_file" class="visible-hidden" style="min-height: 120px;">
                                         <div class="d-none">
                                             <p class="fw-600">Dữ liệu đính kèm</p>
@@ -162,9 +162,7 @@
                                                 </a>
                                             </p>
                                             <p class="fw-600">Ghi chú</p>
-                                            <p id="note" class="box-attach">
-
-                                            </p>
+                                            <p id="note" class="box-attach"></p>
                                         </div>
                                     </div>
 
@@ -233,7 +231,10 @@
                                                 <span class="form-file-img">
                                                     
                                                 </span>
-                                                <img src="public/images/x_thumb_nail.png" class="form-file-view-img-close" alt="">
+
+                                                <a href="#cancel_thumb_nails">
+                                                    <img src="public/images/x_thumb_nail.png" class="form-file-view-img-close" alt="">
+                                                </a>
                                                 <strong class="form-file-img-title">Tải logo của bạn lên đây</strong>
                                                 <span class="form-file-view-img">
                                                     <img src="public/images/product_1.png" alt="">
@@ -253,17 +254,17 @@
                         </div>
                         <!-- modal delete file attach -->
 
-                        <div class="modal" id="delete_attach_file">
+                        <div class="modal d-none" id="delete_attach_file">
                             <div class="modal-box">
                                 <div class="box-content justify-content-center">
                                     <div class="box-item w-100 ">
                                         <div class="item-title ">
-                                            <h4 class="t-left fw-600 t-cap fz-15rem lh-2rem ">Xóa địa chỉ</h4>
+                                            <h4 class="t-left fw-600 t-cap fz-15rem lh-2rem ">Xóa thông tin</h4>
                                             <span class="icon "><a href="#cancel_delete_attach"><img src="public/images/x-black.png " alt=" "></a></span>
                                         </div>
                                         <div class="item-content mg-t-2rem t-center">
                                             <span class="d-inline-block tick-success "><img src="public/images/warning-del.png " alt=" "></span>
-                                            <p class="t-center mg-t-2rem fz-125rem">Bạn có chắc muốn xóa địa chỉ này?</p>
+                                            <p class="t-center mg-t-2rem fz-125rem">Bạn có chắc muốn xóa thông tin này?</p>
                                         </div>
 
                                         <div class="item-content t-center mg-t-175rem ">
