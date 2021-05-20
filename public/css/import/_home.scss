@@ -108,6 +108,7 @@
                     transform: rotate(180deg);
                 }
             }
+            transition: all 0.5s;
         }
         .box-contact-close {
             display: none;

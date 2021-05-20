@@ -1,6 +1,5 @@
 $(document).ready(function() {
     $("ul#main-menu li.item").click(function() {
-        console.log($("ul#main-menu li.item"));
         $("ul#main-menu li.item").removeClass("active");
         $(this).addClass('active');
     });
@@ -23,10 +22,36 @@ $(document).ready(function() {
     });
     // account box
     $('.dir-user .icon').click(function() {
-        $('.dir-box').toggleClass('d-block');
+        $('#dir_box').toggleClass('d-block');
     });
     $('.dir-user .arrow-down').click(function() {
-        $('.dir-box').toggleClass('d-block');
+        $('#dir_box').toggleClass('d-block');
     });
+    // header cart box
+    $('.header-cart .icon').click(function() {
+        $('.header-cart-box').toggleClass('d-block');
+    });
+
+    // sidebar menu
+    $("#sidebar_menu>li.item>a").click(function() {
+        $("#sidebar_menu>li.item").removeClass("active");
+        $(this).parent().addClass('active');
+        if ($('#my_info').hasClass('active')) {
+            $('#my_info').children('.sub-menu-profile').slideDown('1000');
+        } else {
+            $('#my_info').children('.sub-menu-profile').slideUp('1000');
+        }
+    });
+    // sidebar sub menu
+    $("#my_info>.sub-menu-profile>li.item>a").click(function() {
+        $("#my_info>.sub-menu-profile>li.item").removeClass("active");
+        $(this).parent().addClass('active');
+    });
+    // menu invoice
+    $("#menu_invoice>li.item>a").click(function() {
+        $("#menu_invoice>li.item").removeClass("active");
+        $(this).parent().addClass('active');
+    });
+
 
 });

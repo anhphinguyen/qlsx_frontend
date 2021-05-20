@@ -59,21 +59,22 @@ header {
                     }
                 }
                 .icon {
+                    cursor: pointer;
                     position: absolute;
                     top: 0;
                     left: 68.91%;
                     @include widthIcon(40px);
                 }
                 .arrow-down {
+                    cursor: pointer;
                     position: absolute;
                     left: 94.81%;
-                    // top: 45%;
-                    // @include wh(5px, 8px);
                 }
             }
             .dir-box {
+                display: none;
                 position: absolute;
-                left: 79%;
+                left: 78.1%;
                 top: 97.11%;
                 z-index: 100;
                 @include wh(193px, 124px);
@@ -125,6 +126,7 @@ header {
                 }
             }
             .dir-box.header-cart-box {
+                display: none;
                 position: absolute;
                 left: 70.39%;
                 @include wh(27.67%, 124px);

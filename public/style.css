@@ -897,6 +897,8 @@ header #wp-header .logo {
   border-radius: 50%;
   z-index: 110;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #wrapper .wp-container .box-contact div {
@@ -1625,6 +1627,7 @@ header #wp-header.header-customer .bot-header .dir-user .dir-tx div a {
 }
 
 header #wp-header.header-customer .bot-header .dir-user .icon {
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 68.91%;
@@ -1633,13 +1636,15 @@ header #wp-header.header-customer .bot-header .dir-user .icon {
 }
 
 header #wp-header.header-customer .bot-header .dir-user .arrow-down {
+  cursor: pointer;
   position: absolute;
   left: 94.81%;
 }
 
 header #wp-header.header-customer .bot-header .dir-box {
+  display: none;
   position: absolute;
-  left: 79%;
+  left: 78.1%;
   top: 97.11%;
   z-index: 100;
   width: 193px;
@@ -1712,6 +1717,7 @@ header #wp-header.header-customer .bot-header .header-cart .amount {
 }
 
 header #wp-header.header-customer .bot-header .dir-box.header-cart-box {
+  display: none;
   position: absolute;
   left: 70.39%;
   width: 27.67%;
@@ -1814,6 +1820,7 @@ header #wp-header.header-customer .bot-header .logo {
 }
 
 .side-bar .box-item .item-content ul.sub-menu-profile {
+  display: none;
   padding: 0 2rem;
 }
 
