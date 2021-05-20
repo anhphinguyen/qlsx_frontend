@@ -462,6 +462,22 @@
   z-index: 10;
 }
 
+input.error-input {
+  border: 1px solid #DE2D2D;
+  -webkit-box-shadow: 0px 0px 4px #DE2D2D;
+          box-shadow: 0px 0px 4px #DE2D2D;
+}
+
+.error-text {
+  display: none;
+  color: #F04338;
+}
+
+.success-text {
+  display: none;
+  color: #6CBE1B;
+}
+
 .btn {
   display: inline-block;
   color: #FFFFFF;
@@ -1644,7 +1660,7 @@ header #wp-header.header-customer .bot-header .dir-user .arrow-down {
 header #wp-header.header-customer .bot-header .dir-box {
   display: none;
   position: absolute;
-  left: 78.1%;
+  left: 78.5%;
   top: 97.11%;
   z-index: 100;
   width: 193px;

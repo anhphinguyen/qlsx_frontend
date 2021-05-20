@@ -16,20 +16,20 @@ $(document).ready(function() {
 
     // contact box
     $('#contact-box').click(function() {
-        $(this).children('.box-contact-close').toggleClass('d-block');
-        $(this).children('.box-contact').children('.icon-contact').toggleClass('d-none');
-        $(this).children('.box-contact').children('.menu-contact ').toggleClass('d-block');
+        $(this).children('.box-contact-close').fadeToggle(); //.toggleClass('d-block')
+        $(this).children('.box-contact').children('.icon-contact').fadeToggle(); //.toggleClass('d-none')
+        $(this).children('.box-contact').children('.menu-contact ').fadeToggle(); //.toggleClass('d-block')
     });
     // account box
     $('.dir-user .icon').click(function() {
-        $('#dir_box').toggleClass('d-block');
+        $('#dir_box').fadeToggle();
     });
     $('.dir-user .arrow-down').click(function() {
-        $('#dir_box').toggleClass('d-block');
+        $('#dir_box').fadeToggle();
     });
     // header cart box
     $('.header-cart .icon').click(function() {
-        $('.header-cart-box').toggleClass('d-block');
+        $('.header-cart-box').fadeToggle();
     });
 
     // sidebar menu
