@@ -480,21 +480,23 @@
 }
 
 .modal {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  text-align: center;
 }
 
 .modal .modal-box {
+  margin-top: 100px;
+  display: inline-block;
   width: 70%;
   height: auto;
+}
+
+.modal-open {
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .progressbar,
@@ -783,6 +785,7 @@ header #wp-header .bot-header .dir-user .arrow-down {
 }
 
 header #wp-header .bot-header .dir-box {
+  display: none;
   position: absolute;
   right: 40px;
   top: 66px;
@@ -913,6 +916,7 @@ header #wp-header .logo {
 }
 
 #wrapper .wp-container .box-contact .menu-contact {
+  display: none;
   position: fixed;
   right: 48px;
   bottom: 149px;
@@ -968,6 +972,7 @@ header #wp-header .logo {
 }
 
 #wrapper .wp-container .box-contact-close {
+  display: none;
   position: fixed;
   background-image: url("images/x.png");
   right: 98.26px;
@@ -1085,22 +1090,6 @@ header #wp-header .logo {
   width: 83.03%;
 }
 
-.show-thumb-nail {
-  position: fixed;
-  left: 29.5%;
-  bottom: 124px;
-  width: 560px;
-  height: 560px;
-  z-index: 110;
-}
-
-.show-thumb-nail .close {
-  position: absolute;
-  top: -2rem;
-  right: 0;
-  cursor: pointer;
-}
-
 #wrapper.product .top-content {
   background-image: url("images/bg-product.png");
   background-repeat: no-repeat;
@@ -1146,6 +1135,16 @@ header #wp-header .logo {
 
 #wrapper.product .bot-content .wp-content .box-content .box-right .box-item .item-content {
   margin-top: 0;
+}
+
+.show-thumb-nail {
+  z-index: 110;
+}
+
+.show-thumb-nail .close {
+  cursor: pointer;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 #wrapper.service .bot-content {

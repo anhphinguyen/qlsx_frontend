@@ -69,6 +69,7 @@
                 }
             }
             .menu-contact {
+                display: none;
                 position: fixed;
                 right: 48px;
                 bottom: 149px;
@@ -109,6 +110,7 @@
             }
         }
         .box-contact-close {
+            display: none;
             position: fixed;
             background-image: url('images/x.png');
             right: 98.26px;

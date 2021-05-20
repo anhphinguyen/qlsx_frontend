@@ -42,3 +42,11 @@
         }
     }
 }
+
+.show-thumb-nail {
+    z-index: 110;
+    .close {
+        cursor: pointer;
+        filter: invert(1);
+    }
+}
