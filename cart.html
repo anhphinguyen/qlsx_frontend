@@ -124,15 +124,15 @@
                     <span class="fw-600 fz-2rem">Giỏ hàng</span><span class="fw-400 fz-15rem">(800 sản phẩm)</span>
 
                     <!-- empty-box -->
-                    <div id="cart_empty" class="" style="height: 500px;">
+                    <div id="cart_empty" class="d-none" style="height: 500px;">
                         <div class="box-content empty-box py-15rem m-0">
                             <span class="empty-box-icon"><img src="public/images/shopping-cart.png" alt=""></span>
                             <span class="empty-box-text">Không có sản phẩm hiển thị</span>
                         </div>
                     </div>
                     <!-- has product -->
-                    <div id="cart_product" class="d-none">
-                        <div class="t-right w-50 my-3">
+                    <div id="cart_product" class="">
+                        <div class="t-right w-55 my-3">
                             <a href="#delete_all_product_in_cart" class="t-green-main fw-400 d-inline-block">Xóa tất cả</a>
                         </div>
                         <div class="box-content d-flex d-none m-0">
@@ -204,10 +204,11 @@
                             </div>
                             <div class="box-right" style="width: 44%;">
                                 <div class="box-item w-100 p-0 my-1" style="height: auto; position: relative;">
-                                    <div class="box-address p-4" id="add_address_receive">
+                                    <!-- address_receive -->
+                                    <div class="box-address p-4" id="address_receive">
                                         <div class="d-flex justify-content-space-between">
                                             <h1 class="fw-600 fz-1rem">Địa chỉ nhận hàng</h1>
-                                            <a href="#choose_address_give_order" class="fw-400 t-green-main">Sửa</a>
+                                            <span data-tag="a" type="choose_address_give_order" class="get_modal fw-400 t-green-main">Sửa</span>
 
                                         </div>
                                         <div class="p-4 box-address">
@@ -233,13 +234,14 @@
                                             background-color: #F6F6F6;
                                         }
                                     </style>
-                                    <div class="box-address active p-4" id="add_address_send">
+                                    <!-- address_send -->
+                                    <div class="box-address active p-4" id="address_send">
                                         <div class="d-flex justify-content-space-between">
                                             <h1 class="fw-600 fz-1rem">Địa chỉ gửi hàng</h1>
                                             <div>
 
-                                                <a href="#delete_address" class="fw-400 t-green-main px-2">Xóa</a>
-                                                <a href="#choose_address_send_order" class="fw-400 t-green-main px-2">Sửa</a>
+                                                <span type="delete_address_send" data-tag="a" class="get_modal fw-400 t-green-main px-2">Xóa</span>
+                                                <span type="choose_address_send_order" data-tag="a" class="get_modal fw-400 t-green-main px-2">Sửa</span>
                                             </div>
                                         </div>
                                         <div class="p-4 box-address">
@@ -272,8 +274,8 @@
                                     </div>
                                     <div style="height: 100px; visibility: hidden;"></div>
                                     <div class="t-center w-100" style="position: absolute; bottom: 2rem;">
-                                        <a href="#go_order" class="btn btn-green d-inline-block w-70">Tiến hành đặt hàng</a>
-
+                                        <span type="choose_date_give_order" data-tag="a" class="get_modal btn btn-green  w-70">Tiến hành đặt hàng</span>
+                                        <span type="order_stock" data-tag="a" class="d-none btn btn-green  w-70">Đặt hàng</span>
                                         <!-- text check -->
                                         <i class="d-block fw-400 fz-075rem mt-3 t-black">Xin vui lòng kiểm tra lại đơn hàng trước khi đặt hàng</i>
                                     </div>
@@ -284,7 +286,7 @@
 
 
                     <!-- modal choose date give order -->
-                    <div class="modal d-none" id="choose_date_give_order">
+                    <div class="modal" id="choose_date_give_order">
                         <div class="modal-box" style="width: 25%;">
                             <div class="box-content justify-content-center">
                                 <div class="box-item w-100 ">
@@ -294,19 +296,20 @@
                                     </div>
 
                                     <div class="p-4">
-                                        <label for="choose_date" class="fw-400 d-block mb-3">Ngày nhận</label>
+                                        <label for="choose_date" class="fw-400 d-block mb-3 t-left">Ngày nhận</label>
                                         <input type="date" name="choose_date" id="choose_date" class="w-100 py-1 px-3" style="border:  1px solid #C4C4C4;">
+                                        <small class="error-text mt-3 t-center">Bạn chưa chọn ngày nhận hàng</small>
                                     </div>
 
                                     <div class="item-content t-center mg-t-175rem ">
-                                        <button id="add_attach" class="btn-submit w-50 d-inline-block fz-1rem">Hoàn thành</button>
+                                        <button id="submit_choose_date_give_order" class="btn-submit w-50 d-inline-block fz-1rem">Hoàn thành</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- modal choose address give order -->
-                    <div class="modal d-none" id="choose_address_give_order">
+                    <div class="modal" id="choose_address_give_order">
                         <div class="modal-box w-50" style="overflow-y: scroll; max-height: 600px;">
                             <div class="box-content justify-content-center">
                                 <div class="box-item w-100" style="padding: 1.5rem!important;">
@@ -315,7 +318,7 @@
                                         <span class="icon"><a href="#cancel_add_attach"><img src="public/images/x-black.png " alt=" "></a></span>
                                     </div>
 
-                                    <div class="py-3" style="position: relative;">
+                                    <div class="py-3" style="position: relative; text-align: left;">
                                         <input type="radio" name="choose_address_give_order" id="address_1" value="address_1" class="d-inline-block" style="position: relative;top: -4.5rem;">
                                         <div class="lh-15rem mg-l-1rem d-inline-block w-70">
                                             <strong>Công ty Cổ Phần ABC - Chi nhánh 2</strong>
@@ -323,7 +326,7 @@
                                             <p>Tòa nhà TMA, đường số 10, Công viên phần mềm Quang Trung, P. Tân Chánh Hiệp, Quận 12, TP.HCM </p>
                                         </div>
                                     </div>
-                                    <div class="py-3" style="position: relative;">
+                                    <div class="py-3" style="position: relative;text-align: left;">
                                         <input type="radio" name="choose_address_give_order" id="address_1" value="address_1" class="d-inline-block" style="position: relative;top: -4.5rem;">
                                         <div class="lh-15rem mg-l-1rem d-inline-block w-70">
                                             <strong>Công ty Cổ Phần ABC - Chi nhánh 2</strong>
@@ -378,21 +381,21 @@
                                                                 <option value="0 ">Nhập địa chỉ cụ thể</option>
                                                             </select>
                                         </div>
-                                        <div class="form-edit-row-check ">
+                                        <div class="form-edit-row-check t-left">
                                             <input type="checkbox" class="form-input-check " name="choose_default " id="choose_default ">
                                             <label for="choose_default " class="form-lable-check ">Chọn làm địa chỉ mặc định</label>
                                         </div>
                                     </form>
                                     <!-- end form add address -->
                                     <div class="t-right mg-t-175rem ">
-                                        <button id="choose_address_give_order" class="btn-submit w-20 d-inline-block fz-1rem">Hoàn thành</button>
+                                        <button id="submit_give_order" class="btn-submit w-20 d-inline-block fz-1rem">Hoàn thành</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- modal choose address send order -->
-                    <div class="modal d-none" id="choose_address_send_order">
+                    <div class="modal" id="choose_address_send_order">
                         <div class="modal-box w-50" style="overflow-y: scroll; max-height: 600px;">
                             <div class="box-content justify-content-center">
                                 <div class="box-item w-100" style="padding: 1.5rem!important;">
@@ -401,16 +404,16 @@
                                         <span class="icon"><a href="#cancel_add_attach"><img src="public/images/x-black.png " alt=" "></a></span>
                                     </div>
 
-                                    <div class="py-3" style="position: relative;">
-                                        <input type="radio" name="choose_address_give_order" id="address_1" value="address_1" class="d-inline-block" style="position: relative;top: -4.5rem;">
+                                    <div class="py-3" style="position: relative; text-align: left;">
+                                        <input type="radio" name="choose_address_send_order" id="address_1" value="address_1" class="d-inline-block" style="position: relative;top: -4.5rem;">
                                         <div class="lh-15rem mg-l-1rem d-inline-block w-70">
                                             <strong>Phước Bình</strong>
                                             <p>Cecilia Chapman | (257) 563-7401 </p>
                                             <p>Tòa nhà TMA, đường số 10, Công viên phần mềm Quang Trung, P. Tân Chánh Hiệp, Quận 12, TP.HCM </p>
                                         </div>
                                     </div>
-                                    <div class="py-3" style="position: relative;">
-                                        <input type="radio" name="choose_address_give_order" id="address_1" value="address_1" class="d-inline-block" style="position: relative;top: -4.5rem;">
+                                    <div class="py-3" style="position: relative; text-align: left;">
+                                        <input type="radio" name="choose_address_send_order" id="address_1" value="address_1" class="d-inline-block" style="position: relative;top: -4.5rem;">
                                         <div class="lh-15rem mg-l-1rem d-inline-block w-70">
                                             <strong>Phước Bình</strong>
                                             <p>Cecilia Chapman | (257) 563-7401 </p>
@@ -464,14 +467,33 @@
                                                                 <option value="0 ">Nhập địa chỉ cụ thể</option>
                                                             </select>
                                         </div>
-                                        <div class="form-edit-row-check ">
+                                        <div class="form-edit-row-check t-left">
                                             <input type="checkbox" class="form-input-check " name="choose_default " id="choose_default ">
                                             <label for="choose_default " class="form-lable-check ">Chọn làm địa chỉ mặc định</label>
                                         </div>
                                     </form>
                                     <!-- end form add address -->
                                     <div class="t-right mg-t-175rem ">
-                                        <button id="choose_address_give_order" class="btn-submit w-20 d-inline-block fz-1rem">Hoàn thành</button>
+                                        <button id="submit_send_order" class="btn-submit w-20 d-inline-block fz-1rem">Hoàn thành</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal choose address send order -->
+                    <div class="modal" id="delete_address_send">
+                        <div class="modal-box w-50" style="overflow-y: scroll; max-height: 600px;">
+                            <div class="box-content justify-content-center">
+                                <div class="box-item w-100" style="padding: 1.5rem!important;">
+                                    <div class="item-title py-3" style="border-bottom: 1px solid #c4c4c4!important;">
+                                        <h4 class="t-left fw-600 t-cap fz-15rem m-0">Lý do hủy</h4>
+                                        <span class="icon"><a href="#cancel_add_attach"><img src="public/images/x-black.png " alt=" "></a></span>
+                                    </div>
+
+                                    <textarea name="note_cancel_ordernote_cancel_order" cols="30" rows="10" class="mt-3 w-100 p-3 t-placeholder">Ghi lý do hủy đơn</textarea>
+                                    <!-- end form add address -->
+                                    <div class="t-right mg-t-175rem ">
+                                        <button id="submit_send_order" class="btn-submit w-20 d-inline-block fz-1rem">Hoàn thành</button>
                                     </div>
                                 </div>
                             </div>
