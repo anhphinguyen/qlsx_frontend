@@ -55,7 +55,7 @@
                         <a href="my-order.html">Đơn hàng của tôi</a>
                         <a href="my-info.html">Tài khoản của tôi</a>
                         <a href="my-notify.html">Thông báo của tôi</a>
-                        <a href="logout.html">Đăng xuất</a>
+                        <a href="index.html">Đăng xuất</a>
                     </div>
                 </div>
                 <div class="dir-box header-cart-box">
@@ -148,7 +148,7 @@
                                     <!-- menu side bar -->
                                     <ul class="menu-profile" id="sidebar_menu">
                                         <li class="item active">
-                                            <a href="#my_invoice_buy" class="d-flex">
+                                            <a href="my-order.html" class="d-flex">
                                                 <span class="icon">
                                                     <img src="public/images/icon-invoice.png" alt="">
                                                 </span>
@@ -156,7 +156,7 @@
                                             </a>
                                         </li>
                                         <li class="item" id="my_info">
-                                            <a href="#my_infomation" class="d-flex">
+                                            <a href="my-info.html" class="d-flex">
                                                 <span class="icon">
                                                     <img src="public/images/icon-account.png" alt="">
                                                 </span>
@@ -178,7 +178,7 @@
                                             </ul>
                                         </li>
                                         <li class="item">
-                                            <a href="#my_announce" class="d-flex">
+                                            <a href="my-announce.html" class="d-flex">
                                                 <span class="icon">
                                                     <img src="public/images/icon-announce.png" alt="">
                                                 </span>
@@ -202,16 +202,16 @@
                             <div class="box-right w-100">
                                 <!-- menu -->
                                 <ul class="menu box-item mg-b-1rem w-100" id="menu_invoice">
-                                    <li class="item active"><a href="#all_order">Tất cả</a></li>
-                                    <li class="item"><a href="#waiting_confirm">Chờ xác nhận</a></li>
-                                    <li class="item"><a href="#processing">Đang xử lý</a></li>
-                                    <li class="item"><a href="#delivery">Giao hàng</a></li>
-                                    <li class="item"><a href="#payment">Thanh toán</a></li>
-                                    <li class="item"><a href="#complete">Hoàn tất</a></li>
-                                    <li class="item"><a href="#cancel">Hủy đơn</a></li>
+                                    <li class="item active"><span type="all_order" data-tag="a">Tất cả</span></li>
+                                    <li class="item"><span type="waiting_confirm" data-tag="a">Chờ xác nhận</span></li>
+                                    <li class="item"><span type="processing" data-tag="a">Đang xử lý</span></li>
+                                    <li class="item"><span type="delivery" data-tag="a">Giao hàng</span></li>
+                                    <li class="item"><span type="payment" data-tag="a">Thanh toán</span></li>
+                                    <li class="item"><span type="complete" data-tag="a">Hoàn tất</span></li>
+                                    <li class="item"><span type="cancel" data-tag="a">Hủy đơn</span></li>
                                 </ul>
                                 <!-- box -->
-                                <div class="mcontent d-none" id="all_order">
+                                <div class="mcontent" id="all_order">
                                     <div class="box-item mg-b-1rem px-3 py-5 w-100">
                                         <div class="d-flex mg-b-1rem justify-content-space-between">
                                             <span class="fw-400 fz-125rem t-label">Mã đơn hàng</span>
@@ -225,7 +225,24 @@
                                         </div>
                                         <hr>
                                         <div class="d-flex justify-content-space-between">
-                                            <a href="#detail-order" class="btn btn-green">Chi tiết đơn hàng</a>
+                                            <a href="my-detail-invoice.html" class="btn btn-green">Chi tiết đơn hàng</a>
+                                            <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="box-item mg-b-1rem px-3 py-5 w-100">
+                                        <div class="d-flex mg-b-1rem justify-content-space-between">
+                                            <span class="fw-400 fz-125rem t-label">Mã đơn hàng</span>
+                                            <span class="fw-400 t-blue">HOÀN TẤT</span>
+                                        </div>
+                                        <div class="d-flex justify-content-space-between">
+                                            <strong class="fz-15rem">MDH879879</strong>
+                                            <p class="t-label">
+                                                <span class="fw-400">02:39 PM </span>| <span class="fw-400">2021-04-24</span>
+                                            </p>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-space-between">
+                                            <a href="my-detail-invoice.html" class="btn btn-green">Chi tiết đơn hàng</a>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
                                     </div>
@@ -242,24 +259,7 @@
                                         </div>
                                         <hr>
                                         <div class="d-flex justify-content-space-between">
-                                            <a href="#detail-order" class="btn btn-green">Chi tiết đơn hàng</a>
-                                            <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
-                                        </div>
-                                    </div>
-                                    <div class="box-item mg-b-1rem px-3 py-5 w-100">
-                                        <div class="d-flex mg-b-1rem justify-content-space-between">
-                                            <span class="fw-400 fz-125rem t-label">Mã đơn hàng</span>
-                                            <span class="fw-400 t-blue">ĐANG XỬ LÝ</span>
-                                        </div>
-                                        <div class="d-flex justify-content-space-between">
-                                            <strong class="fz-15rem">MDH879879</strong>
-                                            <p class="t-label">
-                                                <span class="fw-400">02:39 PM </span>| <span class="fw-400">2021-04-24</span>
-                                            </p>
-                                        </div>
-                                        <hr>
-                                        <div class="d-flex justify-content-space-between">
-                                            <a href="#detail-order" class="btn btn-green">Chi tiết đơn hàng</a>
+                                            <a href="my-detail-invoice.html" class="btn btn-green">Chi tiết đơn hàng</a>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
                                     </div>
@@ -281,8 +281,48 @@
                                         <hr>
                                         <div class="d-flex justify-content-space-between">
                                             <div>
-                                                <a href="#detail-order" class="btn btn-green">Đã nhận</a>
-                                                <a href="#detail-order" class="btn btn-outline btn-green">Chi tiết đơn hàng</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-green">Đã nhận</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-outline btn-green">Chi tiết đơn hàng</a>
+                                            </div>
+                                            <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="box-item mg-b-1rem px-3 py-5 w-100">
+                                        <div class="d-flex mg-b-1rem justify-content-space-between">
+                                            <span class="fw-400 fz-125rem t-label">Mã đơn hàng</span>
+                                            <span class="fw-400 t-blue">CHỜ XÁC NHẬN</span>
+                                        </div>
+                                        <div class="d-flex justify-content-space-between">
+                                            <strong class="fz-15rem">MDH879879</strong>
+                                            <p class="t-label">
+                                                <span class="fw-400">02:39 PM </span>| <span class="fw-400">2021-04-24</span>
+                                            </p>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-space-between">
+                                            <div>
+                                                <a href="my-detail-invoice.html" class="btn btn-green">Đã nhận</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-outline btn-green">Chi tiết đơn hàng</a>
+                                            </div>
+                                            <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
+                                        </div>
+                                    </div>
+                                    <div class="box-item mg-b-1rem px-3 py-5 w-100">
+                                        <div class="d-flex mg-b-1rem justify-content-space-between">
+                                            <span class="fw-400 fz-125rem t-label">Mã đơn hàng</span>
+                                            <span class="fw-400 t-blue">CHỜ XÁC NHẬN</span>
+                                        </div>
+                                        <div class="d-flex justify-content-space-between">
+                                            <strong class="fz-15rem">MDH879879</strong>
+                                            <p class="t-label">
+                                                <span class="fw-400">02:39 PM </span>| <span class="fw-400">2021-04-24</span>
+                                            </p>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-space-between">
+                                            <div>
+                                                <a href="my-detail-invoice.html" class="btn btn-green">Đã nhận</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-outline btn-green">Chi tiết đơn hàng</a>
                                             </div>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
@@ -303,7 +343,7 @@
                                         </div>
                                         <hr>
                                         <div class="d-flex justify-content-space-between">
-                                            <a href="#detail-order" class="btn btn-green">Chi tiết đơn hàng</a>
+                                            <a href="my-detail-invoice.html" class="btn btn-green">Chi tiết đơn hàng</a>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
                                     </div>
@@ -320,7 +360,7 @@
                                         </div>
                                         <hr>
                                         <div class="d-flex justify-content-space-between">
-                                            <a href="#detail-order" class="btn btn-green">Chi tiết đơn hàng</a>
+                                            <a href="my-detail-invoice.html" class="btn btn-green">Chi tiết đơn hàng</a>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
                                     </div>
@@ -337,7 +377,7 @@
                                         </div>
                                         <hr>
                                         <div class="d-flex justify-content-space-between">
-                                            <a href="#detail-order" class="btn btn-green">Chi tiết đơn hàng</a>
+                                            <a href="my-detail-invoice.html" class="btn btn-green">Chi tiết đơn hàng</a>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
                                     </div>
@@ -358,8 +398,8 @@
                                         <hr>
                                         <div class="d-flex justify-content-space-between">
                                             <div>
-                                                <a href="#detail-order" class="btn btn-green">Đã nhận</a>
-                                                <a href="#detail-order" class="btn btn-outline btn-green">Chi tiết đơn hàng</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-green">Đã nhận</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-outline btn-green">Chi tiết đơn hàng</a>
                                             </div>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
@@ -378,8 +418,8 @@
                                         <hr>
                                         <div class="d-flex justify-content-space-between">
                                             <div>
-                                                <a href="#detail-order" class="btn btn-green">Đã nhận</a>
-                                                <a href="#detail-order" class="btn btn-outline btn-green">Chi tiết đơn hàng</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-green">Đã nhận</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-outline btn-green">Chi tiết đơn hàng</a>
                                             </div>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
@@ -398,8 +438,8 @@
                                         <hr>
                                         <div class="d-flex justify-content-space-between">
                                             <div>
-                                                <a href="#detail-order" class="btn btn-green">Đã nhận</a>
-                                                <a href="#detail-order" class="btn btn-outline btn-green">Chi tiết đơn hàng</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-green">Đã nhận</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-outline btn-green">Chi tiết đơn hàng</a>
                                             </div>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
@@ -422,7 +462,7 @@
                                         <hr>
                                         <div class="d-flex justify-content-space-between">
                                             <div>
-                                                <a href="#detail-order" class="btn btn-green">Chi tiết đơn hàng</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-green">Chi tiết đơn hàng</a>
                                             </div>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
@@ -442,7 +482,7 @@
                                         <div class="d-flex justify-content-space-between">
                                             <div>
 
-                                                <a href="#detail-order" class="btn btn-green">Chi tiết đơn hàng</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-green">Chi tiết đơn hàng</a>
                                             </div>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
@@ -461,7 +501,7 @@
                                         <hr>
                                         <div class="d-flex justify-content-space-between">
                                             <div>
-                                                <a href="#detail-order" class="btn btn-green">Chi tiết đơn hàng</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-green">Chi tiết đơn hàng</a>
                                             </div>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
@@ -483,7 +523,7 @@
                                         <hr>
                                         <div class="d-flex justify-content-space-between">
                                             <div>
-                                                <a href="#detail-order" class="btn btn-green">Chi tiết đơn hàng</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-green">Chi tiết đơn hàng</a>
                                             </div>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
@@ -503,7 +543,7 @@
                                         <div class="d-flex justify-content-space-between">
                                             <div>
 
-                                                <a href="#detail-order" class="btn btn-green">Chi tiết đơn hàng</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-green">Chi tiết đơn hàng</a>
                                             </div>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
@@ -522,7 +562,7 @@
                                         <hr>
                                         <div class="d-flex justify-content-space-between">
                                             <div>
-                                                <a href="#detail-order" class="btn btn-green">Chi tiết đơn hàng</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-green">Chi tiết đơn hàng</a>
                                             </div>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
@@ -543,7 +583,7 @@
                                         <hr>
                                         <div class="d-flex justify-content-space-between">
                                             <div>
-                                                <a href="#detail-order" class="btn btn-green">Chi tiết đơn hàng</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-green">Chi tiết đơn hàng</a>
                                             </div>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
@@ -563,7 +603,7 @@
                                         <div class="d-flex justify-content-space-between">
                                             <div>
 
-                                                <a href="#detail-order" class="btn btn-green">Chi tiết đơn hàng</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-green">Chi tiết đơn hàng</a>
                                             </div>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
@@ -582,7 +622,7 @@
                                         <hr>
                                         <div class="d-flex justify-content-space-between">
                                             <div>
-                                                <a href="#detail-order" class="btn btn-green">Chi tiết đơn hàng</a>
+                                                <a href="my-detail-invoice.html" class="btn btn-green">Chi tiết đơn hàng</a>
                                             </div>
                                             <p>Tổng : <strong class="fz-15rem">223.000 đ</strong></p>
                                         </div>
@@ -608,19 +648,19 @@
                                         <span>Đơn hàng đã đặt</span>
                                     </li>
                                     <li data-step="2">
-                                        <span class="icon"><img src="public/images/chalks.png"  alt=""></span>
+                                        <span class="icon"><img src="public/images/chalks.png" alt=""></span>
                                         <span>Chuẩn bị NVL</span>
                                     </li>
                                     <li data-step="3">
-                                        <span class="icon"><img src="public/images/engineering.png"  alt=""></span>
+                                        <span class="icon"><img src="public/images/engineering.png" alt=""></span>
                                         <span>Đang gia công</span>
                                     </li>
                                     <li data-step="4">
-                                        <span class="icon"><img src="public/images/shipping.png"  alt=""></span>
+                                        <span class="icon"><img src="public/images/shipping.png" alt=""></span>
                                         <span>Đang giao</span>
                                     </li>
                                     <li data-step="5">
-                                        <span class="icon"><img src="public/images/tick.png"  alt=""></span>
+                                        <span class="icon"><img src="public/images/tick.png" alt=""></span>
                                         <span>Đơn hàng đã giao</span>
                                     </li>
                                 </ul>
@@ -699,7 +739,6 @@
                                         </div>
                                     </div>
 
-
                                 </div>
 
                             </div>
@@ -710,9 +749,9 @@
                 </div>
             </div>
             <!-- contact box -->
-            <div class="d-none" id="contact-box">
+            <div id="contact-box">
                 <span class="box-contact-shadow "></span>
-                <span class="box-contact-close d-none "></span>
+                <span class="box-contact-close"></span>
                 <div class="box-contact ">
 
                     <div class="icon-contact ">
@@ -744,6 +783,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 

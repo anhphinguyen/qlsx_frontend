@@ -55,7 +55,7 @@
                         <a href="my-order.html">Đơn hàng của tôi</a>
                         <a href="my-info.html">Tài khoản của tôi</a>
                         <a href="my-notify.html">Thông báo của tôi</a>
-                        <a href="logout.html">Đăng xuất</a>
+                        <a href="index.html">Đăng xuất</a>
                     </div>
                 </div>
                 <div class="dir-box header-cart-box">
@@ -150,7 +150,7 @@
                                             <button class="plus"><img src="public/images/plus.png" alt=""></button>
                                         </div>
                                     </div>
-                                    <a href="#add_attach_file" class="fw-400 t-green-main">+Thêm dữ liệu đính kèm sản phẩm</a>
+                                    <span data-tag="a" type="add_attach_file" class="get_modal fw-400 t-green-main">+Thêm dữ liệu đính kèm sản phẩm</span>
                                     <!-- show_info_file -->
                                     <div id="show_info_file" class="visible-hidden" style="min-height: 120px;">
                                         <div class="d-none">
@@ -216,7 +216,7 @@
                         </div>
 
                         <!-- modal insert file attach -->
-                        <div class="modal d-none" id="add_attach_file">
+                        <div class="modal" id="add_attach_file">
                             <div class="modal-box">
                                 <div class="box-content justify-content-center">
                                     <div class="box-item w-100 ">
@@ -253,7 +253,6 @@
                             </div>
                         </div>
                         <!-- modal delete file attach -->
-
                         <div class="modal d-none" id="delete_attach_file">
                             <div class="modal-box">
                                 <div class="box-content justify-content-center">

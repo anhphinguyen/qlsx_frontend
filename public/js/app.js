@@ -32,26 +32,55 @@ $(document).ready(function() {
         $('.header-cart-box').fadeToggle();
     });
 
+    // MY INFO
     // sidebar menu
     $("#sidebar_menu>li.item>a").click(function() {
         $("#sidebar_menu>li.item").removeClass("active");
         $(this).parent().addClass('active');
         if ($('#my_info').hasClass('active')) {
-            $('#my_info').children('.sub-menu-profile').slideDown('1000');
-        } else {
-            $('#my_info').children('.sub-menu-profile').slideUp('1000');
+            $('#my_info').children('.sub-menu-profile').slideToggle();
         }
     });
+    if ($('#my_info').hasClass('active')) {
+        $('#my_info').children('.sub-menu-profile').slideToggle();
+    }
     // sidebar sub menu
-    $("#my_info>.sub-menu-profile>li.item>a").click(function() {
+    $("#my_info>.sub-menu-profile>li.item>span[data-tag='a']").click(function() {
         $("#my_info>.sub-menu-profile>li.item").removeClass("active");
         $(this).parent().addClass('active');
+        var id_rcontent = $(this).attr('type');
+        if ($('#' + id_rcontent + '.rcontent').hasClass('d-none')) {
+            $('.rcontent').addClass('d-none');
+            $('#' + id_rcontent + '.rcontent').removeClass('d-none');
+        };
     });
+    // My address send
+    $("span.get_modal").click(function() {
+        var id_modal = $(this).attr('type');
+        console.log($('#' + id_modal));
+        $('#' + id_modal).fadeToggle();
+    });
+    $(".modal span.icon").click(function() {
+        $(this).parent('.item-title').parent('.box-item').parent('.box-content').parent('.modal-box').parent('.modal').fadeToggle();
+    });
+
+
+    // MY INVOICE
     // menu invoice
-    $("#menu_invoice>li.item>a").click(function() {
+    $("#menu_invoice>li.item>span[data-tag='a']").click(function() {
         $("#menu_invoice>li.item").removeClass("active");
         $(this).parent().addClass('active');
+
+        var id_mcontent = $(this).attr('type');
+        if ($('#my_invoice.rcontent #' + id_mcontent + '.mcontent').hasClass('d-none')) {
+            $('#my_invoice.rcontent .mcontent').addClass('d-none');
+            $('#my_invoice.rcontent #' + id_mcontent + '.mcontent').removeClass('d-none');
+        };
     });
+
+
+
+
 
 
 });

@@ -523,3 +523,7 @@ span.icon {
     height: 1rem;
     cursor: pointer;
 }
+
+span[data-tag='a'] {
+    cursor: pointer;
+}

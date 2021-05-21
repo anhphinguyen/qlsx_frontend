@@ -400,35 +400,33 @@
 }
 
 .warning {
-  position: relative;
-  width: 70%;
-  height: 56px;
-  text-align: center;
   display: inline-block;
+  width: 80%;
+  text-align: center;
+  background-color: #FDF5F5;
+  padding: 1.25rem;
 }
 
 .warning .warning-retangle {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  background: #DE2D2D;
-  opacity: 0.05;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .warning .warning-icon {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: .5rem;
   display: inline-block;
 }
 
 .warning .warning-text {
-  position: absolute;
-  top: 1.25rem;
-  left: 3rem;
   display: inline-block;
   font-weight: 400;
 }
@@ -462,7 +460,7 @@
   z-index: 10;
 }
 
-input.error-input {
+.error-input {
   border: 1px solid #DE2D2D;
   -webkit-box-shadow: 0px 0px 4px #DE2D2D;
           box-shadow: 0px 0px 4px #DE2D2D;
@@ -504,7 +502,7 @@ input.error-input {
 }
 
 .modal .modal-box {
-  margin-top: 100px;
+  margin-top: 70px;
   display: inline-block;
   width: 70%;
   height: auto;
@@ -1883,12 +1881,12 @@ header #wp-header.header-customer .bot-header .logo {
   margin-left: 2rem;
 }
 
-#my_address_send .box-item .item-title a,
-#my_address_receive .box-item .item-title a,
-#my_announce .box-item .item-title a,
-#my_invoice .box-item .item-title a,
-#my_detail_invoice .box-item .item-title a,
-#choose_date_give_order .box-item .item-title a {
+#my_address_send .box-item .item-title span[data-tag='a'],
+#my_address_receive .box-item .item-title span[data-tag='a'],
+#my_announce .box-item .item-title span[data-tag='a'],
+#my_invoice .box-item .item-title span[data-tag='a'],
+#my_detail_invoice .box-item .item-title span[data-tag='a'],
+#choose_date_give_order .box-item .item-title span[data-tag='a'] {
   position: absolute;
   top: 0;
   right: 0;
@@ -1915,12 +1913,12 @@ header #wp-header.header-customer .bot-header .logo {
   margin-right: .5rem;
 }
 
-#my_address_send .box-item .item-content a[href='#modal_delete_address_send'],
-#my_address_receive .box-item .item-content a[href='#modal_delete_address_send'],
-#my_announce .box-item .item-content a[href='#modal_delete_address_send'],
-#my_invoice .box-item .item-content a[href='#modal_delete_address_send'],
-#my_detail_invoice .box-item .item-content a[href='#modal_delete_address_send'],
-#choose_date_give_order .box-item .item-content a[href='#modal_delete_address_send'] {
+#my_address_send .box-item .item-content span[data-tag='a'],
+#my_address_receive .box-item .item-content span[data-tag='a'],
+#my_announce .box-item .item-content span[data-tag='a'],
+#my_invoice .box-item .item-content span[data-tag='a'],
+#my_detail_invoice .box-item .item-content span[data-tag='a'],
+#choose_date_give_order .box-item .item-content span[data-tag='a'] {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1941,12 +1939,9 @@ header #wp-header.header-customer .bot-header .logo {
   top: 0;
   right: 0;
   display: block;
-}
-
-.modal .item-title span.icon a {
-  display: block;
-  width: 1rem;
-  height: 1rem;
+  width: 1rem !important;
+  height: 1rem !important;
+  cursor: pointer;
 }
 
 #modal_delete_address_send .modal-box {
@@ -1976,7 +1971,7 @@ header #wp-header.header-customer .bot-header .logo {
   border-bottom: 1px solid #15A4DD;
 }
 
-#my_invoice .box-right .box-item.menu .item.active a, #my_invoice .box-right .box-item.menu .item:hover a {
+#my_invoice .box-right .box-item.menu .item.active span[data-tag='a'], #my_invoice .box-right .box-item.menu .item:hover span[data-tag='a'] {
   color: #15A4DD;
 }
 

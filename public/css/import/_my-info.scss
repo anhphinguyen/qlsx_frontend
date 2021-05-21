@@ -78,7 +78,7 @@
                 padding: .5rem 1rem;
                 margin-left: 2rem;
             }
-            a {
+            span[data-tag='a'] {
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -93,7 +93,7 @@
                     margin-right: .5rem;
                 }
             }
-            a[href='#modal_delete_address_send'] {
+            span[data-tag='a'] {
                 position: absolute;
                 bottom: 0;
                 right: 0;
@@ -115,10 +115,8 @@
             top: 0;
             right: 0;
             display: block;
-            a {
-                display: block;
-                @include widthIcon(1rem);
-            }
+            @include widthIcon(1rem!important);
+            cursor: pointer;
         }
     }
 }
@@ -143,7 +141,7 @@
         &.active,
         &:hover {
             border-bottom: 1px solid #15A4DD;
-            a {
+            span[data-tag='a'] {
                 color: #15A4DD;
             }
         }
