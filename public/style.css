@@ -314,7 +314,7 @@
 
 .form-file .form-file-input,
 .form-file .form-file-img {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 20%;
   display: block;
@@ -335,30 +335,29 @@
 
 .form-file .form-file-view-img {
   position: relative;
-  top: -1.2rem;
+  top: -0.2rem;
   left: 20%;
-  display: block;
+  display: none;
   width: 60%;
-  height: 200px;
+  height: 240px;
   border-radius: 15px;
   z-index: 9;
-  opacity: 0;
 }
 
 .form-file .form-file-view-img img {
+  position: relative;
   height: 100%;
 }
 
 .form-file .form-file-view-img-close {
   position: absolute;
-  top: 0;
-  right: 20%;
-  display: block;
+  top: -7px;
+  right: 17%;
+  display: none;
   width: 1rem;
   height: 1rem;
   cursor: pointer;
   z-index: 20;
-  opacity: 0;
 }
 
 .form-file .form-file-img::before {
@@ -390,7 +389,7 @@
   display: inline-block;
   text-align: center;
   position: relative;
-  top: 7.5rem;
+  top: -4.5rem;
 }
 
 .form-file .form-input {
@@ -502,7 +501,7 @@
 }
 
 .modal .modal-box {
-  margin-top: 70px;
+  margin-top: 50px;
   display: inline-block;
   width: 70%;
   height: auto;

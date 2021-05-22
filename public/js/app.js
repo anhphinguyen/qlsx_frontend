@@ -78,6 +78,18 @@ $(document).ready(function() {
         };
     });
 
+    // CART
+    $('#submit_choose_date_give_order').click(function() {
+        if ($('#choose_date').val() == "") {
+            $('#choose_date').addClass('error-input');
+            $('#choose_date ~ .error-text').addClass('d-block');
+        } else {
+            $("span[type='choose_date_give_order']").toggleClass('d-none');
+            $("span[type='order_stock']").toggleClass('d-none');
+            $('#choose_date_give_order').fadeToggle();
+        }
+    });
+
 
 
 
