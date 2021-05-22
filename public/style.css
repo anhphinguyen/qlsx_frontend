@@ -42,7 +42,7 @@
   content: "";
   display: block;
   width: 100%;
-  height: 71%;
+  height: 63%;
   border-bottom: 2px dashed #15A4DD;
   background-image: url("images/none_img.png");
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@
 
 .empty-item::after {
   position: absolute;
-  top: 75%;
+  top: 64%;
   left: 1rem;
   content: "Nothing to show here right now";
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -625,7 +625,6 @@
 }
 
 html {
-  font-size: 16px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -801,11 +800,13 @@ header #wp-header .bot-header .dir-user .arrow-down {
 header #wp-header .bot-header .dir-box {
   display: none;
   position: absolute;
-  right: 40px;
+  right: 34px;
   top: 66px;
   z-index: 100;
   width: 193px;
-  height: 124px;
+  height: auto;
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
 }
 
 header #wp-header .bot-header .dir-box > span.triangle {
@@ -939,6 +940,8 @@ header #wp-header .logo {
   width: 216px;
   height: auto;
   background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
 }
 
 #wrapper .wp-container .box-contact .menu-contact .content-contact {
@@ -1658,17 +1661,19 @@ header #wp-header.header-customer .bot-header .dir-user .arrow-down {
 header #wp-header.header-customer .bot-header .dir-box {
   display: none;
   position: absolute;
-  left: 78.5%;
+  left: 78.1%;
   top: 97.11%;
   z-index: 100;
   width: 193px;
-  height: 124px;
+  height: auto;
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
 }
 
 header #wp-header.header-customer .bot-header .dir-box > span.triangle {
   position: absolute;
   right: 22.48%;
-  top: -7.18%;
+  top: -4.18%;
   width: 12px;
   height: 12px;
   display: block;

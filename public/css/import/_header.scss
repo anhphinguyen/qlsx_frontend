@@ -1,5 +1,5 @@
 html {
-    font-size: 16px;
+    // font-size: 16px;
     user-select: none;
 }
 
@@ -136,10 +136,11 @@ header {
             .dir-box {
                 display: none;
                 position: absolute;
-                right: 40px;
+                right: 34px;
                 top: 66px;
                 z-index: 100;
-                @include wh(193px, 124px);
+                @include wh(193px, auto);
+                box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
                 &>span.triangle {
                     position: absolute;
                     right: 22.48%;

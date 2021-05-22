@@ -74,14 +74,15 @@ header {
             .dir-box {
                 display: none;
                 position: absolute;
-                left: 78.5%;
+                left: 78.1%;
                 top: 97.11%;
                 z-index: 100;
-                @include wh(193px, 124px);
+                @include wh(193px, auto);
+                box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
                 &>span.triangle {
                     position: absolute;
                     right: 22.48%;
-                    top: -7.18%;
+                    top: -4.18%;
                     @include wh(12px, 12px);
                     display: block;
                     background-color: $topHeader;
