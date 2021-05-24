@@ -1,7 +1,10 @@
 header {
     font-size: 1rem;
     #wp-header.header-customer {
+        position: fixed;
+        width: 100%;
         height: 72px;
+        z-index: 10;
         .bot-header {
             position: relative;
             top: 0;
@@ -106,5 +109,10 @@ header {
                 @include wh(5.85%, 72.22%);
             }
         }
+    }
+    #header-hidden {
+        position: relative;
+        width: 100%;
+        height: 72px;
     }
 }

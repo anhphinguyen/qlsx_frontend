@@ -61,7 +61,7 @@ $(document).ready(function() {
         $('#' + id_modal).fadeToggle();
     });
     $(".modal span.icon").click(function() {
-        $(this).parent('.item-title').parent('.box-item').parent('.box-content').parent('.modal-box').parent('.modal').fadeToggle();
+        $(this).parent('.modal-title').parent('.modal-box').parent('.modal').fadeToggle();
     });
 
 

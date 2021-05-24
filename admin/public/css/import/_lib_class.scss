@@ -254,7 +254,7 @@
     }
     .form-file-input,
     .form-file-img {
-        position: absolute;
+        position: relative;
         top: 0;
         left: 20%;
         display: block;
@@ -272,27 +272,27 @@
     }
     .form-file-view-img {
         position: relative;
-        top: -1.2rem;
+        top: -0.2rem;
         left: 20%;
-        display: block;
+        display: none;
         width: 60%;
-        height: 200px;
+        height: 240px;
         border-radius: 15px;
         z-index: 9;
         img {
+            position: relative;
             height: 100%;
         }
-        opacity: 0;
+        // opacity: 1;
     }
     .form-file-view-img-close {
         position: absolute;
-        top: 0;
-        right: 20%;
-        display: block;
+        top: -7px;
+        right: 17%;
+        display: none;
         @include widthIcon(1rem);
         cursor: pointer;
         z-index: 20;
-        opacity: 0;
     }
     .form-file-img::before {
         content: "";
@@ -321,7 +321,7 @@
         display: inline-block;
         text-align: center;
         position: relative;
-        top: 7.5rem;
+        top: -4.5rem;
         // left: 53%;
     }
     .form-input {
@@ -423,20 +423,35 @@
 // ======================== MODAL ===========================
 // ==========================================================
 .modal {
-    // position: fixed;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
     text-align: center;
     .modal-box {
+        background-color: #FFFFFF;
         margin-top: 70px;
         display: inline-block;
         width: 70%;
         height: auto;
+        padding: 0 1.5rem;
+        .modal-title,
+        .modal-content {
+            padding: 1.5rem 0;
+        }
+        .modal-title {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+            font-weight: 600;
+            border-bottom: 1px solid #C4C4C4;
+            .icon {
+                display: block;
+                @include widthIcon(1rem);
+            }
+        }
+        .modal-content {
+            text-align: center;
+            border: none;
+        }
     }
 }
 

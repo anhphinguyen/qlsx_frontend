@@ -75,59 +75,6 @@ $(document).ready(function() {
 
     });
 
-
-
-
-    // // add_attach_file .form-file-view-img-close
-    // $('#add_attach_file .form-file-view-img-close').click(function() {
-    //     $('.form-file-view-img').css({ 'height': '200px', 'opacity': '0' });
-    //     $('.form-file-view-img-close').css('opacity', '0');
-    //     $('.form-file-img').css('opacity', '1');
-    //     $('.form-file-img-title').css('opacity', '1');
-    //     $('.form-file-view-img img').attr('src', 'public/images/product_1.png');
-    //     $('#file_name .file-name').text('');
-    // });
-
-    // // href='#add_attach_file'
-
-    // $("a[href='#add_attach_file']").click(function() {
-    //     $('#add_attach_file').removeClass('d-none');
-
-    // });
-
-
-    // // $("a[href='#cancel_thumb_nails']").click(function() {
-    // //     $('.form-file-view-img img').attr('src', "");
-    // // });
-    // // href='#cancel_add_attach'
-
-    // $("a[href='#cancel_add_attach']").click(function() {
-    //     $('#add_attach_file').addClass('d-none');
-    //     // $('.form-file-view-img img').attr('src', "");
-    //     // alert($('.form-file-view-img img').attr('src'))
-    // });
-
-    // // add_attach
-    // $('#add_attach').click(function() {
-    //     var note_input = $('#add_attach_file #note_input').val();
-    //     if (note_input != "") {
-    //         $('#show_info_file #note').text(note_input);
-    //         // alert(note_input);
-
-    //         $("a[href='#add_attach_file']").addClass('d-none');
-    //     }
-    //     $('#add_attach_file').addClass('d-none');
-    // });
-
-
-
-    // //href='#cancel_delete_attach'
-    // // $("a[href='#cancel_delete_attach']").click(function() {
-    // //     $('#delete_attach_file').removeClass('d-none');
-    // // });
-
-    // //delete_attach
-
     $('#delete_attach').click(function() {
         $('#attach').val("");
         $('#form_attach .form-file-view-img img').attr('src', "");
