@@ -503,6 +503,21 @@ a:hover {
 }
 
 
+/* clear both */
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear-both {
+    clear: both;
+}
+
+
 /* triangle */
 
 .triangle {

@@ -175,6 +175,8 @@
     font-weight: 400;
     font-size: 1rem;
     padding: 1.5rem 2.5rem;
+    line-height: 160%;
+    letter-spacing: 0.02em;
     .form-edit-row {
         margin: .5rem 0;
     }
@@ -426,6 +428,7 @@
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
     text-align: center;
+    overflow-y: scroll;
     .modal-box {
         background-color: #FFFFFF;
         margin-top: 70px;
@@ -544,4 +547,47 @@
 .progressbar-point li.active::after {
     background-color: #15A4DD;
     transition: all .25s;
+}
+
+// ==========================================================
+// ======================== MODULE MODAL ====================
+// ==========================================================
+.module {
+    width: 32%;
+    height: auto;
+    border: 1px solid #C4C4C4;
+    padding: 1rem;
+    margin: 0 .75rem .75rem 0;
+    .module-title {
+        display: flex;
+        justify-content: space-between;
+        .heading {
+            font-weight: 600;
+        }
+        .icon-close {
+            display: inline-block;
+            @include widthIcon(1rem);
+        }
+    }
+    .module-center {
+        text-align: center;
+        .item {
+            display: inline-block;
+            @include widthIcon(2rem);
+        }
+    }
+    input:read-only,
+    textarea:read-only {
+        background-color: #F6F6F6;
+    }
+}
+
+.module-empty {
+    @extend .module;
+    border: none;
+    background-image: url('images/module-empty.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    min-height: 452px;
 }

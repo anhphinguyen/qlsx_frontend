@@ -217,6 +217,8 @@
   font-weight: 400;
   font-size: 1rem;
   padding: 1.5rem 2.5rem;
+  line-height: 160%;
+  letter-spacing: 0.02em;
 }
 
 .form-edit .form-edit-row {
@@ -496,6 +498,7 @@
   background-color: black;
   background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
+  overflow-y: scroll;
 }
 
 .modal .modal-box {
@@ -649,6 +652,64 @@
   background-color: #15A4DD;
   -webkit-transition: all .25s;
   transition: all .25s;
+}
+
+.module, .module-empty {
+  width: 32%;
+  height: auto;
+  border: 1px solid #C4C4C4;
+  padding: 1rem;
+  margin: 0 .75rem .75rem 0;
+}
+
+.module .module-title, .module-empty .module-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.module .module-title .heading, .module-empty .module-title .heading {
+  font-weight: 600;
+}
+
+.module .module-title .icon-close, .module-empty .module-title .icon-close {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+.module .module-center, .module-empty .module-center {
+  text-align: center;
+}
+
+.module .module-center .item, .module-empty .module-center .item {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.module input:-moz-read-only, .module-empty input:-moz-read-only,
+.module textarea:-moz-read-only,
+.module-empty textarea:-moz-read-only {
+  background-color: #F6F6F6;
+}
+
+.module input:read-only, .module-empty input:read-only,
+.module textarea:read-only,
+.module-empty textarea:read-only {
+  background-color: #F6F6F6;
+}
+
+.module-empty {
+  border: none;
+  background-image: url("images/module-empty.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  min-height: 452px;
 }
 
 html {
@@ -1352,7 +1413,7 @@ header #header-hidden {
   left: 0;
 }
 
-#content .heading {
+#content > .heading {
   font-size: 2rem;
   font-weight: 600;
 }
@@ -1375,6 +1436,7 @@ header #header-hidden {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+  margin-bottom: 1.5rem;
 }
 
 .box .box-head {
@@ -1410,6 +1472,21 @@ header #header-hidden {
 .box .box-body .body-justify .p {
   padding: .5rem 1rem;
   padding-left: 0;
+}
+
+.box .body-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .thumb-nails {
