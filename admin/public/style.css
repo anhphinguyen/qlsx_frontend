@@ -654,15 +654,20 @@
   transition: all .25s;
 }
 
-.module, .module-empty {
+.wp-module {
   width: 32%;
   height: auto;
-  border: 1px solid #C4C4C4;
-  padding: 1rem;
   margin: 0 .75rem .75rem 0;
 }
 
-.module .module-title, .module-empty .module-title {
+.module {
+  width: 100%;
+  height: auto;
+  border: 1px solid #C4C4C4;
+  padding: 1rem;
+}
+
+.module .module-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -671,39 +676,40 @@
           justify-content: space-between;
 }
 
-.module .module-title .heading, .module-empty .module-title .heading {
+.module .module-title .heading {
   font-weight: 600;
 }
 
-.module .module-title .icon-close, .module-empty .module-title .icon-close {
+.module .module-title .icon-close {
   display: inline-block;
   width: 1rem;
   height: 1rem;
 }
 
-.module .module-center, .module-empty .module-center {
+.module .module-center {
   text-align: center;
 }
 
-.module .module-center .item, .module-empty .module-center .item {
+.module .module-center .item {
   display: inline-block;
   width: 2rem;
   height: 2rem;
 }
 
-.module input:-moz-read-only, .module-empty input:-moz-read-only,
-.module textarea:-moz-read-only,
-.module-empty textarea:-moz-read-only {
+.module input:-moz-read-only,
+.module textarea:-moz-read-only {
   background-color: #F6F6F6;
 }
 
-.module input:read-only, .module-empty input:read-only,
-.module textarea:read-only,
-.module-empty textarea:read-only {
+.module input:read-only,
+.module textarea:read-only {
   background-color: #F6F6F6;
 }
 
 .module-empty {
+  display: block;
+  width: 100%;
+  height: auto;
   border: none;
   background-image: url("images/module-empty.png");
   background-repeat: no-repeat;
@@ -1491,6 +1497,6 @@ header #header-hidden {
 
 .thumb-nails {
   width: 160px;
-  height: auto;
+  height: 100px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -552,12 +552,18 @@
 // ==========================================================
 // ======================== MODULE MODAL ====================
 // ==========================================================
-.module {
+.wp-module {
     width: 32%;
+    height: auto;
+    margin: 0 .75rem .75rem 0;
+}
+
+.module {
+    width: 100%;
     height: auto;
     border: 1px solid #C4C4C4;
     padding: 1rem;
-    margin: 0 .75rem .75rem 0;
+    // margin: 0 .75rem .75rem 0;
     .module-title {
         display: flex;
         justify-content: space-between;
@@ -583,7 +589,9 @@
 }
 
 .module-empty {
-    @extend .module;
+    display: block;
+    width: 100%;
+    height: auto;
     border: none;
     background-image: url('images/module-empty.png');
     background-repeat: no-repeat;

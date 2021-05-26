@@ -1,7 +1,12 @@
 $(document).ready(function() {
-    $("ul#main-menu li.item").click(function() {
+    // module empty
+    var module_height = $('.module-empty').parent('.wp-module').prev().children('.module').outerHeight();
+    $('.module-empty').css('height', module_height);
+
+    // main menu
+    $("ul#main-menu li.item a").click(function() {
         $("ul#main-menu li.item").removeClass("active");
-        $(this).addClass('active');
+        $(this).parent().addClass('active');
     });
 
     // product

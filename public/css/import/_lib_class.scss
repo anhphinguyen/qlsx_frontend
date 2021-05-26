@@ -37,7 +37,7 @@
     content: "";
     display: block;
     width: 100%;
-    height: 63%;
+    height: 68%;
     border-bottom: 2px dashed #15A4DD;
     background-image: url('images/none_img.png');
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@
 
 .empty-item::after {
     position: absolute;
-    top: 64%;
+    top: 70%;
     left: 1rem;
     content: "Nothing to show here right now";
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

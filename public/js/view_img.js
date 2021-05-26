@@ -27,6 +27,7 @@ $(document).ready(function() {
             $('.form-file-img').removeClass('d-none');
             $('.form-file-input').removeClass('d-none');
             $('.form-file-img-title').removeClass('d-none');
+
         }
     });
 
@@ -43,6 +44,7 @@ $(document).ready(function() {
         $('.form-file-img').removeClass('d-none');
         $('.form-file-input').removeClass('d-none');
         $('.form-file-img-title').removeClass('d-none');
+
     });
 
 
@@ -52,6 +54,7 @@ $(document).ready(function() {
         if ($("span[type='add_attach_file']").hasClass('d-none')) {
             $("span[type='add_attach_file']").removeClass('d-none');
         }
+
     }
 
     $('#add_attach').click(function() {
@@ -72,6 +75,7 @@ $(document).ready(function() {
         } else {
             $('#note_input~.error-text').toggleClass('d-block');
         }
+
 
     });
 
