@@ -121,8 +121,8 @@
                                         </div>
                                     </div>
                                     <div class="t-right">
-                                        <button class="btn btn-green d-inline-block ml-3">Cập nhật</button>
-
+                                        <span data-tag="a" type="edit_module" class="get_modal btn btn-green">
+                                            Cập nhật</span>
                                     </div>
                                 </div>
                             </div>
@@ -147,8 +147,8 @@
                                         </div>
                                     </div>
                                     <div class="t-right">
-                                        <button class="btn btn-green d-inline-block ml-3">Cập nhật</button>
-
+                                        <span data-tag="a" type="edit_module" class="get_modal btn btn-green">
+                                            Cập nhật</span>
                                     </div>
                                 </div>
                             </div>
@@ -173,8 +173,8 @@
                                         </div>
                                     </div>
                                     <div class="t-right">
-                                        <button class="btn btn-green d-inline-block ml-3">Cập nhật</button>
-
+                                        <span data-tag="a" type="edit_module" class="get_modal btn btn-green">
+                                            Cập nhật</span>
                                     </div>
                                 </div>
                             </div>
@@ -193,6 +193,46 @@
     </div>
     <!-- modal create / edit -->
     <div class="modal" id="add_module">
+        <div class="modal-box w-40" style=" margin-top: 50px;">
+            <div class="modal-title">
+                <h4>Module</h4>
+                <span class="icon" data-tag="a">
+                    <img src="public/images/x-black.png" alt="">
+                </span>
+            </div>
+            <div class="modal-content">
+                <!-- <label for="attach" class="form-label mb-3">Hình banner</label> -->
+                <div class="form-file">
+                    <div class="form-file-box">
+                        <input type="file" name="attach" id="attach" onchange="readURL(this);" class="form-file-input">
+                        <span class="form-file-img"></span>
+
+                        <span data-tag="a" type="cancel_thumb_nails">
+                            <img src="public/images/x_thumb_nail.png" class="form-file-view-img-close" alt="">
+                        </span>
+                        <strong class="form-file-img-title">Tải logo của bạn lên đây</strong>
+                        <span class="form-file-view-img">
+                            <img src="" alt="">
+                        </span>
+                    </div>
+                </div>
+                <div class="form-edit p-0">
+                    <div class="form-edit-row my-3">
+                        <label class="form-lable">Tiêu đề</label>
+                        <input type="text" class="form-input" name="title" data-id="title_1" value="CÁC SẢN PHẨM TIÊU BIỂU" readonly>
+                    </div>
+                    <div class="form-edit-row my-3">
+                        <label class="form-lable">Content</label>
+                        <textarea readonly type="text" class="form-input" cols="30" rows="10" name="content" data-id="content_1">Sử dụng mực in không chì từ Nhật bản. Sử dụng 100% nhựa nguyên sinh. Tất cả các sản phẩm đều được kiểm nghiệm an toàn vệ sinh thực phẩm.</textarea>
+                    </div>
+                </div>
+                <div class="item-content t-center mg-t-175rem ">
+                    <button id="add_file" class="btn-submit w-20 d-inline-block fz-1rem">Hoàn thành</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="edit_module">
         <div class="modal-box w-40" style=" margin-top: 50px;">
             <div class="modal-title">
                 <h4>Module</h4>
