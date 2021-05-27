@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    $("ul#main-menu li.item").click(function() {
+    $("ul#main-menu li.item a").click(function() {
         $("ul#main-menu li.item").removeClass("active");
-        $(this).addClass('active');
+        $(this).parent().addClass('active');
     });
 
     // product

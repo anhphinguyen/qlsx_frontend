@@ -1,10 +1,5 @@
 $(document).ready(function() {
     // double click open modal in table
-    // $("span.get_modal").click(function() {
-    //     var id_modal = $(this).attr('type');
-    //     console.log($('#' + id_modal));
-    //     $('#' + id_modal).fadeToggle();
-    // });
 
     $(".click_doubble.get_modal").dblclick(function() {
         var id_modal = $(this).attr('type');
