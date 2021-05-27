@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
     $(".form-file-input").change(function() {
-
         if (this.files && this.files[0]) {
             var reader = new FileReader();
 

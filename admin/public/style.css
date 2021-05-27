@@ -6,6 +6,66 @@
   src: url("../../fonts/Segoe/segoeui.ttf");
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 19px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 1px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #6CBE1B;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #6CBE1B;
+          box-shadow: 0 0 1px #6CBE1B;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(23px);
+  transform: translateX(23px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 .empty-box {
   position: relative;
   width: 100%;
@@ -1498,5 +1558,81 @@ header #header-hidden {
 .thumb-nails {
   width: 160px;
   height: 100px;
+}
+
+.filter-select-date {
+  height: 100%;
+  background-color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.25rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter-select-date .item {
+  padding: 0.35rem 1.25rem;
+  color: #818181;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter-select-date .item:hover {
+  color: #15A4DD;
+  background-color: #E8F6FC;
+  cursor: pointer;
+}
+
+.sort {
+  position: relative;
+  display: inline-block;
+  width: 1rem;
+  height: auto;
+}
+
+.sort .fas {
+  position: relative;
+  right: -10px;
+  padding: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.sort .fa-chevron-up:before,
+.sort .fa-chevron-down:before {
+  position: absolute;
+  font-size: 0.5rem;
+  cursor: pointer;
+}
+
+.sort .fa-chevron-up:before {
+  top: 8px;
+  right: 0;
+}
+
+.sort .fa-chevron-down:before {
+  top: 2px;
+  right: 0;
+}
+
+.sort .arrow:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+tbody tr td {
+  max-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 /*# sourceMappingURL=style.css.map */

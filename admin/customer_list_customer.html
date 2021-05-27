@@ -66,8 +66,8 @@
         <!-- sidebar left fixed -->
         <div id="sidebar-left">
             <ul id="main-menu">
-                <li class="item active"><a href="customer_index.html">Dasboard</a></li>
-                <li class="item"><a href="customer_list_customer.html">Khách hàng</a></li>
+                <li class="item"><a href="customer_index.html">Dasboard</a></li>
+                <li class="item active"><a href="customer_list_customer.html">Khách hàng</a></li>
                 <li class="item"><a href="customer_list_order.html">Đơn hàng</a></li>
                 <li class="item"><a href="customer_list_product_inventory.html">Kho hàng</a></li>
                 <li class="item"><a href="customer_list_account.html">Tài khoản</a></li>
@@ -78,127 +78,113 @@
         <!-- wp content -->
         <div id="wp-content">
             <!-- content -->
-            <div id="content">
+            <div id="content" class="w-100" style="float: none;">
                 <h1 class="heading">
                     Carousel slider
                 </h1>
-                <span data-tag="a" type="add_module" class="get_modal t-green-main d-block t-right my-1">+ Thêm hình ảnh</span>
+                <div class="form-edit d-flex justify-content-space-between p-0 mb-3" style="height: 36px; align-items: flex-end;">
+                    <span data-tag="a" type="add_module" class="get_modal t-green-main d-block t-right w-20 t-left">+ Thêm hình ảnh</span>
+                    <ul class="filter-select-date box-shadow">
+                        <li class="item active">Ngày</li>
+                        <li class="item">Tháng</li>
+                        <li class="item">Năm</li>
+                    </ul>
+                    <div class="form-edit-row m-0">
+                        <input type="date" class="form-input py-1 px-2">
+                    </div>
+                    <div class="form-edit-row m-0 w-35">
+                        <div class="search" style="position: relative;">
+                            <input type="text" name="search" id="search" placeholder="Tìm kiếm..." class="form-input py-1 px-2" value="">
+                            <button class="input d-flex">
+                                <span class="icon" style="position: absolute;top: .5rem; right: .75rem;"><img src="public/images/search_black.png" alt=""></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 <div class="box p-0">
-                    <style>
-                        .stt {
-                            width: 10%;
-                        }
-                    </style>
                     <table class="table">
-                        <thead style="background-color: #F6F6F6;">
+                        <thead style="background-color: #FFF6E5;">
                             <tr>
-                                <th class="stt">STT</th>
-                                <th>Hình ảnh</th>
-                                <th colspan="2">Tiêu đề</th>
-                                <!-- <th>Email</th> -->
+                                <th class="th-flex">Mã KH
+                                    <span class="sort">
+                                        <i class="fas fa-chevron-up arrow"></i>
+                                        <i class="fas fa-chevron-down arrow"></i>
+                                    </span>
+                                </th>
+                                <th class="th-flex">Họ và tên
+                                    <span class="sort">
+                                        <i class="fas fa-chevron-up arrow"></i>
+                                        <i class="fas fa-chevron-down arrow"></i>
+                                    </span>
+                                </th>
+                                <th class="th-flex">Tên công ty
+                                    <span class="sort">
+                                        <i class="fas fa-chevron-up arrow"></i>
+                                        <i class="fas fa-chevron-down arrow"></i>
+                                    </span>
+                                </th>
+                                <th class="th-flex">Số điện thoại
+                                    <span class="sort">
+                                        <i class="fas fa-chevron-up arrow"></i>
+                                        <i class="fas fa-chevron-down arrow"></i>
+                                    </span>
+                                </th>
+                                <th class="th-flex" colspan="2">Trạng thái
+                                    <span class="sort">
+                                        <i class="fas fa-chevron-up arrow"></i>
+                                        <i class="fas fa-chevron-down arrow"></i>
+                                    </span>
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr data-id-slide="1" type="edit_module" class="click_doubble get_modal">
-                                <td class="stt">1</td>
-                                <td class="thumb-nails"><img src="public/images/slide-1.png" alt=""></td>
-                                <td>Đồ nhựa gia dụng</td>
+                            <tr data-id-customer="1" type="edit_module" class="click_doubble get_modal">
+                                <td>KH1234567</td>
+                                <td>Nguyễn Văn A</td>
+                                <td>Công ty Cổ Phần ABCD - Chi nh... </td>
+                                <td>(+84) 944810055</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                      </label>
+                                </td>
                                 <td><span data-tag="a" type="delete_module" class="get_modal t-green-main d-block t-right my-1">Xoá</span></td>
+
                             </tr>
-                            <tr data-id-slide="2" type="edit_module" class="click_doubble get_modal">
-                                <td class="stt">2</td>
-                                <td class="thumb-nails"><img src="public/images/slide-1.png" alt=""></td>
-                                <td>Đồ nhựa gia dụng</td>
+                            <tr data-id-customer="2" type="edit_module" class="click_doubble get_modal">
+                                <td>KH1234567</td>
+                                <td>Nguyễn Văn A</td>
+                                <td>Công ty Cổ Phần ABCD - Chi nh... </td>
+                                <td>(+84) 944810055</td>
+                                <td>
+                                    <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label>
+                                </td>
                                 <td><span data-tag="a" type="delete_module" class="get_modal t-green-main d-block t-right my-1">Xoá</span></td>
+
                             </tr>
-                            <tr data-id-slide="3" type="edit_module" class="click_doubble get_modal">
-                                <td class="stt">3</td>
-                                <td class="thumb-nails"><img src="public/images/slide-1.png" alt=""></td>
-                                <td>Đồ nhựa gia dụng</td>
+                            <tr data-id-customer="3" type="edit_module" class="click_doubble get_modal">
+                                <td>KH1234567</td>
+                                <td>Nguyễn Văn A</td>
+                                <td>Công ty Cổ Phần ABCD - Chi nh... </td>
+                                <td>(+84) 944810055</td>
+                                <td>
+                                    <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                  </label>
+                                </td>
                                 <td><span data-tag="a" type="delete_module" class="get_modal t-green-main d-block t-right my-1">Xoá</span></td>
+
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <!-- sidebar-right fixed -->
-            <div id="sidebar-right">
-                <div class="box" style=" overflow: hidden;text-overflow: clip;">
-                    <div class="box-head">
-                        <h1 class="heading">Hoạt động gần đây</h1>
-                    </div>
-                    <div class="box-body" style=" overflow-y: scroll; height: 480px;">
-                        <div>
-                            <div class="body-justify justify-content-space-between py-2">
-                                <h1 class="heading">Công ty Cổ Phần ABC</h1>
-                                <p class="t-label">09:25 | 2021-05-05</p>
-                            </div>
-                            <div class="body-justify py-1">
-                                <div class="body-title">
-                                    <p class="p">Đặt</p>
-                                </div>
-                                <div class="body-content pl-3" style="flex-direction: column; border-left: 1px solid #c4c4c4;">
-                                    <p class="p">x100 bao bì kem</p>
-                                    <p class="p">x200 ly nhựa nắp tim cứng 500ml</p>
-                                    <p class="p">x500 túi nilon màu</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="body-justify justify-content-space-between py-2">
-                                <h1 class="heading">Công ty Cổ Phần ABC</h1>
-                                <p class="t-label">09:25 | 2021-05-05</p>
-                            </div>
-                            <div class="body-justify py-1">
-                                <div class="body-title">
-                                    <p class="p">Đặt</p>
-                                </div>
-                                <div class="body-content pl-3" style="flex-direction: column; border-left: 1px solid #c4c4c4;">
-                                    <p class="p">x100 bao bì kem</p>
-                                    <p class="p">x200 ly nhựa nắp tim cứng 500ml</p>
-                                    <p class="p">x500 túi nilon màu</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="body-justify justify-content-space-between py-2">
-                                <h1 class="heading">Công ty Cổ Phần ABC</h1>
-                                <p class="t-label">09:25 | 2021-05-05</p>
-                            </div>
-                            <div class="body-justify py-1">
-                                <div class="body-title">
-                                    <p class="p">Đặt</p>
-                                </div>
-                                <div class="body-content pl-3" style="flex-direction: column; border-left: 1px solid #c4c4c4;">
-                                    <p class="p">x100 bao bì kem</p>
-                                    <p class="p">x200 ly nhựa nắp tim cứng 500ml</p>
-                                    <p class="p">x500 túi nilon màu</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="body-justify justify-content-space-between py-2">
-                                <h1 class="heading">Công ty Cổ Phần ABC</h1>
-                                <p class="t-label">09:25 | 2021-05-05</p>
-                            </div>
-                            <div class="body-justify py-1">
-                                <div class="body-title">
-                                    <p class="p">Đặt</p>
-                                </div>
-                                <div class="body-content pl-3" style="flex-direction: column; border-left: 1px solid #c4c4c4;">
-                                    <p class="p">x100 bao bì kem</p>
-                                    <p class="p">x200 ly nhựa nắp tim cứng 500ml</p>
-                                    <p class="p">x500 túi nilon màu</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="t-center w-100 pt-5" style="height: 88px; position: absolute; bottom: 0; left: 0; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 48.44%);">
-                        <span data-tag="a" class="t-green-main">Xem thêm</span>
-                    </div>
-                </div>
-            </div>
-            <div style="clear: both;"></div>
+
         </div>
     </div>
     <!-- modal create / edit -->
@@ -306,22 +292,7 @@
         </div>
     </div>
 
-    <!-- <div class="box-content justify-content-center">
-        <div class="box-item w-100 ">
-            <div class="item-title ">
-                <h4 class="t-left fw-600 t-cap fz-15rem lh-2rem ">Xóa thông tin</h4>
-                <span class="icon "><a href="#cancel_delete_attach"><img src="public/images/x-black.png " alt=" "></a></span>
-            </div>
-            <div class="item-content mg-t-2rem t-center">
-                <span class="d-inline-block tick-success "><img src="public/images/warning-del.png " alt=" "></span>
-                <p class="t-center mg-t-2rem fz-125rem">Bạn có chắc muốn xóa thông tin này?</p>
-            </div>
 
-            <div class="item-content t-center mg-t-175rem ">
-                <button id="delete_attach" class="btn-submit w-30 d-inline-block fz-1rem">Hoàn thành</button>
-            </div>
-        </div>
-    </div> -->
     <!-- END FOOTER -->
     <script src="public/js/jquery.js " type="text/javascript "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
