@@ -66,12 +66,12 @@
         <!-- sidebar left fixed -->
         <div id="sidebar-left">
             <ul id="main-menu">
-                <li class="item active"><a href="index.html">Trang chủ</a></li>
-                <li class="item"><a href="about-us.html">Về chúng tôi</a></li>
-                <li class="item"><a href="process.html">Quy trình</a></li>
-                <li class="item"><a href="product.html">Sản phẩm</a></li>
-                <li class="item"><a href="service.html">Dịch vụ</a></li>
-                <li class="item"><a href="contact.html">Liên hệ</a></li>
+                <li class="item active"><a href="dashboard.html">Dasboard</a></li>
+                <li class="item"><a href="list_customer.html">Khách hàng</a></li>
+                <li class="item"><a href="list_order.html">Đơn hàng</a></li>
+                <li class="item"><a href="list_product_inventory.html">Kho hàng</a></li>
+                <li class="item"><a href="list_account.html">Tài khoản</a></li>
+                <li class="item"><a href="setting.html">Liên hệ</a></li>
             </ul>
         </div>
         <div id="sidebar-left-hidden"></div>
@@ -82,7 +82,7 @@
                 <h1 class="heading">
                     Carousel slider
                 </h1>
-                <span data-tag="a" type="add_file" class="get_modal t-green-main d-block t-right my-1">+ Thêm hình ảnh</span>
+                <span data-tag="a" type="add_module" class="get_modal t-green-main d-block t-right my-1">+ Thêm hình ảnh</span>
                 <div class="box p-0">
                     <table class="table">
                         <thead style="background-color: #F6F6F6;">
@@ -96,50 +96,96 @@
                             <tr data-id-slide="1" type="edit_module" class="click_doubble get_modal">
                                 <td class="thumb-nails"><img src="public/images/slide-1.png" alt=""></td>
                                 <td>Đồ nhựa gia dụng</td>
-                                <td><span data-tag="a" type="delete_file" class="get_modal t-green-main d-block t-right my-1">Xoá</span></td>
+                                <td><span data-tag="a" type="delete_module" class="get_modal t-green-main d-block t-right my-1">Xoá</span></td>
                             </tr>
                             <tr data-id-slide="2" type="edit_module" class="click_doubble get_modal">
                                 <td class="thumb-nails"><img src="public/images/slide-1.png" alt=""></td>
                                 <td>Đồ nhựa gia dụng</td>
-                                <td><span data-tag="a" type="delete_file" class="get_modal t-green-main d-block t-right my-1">Xoá</span></td>
+                                <td><span data-tag="a" type="delete_module" class="get_modal t-green-main d-block t-right my-1">Xoá</span></td>
                             </tr>
                             <tr data-id-slide="3" type="edit_module" class="click_doubble get_modal">
                                 <td class="thumb-nails"><img src="public/images/slide-1.png" alt=""></td>
                                 <td>Đồ nhựa gia dụng</td>
-                                <td><span data-tag="a" type="delete_file" class="get_modal t-green-main d-block t-right my-1">Xoá</span></td>
+                                <td><span data-tag="a" type="delete_module" class="get_modal t-green-main d-block t-right my-1">Xoá</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
-
             </div>
             <!-- sidebar-right fixed -->
             <div id="sidebar-right">
-                <div class="box">
+                <div class="box" style=" overflow: hidden;text-overflow: clip;">
                     <div class="box-head">
-                        <h1 class="heading">Public</h1>
+                        <h1 class="heading">Hoạt động gần đây</h1>
                     </div>
-                    <div class="box-body">
-                        <!-- <div class="body-justify justify-content-space-between">
-                            <h1 class="heading">Công ty Cổ Phần ABC</h1>
-                            <p class="t-label">09:25 | 2021-05-05</p>
-                        </div> -->
-                        <div class="body-justify">
-                            <div class="body-title w-30">
-                                <p class="p">Trạng thái:</p>
-                                <p class="p">Lịch sử:</p>
-                                <p class="p">Ngày đăng:</p>
+                    <div class="box-body" style=" overflow-y: scroll; height: 480px;">
+                        <div>
+                            <div class="body-justify justify-content-space-between py-2">
+                                <h1 class="heading">Công ty Cổ Phần ABC</h1>
+                                <p class="t-label">09:25 | 2021-05-05</p>
                             </div>
-                            <div class="body-content" style="flex-direction: column;">
-                                <p class="p">Đã đăng</p>
-                                <p class="p">2 lần chỉnh sửa</p>
-                                <p class="p">2021-05-06 lúc 10:45</p>
+                            <div class="body-justify py-1">
+                                <div class="body-title">
+                                    <p class="p">Đặt</p>
+                                </div>
+                                <div class="body-content pl-3" style="flex-direction: column; border-left: 1px solid #c4c4c4;">
+                                    <p class="p">x100 bao bì kem</p>
+                                    <p class="p">x200 ly nhựa nắp tim cứng 500ml</p>
+                                    <p class="p">x500 túi nilon màu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="body-justify justify-content-space-between py-2">
+                                <h1 class="heading">Công ty Cổ Phần ABC</h1>
+                                <p class="t-label">09:25 | 2021-05-05</p>
+                            </div>
+                            <div class="body-justify py-1">
+                                <div class="body-title">
+                                    <p class="p">Đặt</p>
+                                </div>
+                                <div class="body-content pl-3" style="flex-direction: column; border-left: 1px solid #c4c4c4;">
+                                    <p class="p">x100 bao bì kem</p>
+                                    <p class="p">x200 ly nhựa nắp tim cứng 500ml</p>
+                                    <p class="p">x500 túi nilon màu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="body-justify justify-content-space-between py-2">
+                                <h1 class="heading">Công ty Cổ Phần ABC</h1>
+                                <p class="t-label">09:25 | 2021-05-05</p>
+                            </div>
+                            <div class="body-justify py-1">
+                                <div class="body-title">
+                                    <p class="p">Đặt</p>
+                                </div>
+                                <div class="body-content pl-3" style="flex-direction: column; border-left: 1px solid #c4c4c4;">
+                                    <p class="p">x100 bao bì kem</p>
+                                    <p class="p">x200 ly nhựa nắp tim cứng 500ml</p>
+                                    <p class="p">x500 túi nilon màu</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="body-justify justify-content-space-between py-2">
+                                <h1 class="heading">Công ty Cổ Phần ABC</h1>
+                                <p class="t-label">09:25 | 2021-05-05</p>
+                            </div>
+                            <div class="body-justify py-1">
+                                <div class="body-title">
+                                    <p class="p">Đặt</p>
+                                </div>
+                                <div class="body-content pl-3" style="flex-direction: column; border-left: 1px solid #c4c4c4;">
+                                    <p class="p">x100 bao bì kem</p>
+                                    <p class="p">x200 ly nhựa nắp tim cứng 500ml</p>
+                                    <p class="p">x500 túi nilon màu</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="t-center w-100" style="position: absolute; bottom: 2.5rem;">
-                        <button class="btn btn-green">Cập nhật</button>
+                    <div class="t-center w-100 pt-5" style="height: 88px; position: absolute; bottom: 0; left: 0; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 48.44%);">
+                        <span data-tag="a" class="t-green-main">Xem thêm</span>
                     </div>
                 </div>
             </div>
