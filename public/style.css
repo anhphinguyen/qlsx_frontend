@@ -1013,9 +1013,11 @@ header #wp-header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #wrapper .wp-content .box-content .content {
@@ -1028,6 +1030,7 @@ header #wp-header .logo {
           box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
   padding: 24px;
   background-color: #FFFFFF;
+  margin: 1rem 0;
 }
 
 #wrapper .wp-content .box-content .box-item .item-title {

@@ -80,120 +80,37 @@
             <!-- content -->
             <div id="content" class="w-100" style="float: none;">
                 <h1 class="heading">
-                    Khách hàng
+                    <a href="customer_list_customer.html"><img src="public/images/arrow-left.png" alt=""></a>
+                    Chỉnh sửa thông tin
                 </h1>
-                <div class="form-edit d-flex justify-content-space-between p-0 mb-3" style="height: 36px; align-items: flex-end;">
-                    <span data-tag="a" type="add_module" class="get_modal t-green-main d-block t-right w-20 t-left">+ Thêm hình ảnh</span>
-                    <ul class="filter-select-date box-shadow">
-                        <li class="item active">Ngày</li>
-                        <li class="item">Tháng</li>
-                        <li class="item">Năm</li>
+
+                <!-- tabs container -->
+                <div class="tabs-container">
+                    <ul class="nav nav-tabs tab-border-top-danger">
+                        <li class="active">
+                            <a data-toggle="tab" href="#tab-1" aria-expanded="true"> This is tab</a>
+                        </li>
+                        <li class="active">
+                            <a data-toggle="tab" href="#tab-2" aria-expanded="false"> This is tab</a>
+                        </li>
                     </ul>
-                    <div class="form-edit-row m-0">
-                        <input type="date" class="form-input py-1 px-2">
-                    </div>
-                    <div class="form-edit-row m-0 w-35">
-                        <div class="search" style="position: relative;">
-                            <input type="text" name="search" id="search" placeholder="Tìm kiếm..." class="form-input py-1 px-2" value="">
-                            <button class="input d-flex">
-                                <span class="icon" style="position: absolute;top: .5rem; right: .75rem;"><img src="public/images/search_black.png" alt=""></span>
-                            </button>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi quidem nisi quibusdam cumque repudiandae quis omnis incidunt, molestiae corrupti voluptates enim non dolor quam similique eveniet? Laborum numquam labore
+                                    eveniet cum animi fuga error, magnam voluptas, quisquam distinctio minus eos dolorem ut culpa eligendi aperiam qui similique, amet debitis impedit? In voluptatum, soluta unde quidem voluptatem, cumque labore ab, quisquam
+                                    blanditiis vel laborum qui voluptate iste magni praesentium illum animi quos iure similique dolor ad excepturi. Earum, delectus, eaque quas corporis labore, accusamus hic cupiditate magni libero maiores modi incidunt
+                                    repellat explicabo itaque dolorem reiciendis animi voluptatibus sed? Natus?</p>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane">
+                            <div class="panel-body">
+                                <p>ooooo</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="box p-0" style="height: 554px; overflow-y: scroll;">
-                    <table class="table">
-                        <thead style="background-color: #FFF6E5;">
-                            <tr>
-                                <th class="th-flex">Mã KH
-                                    <span class="sort">
-                                        <i class="fas fa-chevron-up arrow"></i>
-                                        <i class="fas fa-chevron-down arrow"></i>
-                                    </span>
-                                </th>
-                                <th class="th-flex">Họ và tên
-                                    <span class="sort">
-                                        <i class="fas fa-chevron-up arrow"></i>
-                                        <i class="fas fa-chevron-down arrow"></i>
-                                    </span>
-                                </th>
-                                <th class="th-flex">Tên công ty
-                                    <span class="sort">
-                                        <i class="fas fa-chevron-up arrow"></i>
-                                        <i class="fas fa-chevron-down arrow"></i>
-                                    </span>
-                                </th>
-                                <th class="th-flex">Số điện thoại
-                                    <span class="sort">
-                                        <i class="fas fa-chevron-up arrow"></i>
-                                        <i class="fas fa-chevron-down arrow"></i>
-                                    </span>
-                                </th>
-                                <th class="th-flex" colspan="2">Trạng thái
-                                    <span class="sort">
-                                        <i class="fas fa-chevron-up arrow"></i>
-                                        <i class="fas fa-chevron-down arrow"></i>
-                                    </span>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr data-id-customer="1" type="edit_module" class="click_doubble get_modal">
-                                <td>KH1234567</td>
-                                <td>Nguyễn Văn A</td>
-                                <td>Công ty Cổ Phần ABCD - Chi nh... </td>
-                                <td>(+84) 944810055</td>
-                                <td>
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                      </label>
-                                </td>
-                                <td><span data-tag="a" type="delete_module" class="get_modal t-green-main d-block t-right my-1">Xoá</span></td>
 
-                            </tr>
-                            <tr data-id-customer="2" type="edit_module" class="click_doubble get_modal">
-                                <td>KH1234567</td>
-                                <td>Nguyễn Văn A</td>
-                                <td>Công ty Cổ Phần ABCD - Chi nh... </td>
-                                <td>(+84) 944810055</td>
-                                <td>
-                                    <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                  </label>
-                                </td>
-                                <td><span data-tag="a" type="delete_module" class="get_modal t-green-main d-block t-right my-1">Xoá</span></td>
-
-                            </tr>
-                            <tr data-id-customer="3" type="edit_module" class="click_doubble get_modal">
-                                <td>KH1234567</td>
-                                <td>Nguyễn Văn A</td>
-                                <td>Công ty Cổ Phần ABCD - Chi nh... </td>
-                                <td>(+84) 944810055</td>
-                                <td>
-                                    <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                  </label>
-                                </td>
-                                <td>
-                                    <span data-tag="a" type="delete_module" class="get_modal t-green-main d-block t-right my-1">Xoá</span>
-                                </td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-                    <ul class="pagination">
-                        <li class="item prev"><img src="public/images/arrow-left.png" alt=""></li>
-                        <li class="item">1</li>
-                        <li class="item">2</li>
-                        <li class="item">3</li>
-                        <li class="item">4</li>
-                        <li class="item">5</li>
-                        <li class="item next"><img src="public/images/arrow-right.png" alt=""></li>
-                    </ul>
-                </div>
             </div>
 
         </div>

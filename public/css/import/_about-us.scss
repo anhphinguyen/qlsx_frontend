@@ -5,7 +5,8 @@
         .box-content {
             margin-top: 72px;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
             .content {
                 max-width: 55.92%;
             }
@@ -15,6 +16,7 @@
                 box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
                 padding: 24px;
                 background-color: $topHeader;
+                margin: 1rem 0;
                 .item-title {
                     color: $blue;
                     border-bottom: 1px solid $blue;
