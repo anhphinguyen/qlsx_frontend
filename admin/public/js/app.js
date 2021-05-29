@@ -1,6 +1,16 @@
 $(document).ready(function() {
-    // double click open modal in table
+    // show pass
+    $(".show_pass").prev().hide();
+    $(".show_pass").click(function() {
+        $(this).prev().stop().toggle();
+        if ($(this).text() === 'Hiển thị mật khẩu') {
+            $(this).text('Hide').stop();
+        } else {
+            $(this).text('Hiển thị mật khẩu').stop();
+        }
 
+    });
+    // double click open modal in table
     $(".click_doubble.get_modal").dblclick(function() {
         var id_modal = $(this).attr('type');
         console.log($('#' + id_modal));
@@ -11,6 +21,11 @@ $(document).ready(function() {
     var module_height = $('.module-empty').parent('.wp-module').prev().children('.module').outerHeight();
     $('.module-empty').css('height', module_height);
 
+    // sub menu
+    $("ul.sub-menu li.sub-item a").click(function() {
+        $("ul.sub-menu li.sub-item").removeClass("active");
+        $(this).parent().addClass('active');
+    });
     // main menu
     $("ul#main-menu li.item a").click(function() {
         $("ul#main-menu li.item").removeClass("active");

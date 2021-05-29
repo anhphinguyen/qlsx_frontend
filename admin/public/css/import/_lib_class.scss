@@ -5,12 +5,13 @@
     width: 100%;
     height: 72px;
     padding: 1.5rem;
-    position: absolute;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
     align-items: center;
     justify-content: flex-end;
+    background-color: #FFFFFF;
     .item {
         @include widthIcon(1.5rem);
         display: flex;
@@ -21,6 +22,7 @@
         &.next {
             padding: .25rem;
         }
+        cursor: pointer;
         transition: all ease 0.25s;
     }
     .item:hover,
@@ -174,7 +176,7 @@ input:checked+.slider:before {
         display: flex;
         .form-info-left {
             position: relative;
-            flex: 30%;
+            width: 30%;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -203,7 +205,7 @@ input:checked+.slider:before {
             }
         }
         .form-info-right {
-            flex: 70%;
+            width: 70%;
             .form-info-row {
                 display: flex;
                 align-items: center;
@@ -331,6 +333,14 @@ input:checked+.slider:before {
         right: 1rem;
         display: block;
         @include widthIcon(1.5rem);
+        font-size: 1.5rem;
+    }
+    .note-box {
+        margin-top: 1.5rem;
+        .note {
+            margin: .5rem 0;
+            display: block;
+        }
     }
 }
 
@@ -552,6 +562,8 @@ input:checked+.slider:before {
         .modal-content {
             text-align: center;
             border: none;
+            height: 550px;
+            overflow-y: scroll;
         }
     }
 }

@@ -7,6 +7,10 @@ img {
     width: 100%!important;
 }
 
+.w-0 {
+    width: 0%!important;
+}
+
 .w-10 {
     width: 10%!important;
 }
@@ -234,7 +238,7 @@ a:hover {
 }
 
 .d-inline-block {
-    display: inline-block;
+    display: inline-block!important;
 }
 
 .d-flex {
@@ -551,4 +555,8 @@ span.icon {
 
 span[data-tag='a'] {
     cursor: pointer;
+}
+
+.sticky {
+    position: sticky;
 }
