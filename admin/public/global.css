@@ -180,7 +180,7 @@ a:hover {
 }
 
 .t-center {
-    text-align: center;
+    text-align: center!important;
 }
 
 .t-left {
@@ -407,6 +407,29 @@ textarea:read-only {
 
 .bg-white {
     background-color: #FFFFFF;
+}
+
+.bg-blue {
+    background-color: #E8F6FC;
+}
+
+.bg-F6 {
+    background-color: #F6F6F6;
+}
+
+
+/* align item */
+
+.align-item-start {
+    align-items: flex-start!important;
+}
+
+.align-item-end {
+    align-items: flex-end!important;
+}
+
+.align-item-center {
+    align-items: center!important;
 }
 
 

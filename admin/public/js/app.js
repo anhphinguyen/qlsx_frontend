@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    // filter-select-date
+    $("ul.filter-select-date li.item a").click(function() {
+        $("ul.filter-select-date li.item").removeClass("active");
+        $(this).parent().addClass('active');
+    });
     // show pass
     $(".show_pass").prev().hide();
     $(".show_pass").click(function() {
@@ -8,7 +13,6 @@ $(document).ready(function() {
         } else {
             $(this).text('Hiển thị mật khẩu').stop();
         }
-
     });
     // double click open modal in table
     $(".click_doubble.get_modal").dblclick(function() {

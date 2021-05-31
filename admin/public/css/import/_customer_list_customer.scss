@@ -4,14 +4,17 @@
     display: flex;
     padding: 0.25rem;
     justify-content: space-between;
+    flex-wrap: nowrap;
     .item {
         padding: 0.35rem 1.25rem;
+        margin: 0 .25rem;
         color: $label;
         box-sizing: border-box;
         font-size: 1rem;
         display: flex;
         align-items: center;
-        &:hover {
+        &:hover,
+        &.active {
             color: $blue;
             background-color: $active_item_menu;
             cursor: pointer;

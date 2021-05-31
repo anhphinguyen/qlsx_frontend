@@ -84,14 +84,19 @@
                 </h1>
                 <div class="form-edit d-flex justify-content-space-between p-0 mb-3" style="height: 36px; align-items: flex-end;">
                     <span data-tag="a" type="add_module" class="get_modal t-green-main d-block t-right w-20 t-left">+ Thêm hình ảnh</span>
-                    <ul class="filter-select-date box-shadow">
-                        <li class="item active">Ngày</li>
-                        <li class="item">Tháng</li>
-                        <li class="item">Năm</li>
-                    </ul>
-                    <div class="form-edit-row m-0">
-                        <input type="date" class="form-input py-1 px-2">
+                    <!-- filter date -->
+                    <div class="form-edit-row-flex align-item-center">
+                        <div class="form-edit-row m-0">
+                            <input type="date" class="form-input py-1 px-2">
+                        </div>
+                        <div class="form-edit-row m-0 mx-3">
+                            <p>Đến</p>
+                        </div>
+                        <div class="form-edit-row m-0">
+                            <input type="date" class="form-input py-1 px-2">
+                        </div>
                     </div>
+
                     <div class="form-edit-row m-0 w-35">
                         <div class="search" style="position: relative;">
                             <input type="text" name="search" id="search" placeholder="Tìm kiếm..." class="form-input py-1 px-2" value="">
