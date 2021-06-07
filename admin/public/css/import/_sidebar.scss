@@ -24,6 +24,30 @@
 .item {
     width: 100%;
     background-color: #FFFFFF;
+    .icon {
+        margin-right: 1.5rem;
+    }
+    .sub-menu {
+        flex-direction: column;
+        border-left: 2px solid #C4C4C4;
+        width: 100%;
+        .sub-item {
+            text-align: center;
+            border-bottom: none;
+            width: 100%;
+            margin: .25rem 0;
+            a {
+                font-weight: 400;
+            }
+            &:hover,
+            &.active {
+                transform: translateX(10%);
+                border-left: 1px solid #2dabde;
+                border-bottom: 1px solid #2dabde;
+                transition: all .25s;
+            }
+        }
+    }
 }
 
 #main-menu .item {
@@ -31,18 +55,26 @@
     a {
         font-size: 1.25rem;
     }
-    &:hover {
-        background-color: $active_item_menu;
-        border-left: 4px solid $blue;
-        a {
-            font-weight: 600;
-        }
-    }
+    &:hover,
     &.active {
         background-color: $active_item_menu;
         border-left: 4px solid $blue;
         a {
             font-weight: 600;
         }
+        .sub-menu {
+            border-left: 2px solid $blue;
+            //     .sub-item {
+            //         text-align: center;
+            //         transform: translateY(-20%);
+            //     }
+        }
     }
+    //  {
+    //     background-color: $active_item_menu;
+    //     border-left: 4px solid $blue;
+    //     a {
+    //         font-weight: 600;
+    //     }
+    // }
 }

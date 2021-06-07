@@ -1505,6 +1505,45 @@ header #header-hidden {
   background-color: #FFFFFF;
 }
 
+#main-menu .icon,
+.item .icon {
+  margin-right: 1.5rem;
+}
+
+#main-menu .sub-menu,
+.item .sub-menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left: 2px solid #C4C4C4;
+  width: 100%;
+}
+
+#main-menu .sub-menu .sub-item,
+.item .sub-menu .sub-item {
+  text-align: center;
+  border-bottom: none;
+  width: 100%;
+  margin: .25rem 0;
+}
+
+#main-menu .sub-menu .sub-item a,
+.item .sub-menu .sub-item a {
+  font-weight: 400;
+}
+
+#main-menu .sub-menu .sub-item:hover, #main-menu .sub-menu .sub-item.active,
+.item .sub-menu .sub-item:hover,
+.item .sub-menu .sub-item.active {
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+  border-left: 1px solid #2dabde;
+  border-bottom: 1px solid #2dabde;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
 #main-menu .item {
   padding: 1.5rem 2rem;
 }
@@ -1513,22 +1552,17 @@ header #header-hidden {
   font-size: 1.25rem;
 }
 
-#main-menu .item:hover {
+#main-menu .item:hover, #main-menu .item.active {
   background-color: #E8F6FC;
   border-left: 4px solid #15A4DD;
 }
 
-#main-menu .item:hover a {
+#main-menu .item:hover a, #main-menu .item.active a {
   font-weight: 600;
 }
 
-#main-menu .item.active {
-  background-color: #E8F6FC;
-  border-left: 4px solid #15A4DD;
-}
-
-#main-menu .item.active a {
-  font-weight: 600;
+#main-menu .item:hover .sub-menu, #main-menu .item.active .sub-menu {
+  border-left: 2px solid #15A4DD;
 }
 
 #wp-content {
