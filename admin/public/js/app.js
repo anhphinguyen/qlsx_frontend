@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     // filter-select-date
     $("ul.filter-select-date li.item a").click(function() {
         $("ul.filter-select-date li.item").removeClass("active");
@@ -16,10 +17,17 @@ $(document).ready(function() {
     });
     // double click open modal in table
     $(".click_doubble.get_modal").dblclick(function() {
+
         var id_modal = $(this).attr('type');
         console.log($('#' + id_modal));
         $('#' + id_modal).stop().toggle(300);
-        return false;
+        console.log($(".modal-content").innerHeight());
+
+        // if ($(".modal-content").innerHeight() >= 550) {
+        //     $(".modal-content").addClass('overflow-y-scroll');
+
+        // }
+        // return false;
     });
     // module empty
     var module_height = $('.module-empty').parent('.wp-module').prev().children('.module').outerHeight();
@@ -91,6 +99,10 @@ $(document).ready(function() {
         var id_modal = $(this).attr('type');
         console.log($('#' + id_modal));
         $('#' + id_modal).fadeToggle();
+        // if ($(".modal-content").innerHeight() >= 550) {
+        //     $(".modal-content").addClass('overflow-y-scroll');
+        //     console.log($(".modal-content").innerHeight());
+        // }
     });
     $(".modal span.icon").click(function() {
         $(this).parent('.modal-title').parent('.modal-box').parent('.modal').fadeToggle();

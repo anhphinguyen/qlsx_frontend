@@ -402,19 +402,23 @@ textarea:read-only {
 /* background content */
 
 .bg-main-content {
-    background-color: #E5E5E5;
+    background-color: #E5E5E5!important;
 }
 
 .bg-white {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF!important;
 }
 
 .bg-blue {
-    background-color: #E8F6FC;
+    background-color: #E8F6FC!important;
 }
 
 .bg-F6 {
-    background-color: #F6F6F6;
+    background-color: #F6F6F6!important;
+}
+
+.bg-pink {
+    background-color: #FFF6E5!important;
 }
 
 
@@ -468,6 +472,13 @@ textarea:read-only {
 
 .t-black {
     color: #333333;
+}
+
+
+/* overflow */
+
+.overflow-y-scroll {
+    overflow-y: scroll;
 }
 
 

@@ -10,8 +10,10 @@ ul.sub-menu {
         // width: 15%;
         &:hover,
         &.active {
-            color: #15A4DD;
             border-bottom: 1px solid #15A4DD;
+            a {
+                color: #15A4DD;
+            }
         }
     }
 }

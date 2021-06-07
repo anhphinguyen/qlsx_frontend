@@ -70,8 +70,12 @@
                 <li class="item"><a href="customer_list_customer.html">Khách hàng</a></li>
                 <li class="item active"><a href="customer_list_order.html">Đơn hàng</a></li>
                 <li class="item"><a href="customer_list_product_inventory.html">Kho hàng</a></li>
+                <li class="item"><a href="customer_list_production.html">Sản xuất</a></li>
+                <li class="item"><a href="customer_list_vendor.html">Nhà cung ứng</a></li>
+                <li class="item"><a href="customer_list_product.html">Sản phẩm</a></li>
+                <li class="item"><a href="customer_list_ship.html">Vận chuyển</a></li>
                 <li class="item"><a href="customer_list_account.html">Tài khoản</a></li>
-                <li class="item"><a href="customer_setting.html">Liên hệ</a></li>
+                <li class="item"><a href="customer_setting.html">Cài đặt</a></li>
             </ul>
         </div>
         <div id="sidebar-left-hidden"></div>
@@ -80,7 +84,7 @@
             <!-- content -->
             <div id="content" class="w-100" style="float: none;">
                 <h1 class="heading mb-4">
-                    <a href="customer_list_customer" class="mr-3"><i class="fas fa-chevron-left"></i></a> Chỉnh sửa thông tin
+                    Đơn hàng
                 </h1>
                 <div class="form-edit d-flex justify-content-space-between p-0 mb-3" style="height: 36px; align-items: flex-end;">
                     <span data-tag="a" type="add_module" class="get_modal t-green-main d-block t-right w-20 t-left">+ Thêm hình ảnh</span>
@@ -642,7 +646,7 @@
                             <div class="form-info-row">
                                 <label for="title" class="form-info-lable">Ngày nhận</label>
                                 <div class="form-info-input-content t-left">
-                                    <p>2021-04-21</p>
+                                    <input type="date" name="date_give" id="date_give" value="2021-04-21">
                                 </div>
                             </div>
                             <div class="form-info-row">
@@ -664,8 +668,20 @@
                                     <strong>59.400.000 đ</strong>
                                 </div>
                             </div>
+                            <div class="form-info-row">
+                                <div for="title" class="form-info-lable">
+                                    <input type="checkbox" name="cancel_order" id="cancel_order">
+                                    <label for="cancel_order">Hủy đơn</label>
+                                </div>
+                                <div class="form-info-input-content t-left">
+                                    <textarea name="cancel_reason" id="cancel_reason" class="w-100" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="item-content t-right mg-t-175rem ">
+                    <button id="add_file" class="btn-submit w-20 d-inline-block fz-1rem">Cập nhật</button>
                 </div>
             </div>
         </div>
