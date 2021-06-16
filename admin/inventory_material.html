@@ -385,13 +385,13 @@
 
 
     <!-- modal create / edit -->
-    <div class="modal" id="add_exort">
+    <div class="modal" id="add_export">
         <div class="modal-box w-50" style=" margin-top: 50px;">
             <div class="modal-title">
                 <h4>Thêm phiếu xuất kho</h4>
                 <span class="icon" data-tag="a">
-                    <img src="public/images/x-black.png" alt="">
-                </span>
+                <img src="public/images/x-black.png" alt="">
+            </span>
             </div>
             <div class="modal-content">
                 <div class="form-info">
@@ -401,51 +401,58 @@
                                 <label for="title" class="form-info-lable">Thành phẩm</label>
                                 <div class="form-info-input-content">
                                     <!-- thành phẩm -->
-                                    <div class="d-flex justify-content-space-between align-item-center bg-F6 p-2 my-1">
-                                        <select name="" id="" class="w-40 p-1 mx-1">
-                                            <option value="0">Chọn thành phẩm</option>
-                                        </select>
-                                        <div class="amount mx-1">
-                                            <button class="minus"><img src="public/images/minus.png" alt=""></button>
-                                            <input type="text" class="t-center" value="1">
-                                            <button class="plus"><img src="public/images/plus.png" alt=""></button>
+                                    <div class="box bg-F6" style="position: relative;">
+                                        <i class="fas fa-times-circle" style="position:absolute;top:.5rem; right:.5rem; cursor:pointer;"></i>
+                                        <div class="form-edit p-3">
+                                            <div class="form-edit-row-flex">
+                                                <div class="form-box-flex w-100">
+                                                    <select name="machine_name" class="form-select" id="machine_name">
+                                                                                        <option value="0">Chọn thành phẩm</option>
+                                                                                        <option value="1">W-R365</option>
+                                                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <select name="" id="" class="w-20 p-1 mx-1">
-                                            <option value="0">ĐVT</option>
-                                        </select>
-                                        <i class="fas fa-times-circle icon ml-1"></i>
+                                        <!-- chỉ show khi đã chọn NVL -->
+                                        <div class="t-left px-3">
+                                            <p class="my-2">ĐVT: <strong>Cái</strong></p>
+                                            <div class="d-flex">
+                                                <p class="my-2 mr-2">Số lượng</p>
+                                                <div class="amount" style="display: inline-block;">
+                                                    <button class="minus"><img src="public/images/minus.png" alt=""></button>
+                                                    <input type="text" value="1">
+                                                    <button class="plus"><img src="public/images/plus.png" alt=""></button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <!-- thành phẩm -->
-                                    <div class="d-flex justify-content-space-between align-item-center bg-F6 p-2 my-1">
-                                        <select name="" id="" class="w-40 p-1 mx-1">
-                                            <option value="0">Chọn thành phẩm</option>
-                                        </select>
-                                        <div class="amount mx-1">
-                                            <button class="minus"><img src="public/images/minus.png" alt=""></button>
-                                            <input type="text" class="t-center" value="1">
-                                            <button class="plus"><img src="public/images/plus.png" alt=""></button>
+                                    <div class="box bg-F6" style="position: relative;">
+                                        <i class="fas fa-times-circle" style="position:absolute;top:.5rem; right:.5rem; cursor:pointer;"></i>
+                                        <div class="form-edit p-3">
+                                            <div class="form-edit-row-flex">
+                                                <div class="form-box-flex w-100">
+                                                    <select name="machine_name" class="form-select" id="machine_name">
+                                                                                        <option value="0">Chọn thành phẩm</option>
+                                                                                        <option value="1">W-R365</option>
+                                                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <select name="" id="" class="w-20 p-1 mx-1">
-                                            <option value="0">ĐVT</option>
-                                        </select>
-                                        <i class="fas fa-times-circle icon ml-1"></i>
-                                    </div>
-                                    <!-- thành phẩm -->
-                                    <div class="d-flex justify-content-space-between align-item-center bg-F6 p-2 my-1">
-                                        <select name="" id="" class="w-40 p-1 mx-1">
-                                            <option value="0">Chọn thành phẩm</option>
-                                        </select>
-                                        <div class="amount mx-1">
-                                            <button class="minus"><img src="public/images/minus.png" alt=""></button>
-                                            <input type="text" class="t-center" value="1">
-                                            <button class="plus"><img src="public/images/plus.png" alt=""></button>
+                                        <!-- chỉ show khi đã chọn NVL -->
+                                        <div class="t-left px-3">
+                                            <p class="my-2">ĐVT: <strong>Cái</strong></p>
+                                            <div class="d-flex">
+                                                <p class="my-2 mr-2">Số lượng</p>
+                                                <div class="amount" style="display: inline-block;">
+                                                    <button class="minus"><img src="public/images/minus.png" alt=""></button>
+                                                    <input type="text" value="1">
+                                                    <button class="plus"><img src="public/images/plus.png" alt=""></button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <select name="" id="" class="w-20 p-1 mx-1">
-                                            <option value="0">ĐVT</option>
-                                        </select>
-                                        <i class="fas fa-times-circle icon ml-1"></i>
                                     </div>
-                                    <span data-tag="a" type="add_machine" class="get_modal t-green-main d-block t-right t-left p-2">+Thêm NVL</span>
+                                    <span data-tag="a" type="add_machine" class="get_modal t-green-main d-block t-right t-left p-2">+Thêm thành phẩm</span>
 
                                 </div>
                             </div>
@@ -471,8 +478,8 @@
             <div class="modal-title">
                 <h4>Thêm phiếu nhập kho</h4>
                 <span class="icon" data-tag="a">
-                    <img src="public/images/x-black.png" alt="">
-                </span>
+                <img src="public/images/x-black.png" alt="">
+            </span>
             </div>
             <div class="modal-content">
                 <div class="form-info">
@@ -482,51 +489,58 @@
                                 <label for="title" class="form-info-lable">Thành phẩm</label>
                                 <div class="form-info-input-content">
                                     <!-- thành phẩm -->
-                                    <div class="d-flex justify-content-space-between align-item-center bg-F6 p-2 my-1">
-                                        <select name="" id="" class="w-40 p-1 mx-1">
-                                            <option value="0">Chọn thành phẩm</option>
-                                        </select>
-                                        <div class="amount mx-1">
-                                            <button class="minus"><img src="public/images/minus.png" alt=""></button>
-                                            <input type="text" class="t-center" value="1">
-                                            <button class="plus"><img src="public/images/plus.png" alt=""></button>
+                                    <div class="box bg-F6" style="position: relative;">
+                                        <i class="fas fa-times-circle" style="position:absolute;top:.5rem; right:.5rem; cursor:pointer;"></i>
+                                        <div class="form-edit p-3">
+                                            <div class="form-edit-row-flex">
+                                                <div class="form-box-flex w-100">
+                                                    <select name="machine_name" class="form-select" id="machine_name">
+                                                                                        <option value="0">Chọn thành phẩm</option>
+                                                                                        <option value="1">W-R365</option>
+                                                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <select name="" id="" class="w-20 p-1 mx-1">
-                                            <option value="0">ĐVT</option>
-                                        </select>
-                                        <i class="fas fa-times-circle icon ml-1"></i>
+                                        <!-- chỉ show khi đã chọn NVL -->
+                                        <div class="t-left px-3">
+                                            <p class="my-2">ĐVT: <strong>Cái</strong></p>
+                                            <div class="d-flex">
+                                                <p class="my-2 mr-2">Số lượng</p>
+                                                <div class="amount" style="display: inline-block;">
+                                                    <button class="minus"><img src="public/images/minus.png" alt=""></button>
+                                                    <input type="text" value="1">
+                                                    <button class="plus"><img src="public/images/plus.png" alt=""></button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <!-- thành phẩm -->
-                                    <div class="d-flex justify-content-space-between align-item-center bg-F6 p-2 my-1">
-                                        <select name="" id="" class="w-40 p-1 mx-1">
-                                            <option value="0">Chọn thành phẩm</option>
-                                        </select>
-                                        <div class="amount mx-1">
-                                            <button class="minus"><img src="public/images/minus.png" alt=""></button>
-                                            <input type="text" class="t-center" value="1">
-                                            <button class="plus"><img src="public/images/plus.png" alt=""></button>
+                                    <div class="box bg-F6" style="position: relative;">
+                                        <i class="fas fa-times-circle" style="position:absolute;top:.5rem; right:.5rem; cursor:pointer;"></i>
+                                        <div class="form-edit p-3">
+                                            <div class="form-edit-row-flex">
+                                                <div class="form-box-flex w-100">
+                                                    <select name="machine_name" class="form-select" id="machine_name">
+                                                                                        <option value="0">Chọn thành phẩm</option>
+                                                                                        <option value="1">W-R365</option>
+                                                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <select name="" id="" class="w-20 p-1 mx-1">
-                                            <option value="0">ĐVT</option>
-                                        </select>
-                                        <i class="fas fa-times-circle icon ml-1"></i>
-                                    </div>
-                                    <!-- thành phẩm -->
-                                    <div class="d-flex justify-content-space-between align-item-center bg-F6 p-2 my-1">
-                                        <select name="" id="" class="w-40 p-1 mx-1">
-                                            <option value="0">Chọn thành phẩm</option>
-                                        </select>
-                                        <div class="amount mx-1">
-                                            <button class="minus"><img src="public/images/minus.png" alt=""></button>
-                                            <input type="text" class="t-center" value="1">
-                                            <button class="plus"><img src="public/images/plus.png" alt=""></button>
+                                        <!-- chỉ show khi đã chọn NVL -->
+                                        <div class="t-left px-3">
+                                            <p class="my-2">ĐVT: <strong>Cái</strong></p>
+                                            <div class="d-flex">
+                                                <p class="my-2 mr-2">Số lượng</p>
+                                                <div class="amount" style="display: inline-block;">
+                                                    <button class="minus"><img src="public/images/minus.png" alt=""></button>
+                                                    <input type="text" value="1">
+                                                    <button class="plus"><img src="public/images/plus.png" alt=""></button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <select name="" id="" class="w-20 p-1 mx-1">
-                                            <option value="0">ĐVT</option>
-                                        </select>
-                                        <i class="fas fa-times-circle icon ml-1"></i>
                                     </div>
-                                    <span data-tag="a" type="add_machine" class="get_modal t-green-main d-block t-right t-left p-2">+Thêm NVL</span>
+                                    <span data-tag="a" type="add_machine" class="get_modal t-green-main d-block t-right t-left p-2">+Thêm thành phẩm</span>
 
                                 </div>
                             </div>

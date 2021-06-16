@@ -264,9 +264,9 @@ input:checked + .slider:before {
 }
 
 .form-info .form-info-content .form-info-right .form-info-row .form-info-lable {
-  -webkit-box-flex: 20%;
-      -ms-flex: 20%;
-          flex: 20%;
+  -webkit-box-flex: 21%;
+      -ms-flex: 21%;
+          flex: 21%;
   text-align: right;
   margin-right: 1.75rem;
   font-weight: 400;

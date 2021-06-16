@@ -5,6 +5,14 @@ $(document).ready(function() {
         $("ul.filter-select-date li.item").removeClass("active");
         $(this).parent().addClass('active');
     });
+    // rand pass
+    $(".rand_pass").prev().hide();
+    $(".rand_pass").click(function() {
+        let pass = Math.random().toString(36).substring(2);
+        console.log(pass);
+        $(this).prev().stop().val(pass).show();
+
+    });
     // show pass
     $(".show_pass").prev().hide();
     $(".show_pass").click(function() {

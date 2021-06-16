@@ -70,6 +70,8 @@
                 <li class="item active"><a href="customer_list_customer.html">Khách hàng</a></li>
                 <li class="item"><a href="customer_list_order.html">Đơn hàng</a></li>
                 <li class="item"><a href="customer_list_product_inventory.html">Kho hàng</a></li>
+                <li class="item"><a href="customer_list_inventory.html">Kiểm kê kho</a></li>
+
                 <li class="item"><a href="customer_list_production.html">Sản xuất</a></li>
                 <li class="item"><a href="customer_list_vendor.html">Nhà cung ứng</a></li>
                 <li class="item"><a href="customer_list_product.html">Sản phẩm</a></li>
@@ -84,7 +86,7 @@
             <!-- content -->
             <div id="content" class="w-100" style="float: none;">
                 <h1 class="heading mb-4">
-                    <a href="customer_list_customer" class="mr-3"><i class="fas fa-chevron-left"></i></a> Chỉnh sửa thông tin
+                    <a href="customer_list_customer.html" class="mr-3"><i class="fas fa-chevron-left"></i></a> Chỉnh sửa thông tin
                 </h1>
                 <div class="box p-0">
                     <!-- tab -->
@@ -114,23 +116,14 @@
                                     <div class="form-info">
                                         <div class="form-info-content justify-content-center">
                                             <div class="form-info-right w-60">
-                                                <div class="form-info-row">
+                                                <div class="form-info-row align-item-center">
                                                     <label for="title" class="form-info-lable">Mã khách hàng</label>
                                                     <div class="form-info-input-content">
                                                         <input type="text" class="" value="" placeholder="Nhập mã khách hàng">
                                                     </div>
                                                 </div>
-                                                <div class="form-info-row">
-                                                    <div class="form-info-lable">
-                                                        <label for="title" class="form-info-lable visible-hidden">Mã khách hàng</label>
-                                                    </div>
 
-                                                    <div class="form-info-input-content t-left">
-                                                        <input type="checkbox" class="d-inline-block" style="width: 3%;" name="is_business" id="is_business">
-                                                        <label for="is_business">Bạn là doanh nghiệp?</label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-info-row">
+                                                <div class="form-info-row align-item-center">
                                                     <div class="form-info-lable">
                                                         <label class="fw-400 lh-12rem">Tên công ty</label>
                                                     </div>
@@ -138,7 +131,7 @@
                                                         <input type="text" class="" value="" placeholder="Nhập tên công ty">
                                                     </div>
                                                 </div>
-                                                <div class="form-info-row">
+                                                <div class="form-info-row align-item-center">
                                                     <div class="form-info-lable">
                                                         <label class="fw-400 lh-12rem">Họ tên</label>
                                                     </div>
@@ -146,71 +139,20 @@
                                                         <input type="text" class="" value="" placeholder="Nhập họ tên">
                                                     </div>
                                                 </div>
-                                                <div class="form-info-row">
+                                                <div class="form-info-row align-item-center">
                                                     <div class="form-info-lable">
                                                         <label class="fw-400 lh-12rem">Số điện thoại</label>
                                                     </div>
                                                     <div class="form-info-input-content">
-                                                        <input type="text" class="" value="" placeholder="Nhập số điện thoại">
+                                                        <input type="text" class="" value="" redonly placeholder="Nhập số điện thoại">
                                                     </div>
                                                 </div>
-                                                <div class="form-info-row">
+                                                <div class="form-info-row align-item-center">
                                                     <div class="form-info-lable">
                                                         <label class="fw-400 lh-12rem">Email</label>
                                                     </div>
                                                     <div class="form-info-input-content">
                                                         <input type="email" class="" value="" placeholder="Nhập email">
-                                                    </div>
-                                                </div>
-                                                <div class="form-info-row form-info-row-radio">
-                                                    <div class="form-info-lable">
-                                                        <label class="fw-400 lh-12rem">Giới tính</label>
-                                                    </div>
-
-                                                    <div class="form-info-input-content form-info-input-radio">
-                                                        <input type="radio" id="male" name="gender" value="male" checked>
-                                                        <label for="male">Nam</label>
-                                                        <input type="radio" id="female" name="gender" value="female">
-                                                        <label for="female">Nữ</label>
-                                                        <input type="radio" id="other" name="gender" value="other">
-                                                        <label for="other">Khác</label>
-                                                    </div>
-
-                                                </div>
-                                                <div class="form-info-row">
-                                                    <div class="form-info-lable">
-                                                        <label class="fw-400 lh-12rem">Ngày sinh</label>
-                                                    </div>
-                                                    <div class="form-info-input-content">
-                                                        <select name="day" id="day" class="form-info-select">
-                                                                <option value="0">Ngày</option>
-                                                                <option value="1">01</option>
-                                                                <option value="2">02</option>
-                                                                <option value="3">03</option>
-                                                            </select>
-                                                        <select name="month" id="month" class="form-info-select">
-                                                                <option value="0">Tháng</option>
-                                                                <option value="1">01</option>
-                                                                <option value="2">02</option>
-                                                                <option value="3">03</option>
-                                                            </select>
-                                                        <select name="year" id="year" class="form-info-select">
-                                                                <option value="0">Năm</option>
-                                                                <option value="1">01</option>
-                                                                <option value="2">02</option>
-                                                                <option value="3">03</option>
-                                                            </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-info-row">
-                                                    <div class="form-info-lable">
-                                                        <label class="fw-400 lh-12rem">Mật khẩu</label>
-                                                    </div>
-                                                    <div class="form-info-input-content">
-                                                        <div class="form-info-row justify-content-space-between">
-                                                            <input type="text" class="w-70 py-1" value="D#)zS0Uu(rUu2EV*UM0Z2QW%" placeholder="Nhập email">
-                                                            <button class="show_pass btn btn-green btn-outline py-1">Hiển thị mật khẩu</button>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -504,26 +446,6 @@
                         </div>
                     </div>
                     <div class="form-edit-row ">
-                        <label class="form-lable ">Thành phố</label>
-                        <select name="city " id="city " class="form-select">
-                                <option value="0 ">TP. Hồ Chí Minh</option>
-                            </select>
-                    </div>
-                    <div class="form-edit-row form-edit-row-flex input-content ">
-                        <div class="form-box-flex ">
-                            <label class="form-lable ">Quận/huyện</label>
-                            <select name="district " id="district " class="form-select">
-                                        <option value="0 ">Quận Bình Thạnh</option>
-                                    </select>
-                        </div>
-                        <div class="form-box-flex ">
-                            <label class="form-lable ">Phường/xã</label>
-                            <select name="ward " id="ward " class="form-select">
-                                        <option value="0 ">Phường 25</option>
-                                    </select>
-                        </div>
-                    </div>
-                    <div class="form-edit-row ">
                         <label class="form-lable ">Địa chỉ</label>
                         <select name="address " id="address " class="form-select">
                                 <option value="0 ">157/17/1 Nguyen Gia Tri Street</option>
@@ -536,7 +458,7 @@
                 </form>
             </div>
 
-            <div class="item-content mg-t-2rem d-flex justify-content-end ">
+            <div class="item-content mb-3 d-flex justify-content-end ">
                 <button class="btn-submit w-30 ">Hoàn thành</button>
             </div>
         </div>
@@ -545,7 +467,7 @@
     <div class="modal" id="edit_address_receive">
         <div class="modal-box">
             <div class="modal-title">
-                <h4>Chỉnh sửa địa chỉ gửi</h4>
+                <h4>Chỉnh sửa địa chỉ nhận</h4>
                 <span class="icon" data-tag="a">
                             <img src="public/images/x-black.png" alt="">
                         </span>
@@ -567,26 +489,6 @@
                         </div>
                     </div>
                     <div class="form-edit-row ">
-                        <label class="form-lable ">Thành phố</label>
-                        <select name="city " id="city " class="form-select">
-                                <option value="0 ">TP. Hồ Chí Minh</option>
-                            </select>
-                    </div>
-                    <div class="form-edit-row form-edit-row-flex input-content ">
-                        <div class="form-box-flex ">
-                            <label class="form-lable ">Quận/huyện</label>
-                            <select name="district " id="district " class="form-select">
-                                        <option value="0 ">Quận Bình Thạnh</option>
-                                    </select>
-                        </div>
-                        <div class="form-box-flex ">
-                            <label class="form-lable ">Phường/xã</label>
-                            <select name="ward " id="ward " class="form-select">
-                                        <option value="0 ">Phường 25</option>
-                                    </select>
-                        </div>
-                    </div>
-                    <div class="form-edit-row ">
                         <label class="form-lable ">Địa chỉ</label>
                         <select name="address " id="address " class="form-select">
                                 <option value="0 ">157/17/1 Nguyen Gia Tri Street</option>
@@ -599,7 +501,7 @@
                 </form>
             </div>
 
-            <div class="item-content mg-t-2rem d-flex justify-content-end ">
+            <div class="item-content mb-3 d-flex justify-content-end ">
                 <button class="btn-submit w-30 ">Hoàn thành</button>
             </div>
         </div>
@@ -644,18 +546,64 @@
                             <div class="form-info-row" style="align-items: flex-start;">
                                 <label for="title" class="form-info-lable">Sản phẩm</label>
                                 <div class="form-info-input-content ">
-                                    <!-- chua confirm -->
-                                    <div class="d-flex justify-content-space-between bg-F6 py-2 px-3 my-1">
-                                        <p>Túi nilon màu</p>
-                                        <p>125 Cái</p>
+                                    <!-- product items -->
+                                    <div class="bg-F6 py-2 px-3 my-1">
+                                        <div class="py-2" style="border-bottom: 1px dashed #C4C4C4">
+                                            <strong>NGON MÊ LY R365</strong>
+                                            <p class="mt-2">NML-R365</p>
+                                            <p class="mt-2">x1234 Thùng</p>
+                                        </div>
+                                        <div class="d-flex py-2 align-item-center">
+                                            <span class="fz-075rem t-lable mr-3">Đơn vị sản phẩm:</span>
+                                            <span>Ly</span>
+                                        </div>
+                                        <div class="d-flex py-2 align-item-center">
+                                            <span class="fz-075rem t-lable mr-3">Đơn vị đóng gói:</span>
+                                            <span>Thùng</span>
+                                        </div>
+                                        <div class="d-flex py-2 align-item-center">
+                                            <span class="fz-075rem t-lable mr-3">Quy cách đóng:</span>
+                                            <span>300 Cái/Thùng</span>
+                                        </div>
                                     </div>
-                                    <div class="d-flex justify-content-space-between bg-F6 py-2 px-3 my-1 ">
-                                        <p>Bao bì kem</p>
-                                        <p>125 Cái</p>
+
+                                    <div class="bg-F6 py-2 px-3 my-1">
+                                        <div class="py-2" style="border-bottom: 1px dashed #C4C4C4">
+                                            <strong>NGON MÊ LY R365</strong>
+                                            <p class="mt-2">NML-R365</p>
+                                            <p class="mt-2">x1234 Thùng</p>
+                                        </div>
+                                        <div class="d-flex py-2 align-item-center">
+                                            <span class="fz-075rem t-lable mr-3">Đơn vị sản phẩm:</span>
+                                            <span>Ly</span>
+                                        </div>
+                                        <div class="d-flex py-2 align-item-center">
+                                            <span class="fz-075rem t-lable mr-3">Đơn vị đóng gói:</span>
+                                            <span>Thùng</span>
+                                        </div>
+                                        <div class="d-flex py-2 align-item-center">
+                                            <span class="fz-075rem t-lable mr-3">Quy cách đóng:</span>
+                                            <span>300 Cái/Thùng</span>
+                                        </div>
                                     </div>
-                                    <div class="d-flex justify-content-space-between bg-F6 py-2 px-3 my-1">
-                                        <p>Ly nhựa nắp tim cứng 500ml</p>
-                                        <p>125 Cái</p>
+                                    <div class="bg-F6 py-2 px-3 my-1">
+                                        <div class="py-2" style="border-bottom: 1px dashed #C4C4C4">
+                                            <strong>NGON MÊ LY R365</strong>
+                                            <p class="mt-2">NML-R365</p>
+                                            <p class="mt-2">x1234 Thùng</p>
+                                        </div>
+                                        <div class="d-flex py-2 align-item-center">
+                                            <span class="fz-075rem t-lable mr-3">Đơn vị sản phẩm:</span>
+                                            <span>Ly</span>
+                                        </div>
+                                        <div class="d-flex py-2 align-item-center">
+                                            <span class="fz-075rem t-lable mr-3">Đơn vị đóng gói:</span>
+                                            <span>Thùng</span>
+                                        </div>
+                                        <div class="d-flex py-2 align-item-center">
+                                            <span class="fz-075rem t-lable mr-3">Quy cách đóng:</span>
+                                            <span>300 Cái/Thùng</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -674,7 +622,7 @@
                             <div class="form-info-row">
                                 <label for="title" class="form-info-lable">Trạng thái</label>
                                 <div class="form-info-input-content t-left">
-                                    <p>ĐANG XỬ LÝ</p>
+                                    <p class="t-blue">ĐANG XỬ LÝ</p>
                                 </div>
                             </div>
                             <div class="form-info-row" style="align-items: flex-start;">

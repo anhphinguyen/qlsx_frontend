@@ -70,6 +70,8 @@
                 <li class="item"><a href="customer_list_customer.html">Khách hàng</a></li>
                 <li class="item"><a href="customer_list_order.html">Đơn hàng</a></li>
                 <li class="item"><a href="customer_list_product_inventory.html">Kho hàng</a></li>
+                <li class="item"><a href="customer_list_inventory.html">Kiểm kê kho</a></li>
+
                 <li class="item"><a href="customer_list_production.html">Sản xuất</a></li>
                 <li class="item"><a href="customer_list_vendor.html">Nhà cung ứng</a></li>
                 <li class="item"><a href="customer_list_product.html">Sản phẩm</a></li>
@@ -115,7 +117,7 @@
                     <!-- tabs container -->
                     <div class="tabs-container">
                         <ul class="sub-menu nav nav-tabs tab-border-top-danger" style="position: relative;">
-                            <li class="sub-item">
+                            <li class="sub-item active">
                                 <a data-toggle="tab" href="#tab-1" aria-expanded="true">Danh sách tài khoản</a>
                             </li>
                             <li class="sub-item">
@@ -313,14 +315,14 @@
                 <div class="form-info">
                     <div class="form-info-content">
                         <div class="form-info-right w-100">
-                            <div class="form-info-row">
+                            <div class="form-info-row align-item-center">
                                 <label for="title" class="form-info-lable">Tên đăng nhập</label>
                                 <div class="form-info-input-content">
                                     <input type="text" class="" value="" placeholder="Nhập tên đăng nhập">
                                 </div>
                             </div>
 
-                            <div class="form-info-row">
+                            <div class="form-info-row align-item-center">
                                 <div class="form-info-lable">
                                     <label class="fw-400 lh-12rem">Số điện thoại</label>
                                 </div>
@@ -328,7 +330,7 @@
                                     <input type="text" class="" value="" placeholder="Nhập số điện thoại">
                                 </div>
                             </div>
-                            <div class="form-info-row">
+                            <div class="form-info-row align-item-center">
                                 <div class="form-info-lable">
                                     <label class="fw-400 lh-12rem">Họ và tên</label>
                                 </div>
@@ -336,8 +338,148 @@
                                     <input type="text" class="" value="" placeholder="Nhập họ và tên">
                                 </div>
                             </div>
+                            <div class="form-info-row align-item-center">
+                                <div class="form-info-lable">
+                                    <label class="fw-400 lh-12rem">Email</label>
+                                </div>
+                                <div class="form-info-input-content">
+                                    <input type="email" class="" value="" placeholder="Nhập email">
+                                </div>
+                            </div>
+                            <div class="form-info-row align-item-center">
+                                <div class="form-info-lable">
+                                    <label class="fw-400 lh-12rem">Mật khẩu</label>
+                                </div>
+                                <div class="form-info-input-content">
+                                    <div class="form-info-row justify-content-space-between">
+                                        <input type="text" class="w-70 py-1" value="D#)zS0Uu(rUu2EV*UM0Z2QW%" placeholder="Nhập email">
+                                        <button class="rand_pass btn btn-green btn-outline py-1">Tạo mật khẩu</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-info-row align-item-center">
+                                <div class="form-info-lable">
+                                    <label for="title" class="">Gửi thông báo</label>
+                                </div>
 
+                                <div class="form-info-input-content t-left">
+                                    <input type="checkbox" class="d-inline-block w-10" checked name="is_business" id="is_business">
+                                    <label for="is_business">Gửi thông báo đến số điện thoại của người dùng mới</label>
+                                </div>
+                            </div>
                             <div class="form-info-row">
+                                <div class="form-info-lable">
+                                    <label for="role" class="fw-400 lh-12rem">Vai trò</label>
+                                </div>
+                                <div class="form-info-input-content">
+                                    <select name="role" id="role" class="">
+                                        <option value="0">Chọn vai trò</option>
+                                        <option value="1">Admistrator</option>
+                                    </select>
+                                    <ul id="list_role_checked">
+                                        <li class="item rounder">
+                                            <span>Dashboard</span>
+                                            <i class="fas fa-times-circle icon"></i>
+                                        </li>
+                                        <li class="item rounder">
+                                            <span>Dashboard</span>
+
+                                            <i class="fas fa-times-circle icon"></i>
+                                        </li>
+                                        <li class="item rounder">
+                                            <span>Dashboard</span>
+
+                                            <i class="fas fa-times-circle icon"></i>
+                                        </li>
+                                        <li class="item rounder">
+                                            <span>Dashboard</span>
+
+                                            <i class="fas fa-times-circle icon"></i>
+                                        </li>
+                                    </ul>
+                                    <span data-tag="a" class="t-green-main d-block t-right t-left">Thêm quyền hạn</span>
+                                    <ul id="add_role">
+                                        <li class="item bg-F6">
+                                            <div class="form-info-row">
+                                                <div class="form-info-input-content t-left">
+                                                    <input type="checkbox" class="d-inline-block w-10" checked>
+                                                    <label>Khách hàng</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item bg-F6">
+                                            <div class="form-info-row">
+                                                <div class="form-info-input-content t-left">
+                                                    <input type="checkbox" class="d-inline-block w-10" checked>
+                                                    <label>Khách hàng</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item bg-F6">
+                                            <div class="form-info-row">
+                                                <div class="form-info-input-content t-left">
+                                                    <input type="checkbox" class="d-inline-block w-10" checked>
+                                                    <label>Khách hàng</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-content t-right mg-t-175rem ">
+                    <button id="add_file" class="btn-submit w-20 d-inline-block fz-1rem">Thêm tài khoản</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="edit_module">
+        <div class="modal-box w-50" style=" margin-top: 50px;">
+            <div class="modal-title">
+                <h4>Thêm tài khoản mới</h4>
+                <span class="icon" data-tag="a">
+                    <img src="public/images/x-black.png" alt="">
+                </span>
+            </div>
+            <div class="modal-content">
+                <div class="form-info">
+                    <div class="form-info-content">
+                        <div class="form-info-right w-100">
+                            <div class="form-info-row align-item-center">
+                                <label for="title" class="form-info-lable">Tên đăng nhập</label>
+                                <div class="form-info-input-content">
+                                    <input type="text" class="" value="" placeholder="Nhập tên đăng nhập">
+                                </div>
+                            </div>
+
+                            <div class="form-info-row align-item-center">
+                                <div class="form-info-lable">
+                                    <label class="fw-400 lh-12rem">Số điện thoại</label>
+                                </div>
+                                <div class="form-info-input-content">
+                                    <input type="text" class="" value="" placeholder="Nhập số điện thoại">
+                                </div>
+                            </div>
+                            <div class="form-info-row align-item-center">
+                                <div class="form-info-lable">
+                                    <label class="fw-400 lh-12rem">Họ và tên</label>
+                                </div>
+                                <div class="form-info-input-content">
+                                    <input type="text" class="" value="" placeholder="Nhập họ và tên">
+                                </div>
+                            </div>
+                            <div class="form-info-row align-item-center">
+                                <div class="form-info-lable">
+                                    <label class="fw-400 lh-12rem">Email</label>
+                                </div>
+                                <div class="form-info-input-content">
+                                    <input type="email" class="" value="" placeholder="Nhập email">
+                                </div>
+                            </div>
+                            <div class="form-info-row align-item-center">
                                 <div class="form-info-lable">
                                     <label for="title" class="">Gửi thông báo</label>
                                 </div>
@@ -379,7 +521,7 @@
                                     </ul>
                                     <span data-tag="a" class="t-green-main d-block t-right t-left">Thêm quyền hạn</span>
                                     <ul id="add_role">
-                                        <li class="item">
+                                        <li class="item bg-F6">
                                             <div class="form-info-row">
                                                 <div class="form-info-input-content t-left">
                                                     <input type="checkbox" class="d-inline-block w-10" checked>
@@ -387,7 +529,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="item">
+                                        <li class="item bg-F6">
                                             <div class="form-info-row">
                                                 <div class="form-info-input-content t-left">
                                                     <input type="checkbox" class="d-inline-block w-10" checked>
@@ -395,7 +537,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="item">
+                                        <li class="item bg-F6">
                                             <div class="form-info-row">
                                                 <div class="form-info-input-content t-left">
                                                     <input type="checkbox" class="d-inline-block w-10" checked>
@@ -411,132 +553,6 @@
                 </div>
                 <div class="item-content t-right mg-t-175rem ">
                     <button id="add_file" class="btn-submit w-20 d-inline-block fz-1rem">Thêm tài khoản</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="edit_module">
-        <div class="modal-box w-50" style=" margin-top: 50px;">
-            <div class="modal-title">
-                <h4>Thêm tài khoản mới</h4>
-                <span class="icon" data-tag="a">
-                    <img src="public/images/x-black.png" alt="">
-                </span>
-            </div>
-            <div class="modal-content">
-                <div class="form-info">
-                    <div class="form-info-content">
-                        <div class="form-info-right w-100">
-                            <div class="form-info-row">
-                                <label for="title" class="form-info-lable">Tên đăng nhập</label>
-                                <div class="form-info-input-content">
-                                    <input type="text" class="" value="" readonly placeholder="Nhập tên đăng nhập">
-                                </div>
-                            </div>
-
-                            <div class="form-info-row">
-                                <div class="form-info-lable">
-                                    <label class="fw-400 lh-12rem">Số điện thoại</label>
-                                </div>
-                                <div class="form-info-input-content">
-                                    <input type="text" class="" value="" readonly placeholder="Nhập số điện thoại" value="Sample@gmail.com">
-                                </div>
-                            </div>
-                            <div class="form-info-row">
-                                <div class="form-info-lable">
-                                    <label class="fw-400 lh-12rem">Họ và tên</label>
-                                </div>
-                                <div class="form-info-input-content">
-                                    <input type="text" class="" value="" placeholder="Nhập họ và tên" value="Sample@gmail.com">
-                                </div>
-                            </div>
-                            <div class="form-info-row">
-                                <div class="form-info-lable">
-                                    <label class="fw-400 lh-12rem">Email</label>
-                                </div>
-                                <div class="form-info-input-content">
-                                    <input type="text" class="" value="" placeholder="Nhập họ và tên" value="Sample@gmail.com">
-                                </div>
-                            </div>
-
-
-                            <div class="form-info-row">
-                                <div class="form-info-lable">
-                                    <label for="role" class="fw-400 lh-12rem">Vai trò</label>
-                                </div>
-                                <div class="form-info-input-content">
-                                    <select name="role" id="role">
-                                        <option value="0">Chọn vai trò</option>
-                                        <option value="1">Admistrator</option>
-                                    </select>
-                                    <ul id="list_role_checked">
-                                        <li class="item rounder">
-                                            <span>Dashboard</span>
-                                            <i class="fas fa-times-circle icon"></i>
-                                        </li>
-                                        <li class="item rounder">
-                                            <span>Dashboard</span>
-
-                                            <i class="fas fa-times-circle icon"></i>
-                                        </li>
-                                        <li class="item rounder">
-                                            <span>Dashboard</span>
-
-                                            <i class="fas fa-times-circle icon"></i>
-                                        </li>
-                                        <li class="item rounder">
-                                            <span>Dashboard</span>
-
-                                            <i class="fas fa-times-circle icon"></i>
-                                        </li>
-                                    </ul>
-                                    <span data-tag="a" class="t-green-main d-block t-right t-left">Thêm quyền hạn</span>
-                                    <ul id="add_role">
-                                        <li class="item">
-                                            <div class="form-info-row">
-                                                <div class="form-info-input-content t-left">
-                                                    <input type="checkbox" class="d-inline-block w-10" checked>
-                                                    <label>Khách hàng</label>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="form-info-row">
-                                                <div class="form-info-input-content t-left">
-                                                    <input type="checkbox" class="d-inline-block w-10" checked>
-                                                    <label>Khách hàng</label>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="form-info-row">
-                                                <div class="form-info-input-content t-left">
-                                                    <input type="checkbox" class="d-inline-block w-10" checked>
-                                                    <label>Khách hàng</label>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="form-info-row">
-                                <div class="form-info-lable">
-                                    <label class="fw-400 lh-12rem">Trạng thái</label>
-                                </div>
-                                <div class="form-info-input-content">
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                      </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-content t-right mg-t-175rem ">
-                    <button id="add_file" class="btn-submit w-20 d-inline-block fz-1rem">Hoàn thành</button>
                 </div>
             </div>
         </div>
