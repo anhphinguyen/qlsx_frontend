@@ -52,7 +52,7 @@ $(document).ready(function() {
         } else {
             if ($("#password").val() == $("#password_confirm").val()) {
                 $(".step-2").toggleClass('d-none');
-                $(".step-3").toggleClass('d-none');
+                $(".step-4").toggleClass('d-none');
                 $("#set_pass div~.error-text").removeClass('d-block');
                 progressbar_point(this);
             } else {
@@ -65,32 +65,32 @@ $(document).ready(function() {
 
     });
     // step 3
+    // $("span[type='step_2']").click(function() {
+    //     $('.step-2').toggleClass('d-none');
+    //     $('.step-3').toggleClass('d-none');
+    //     $("#set_pass div~.error-text").removeClass('d-block');
+    //     progressbar_point(this);
+    // });
+    // $(".step-3 #submit_step_3").click(function() {
+    //     if ($("#name_business").val() == "") {
+    //         $("#name_business").addClass('error-input');
+    //         $("#name_business~.error-text").addClass('d-block');
+    //     } else if ($("#name_user").val() == "") {
+    //         $("#name_user").addClass('error-input');
+    //         $("#name_user~.error-text").addClass('d-block');
+    //         $("#name_business~.error-text").removeClass('d-block');
+    //         $("#name_business").removeClass('error-input');
+    //     } else {
+    //         $(".step-3").toggleClass('d-none');
+    //         $(".step-4").toggleClass('d-none');
+    //         $("#form_info .error-text").removeClass('d-block');
+    //         $("#form_info input").removeClass('error-input');
+    //         progressbar_point(this);
+    //     }
+    // });
+    // step 4
     $("span[type='step_2']").click(function() {
         $('.step-2').toggleClass('d-none');
-        $('.step-3').toggleClass('d-none');
-        $("#set_pass div~.error-text").removeClass('d-block');
-        progressbar_point(this);
-    });
-    $(".step-3 #submit_step_3").click(function() {
-        if ($("#name_business").val() == "") {
-            $("#name_business").addClass('error-input');
-            $("#name_business~.error-text").addClass('d-block');
-        } else if ($("#name_user").val() == "") {
-            $("#name_user").addClass('error-input');
-            $("#name_user~.error-text").addClass('d-block');
-            $("#name_business~.error-text").removeClass('d-block');
-            $("#name_business").removeClass('error-input');
-        } else {
-            $(".step-3").toggleClass('d-none');
-            $(".step-4").toggleClass('d-none');
-            $("#form_info .error-text").removeClass('d-block');
-            $("#form_info input").removeClass('error-input');
-            progressbar_point(this);
-        }
-    });
-    // step 4
-    $("span[type='step_3']").click(function() {
-        $('.step-3').toggleClass('d-none');
         $('.step-4').toggleClass('d-none');
         $("#form_address .error-text").removeClass('d-block');
         $("#form_address input").removeClass('error-input');
