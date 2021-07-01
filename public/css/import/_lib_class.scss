@@ -197,7 +197,7 @@
         border: 1px solid #C4C4C4;
         background: #FFFFFF;
     }
-    .form-edits-row-check {
+    .form-edit-row-check {
         text-align: left;
         .form-input-check {
             display: inline-block;
@@ -407,6 +407,8 @@
     color: #FFFFFF;
     padding: 0.5rem 1.25rem;
     border-radius: 0;
+    font-size: 1.25em!important;
+    width: 20vw!important;
 }
 
 .btn-green {
@@ -433,6 +435,7 @@
     /* Black w/ opacity */
     text-align: center;
     .modal-box {
+        overflow-y: scroll!important;
         margin-top: 50px;
         display: inline-block;
         width: 70%;

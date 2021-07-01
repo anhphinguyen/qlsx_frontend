@@ -54,7 +54,7 @@
                     <div class="box-text">
                         <a href="my-order.html">Đơn hàng của tôi</a>
                         <a href="my-info.html">Tài khoản của tôi</a>
-                        <a href="my-notify.html">Thông báo của tôi</a>
+                        <a href="my-announce.html">Thông báo của tôi</a>
                         <a href="index.html">Đăng xuất</a>
                     </div>
                 </div>
@@ -111,6 +111,18 @@
                 </div>
                 <div class="logo">
                     <a href="#"><img src="public/images/logo.png" alt=""></a>
+                </div>
+                <div class="respon-header">
+                    <button class="respon-btn"></button>
+                    <ul class="respon-menu">
+                        <li class="item"><a href="cart.html">Xem giỏ hàng</a><span class="amount ml-2">4</span></li>
+                        <hr>
+                        <li class="item"><a href="my-order.html">Đơn hàng của tôi</a></li>
+                        <li class="item active"><a href="my-info.html">Tài khoản của tôi</a></li>
+                        <li class="item"><a href="my-announce.html">Thông báo của tôi</a></li>
+                        <li class="item"><a href="index.html">Đăng xuất</a></li>
+                    </ul>
+
                 </div>
             </nav>
         </div>
@@ -201,13 +213,6 @@
                                     <!-- FORM INFO -->
                                     <form action="" method="post" class="box-request form-info">
                                         <div class="form-info-content">
-                                            <div class="form-info-left">
-                                                <input type="file" name="avatar" class="form-info-input-file" id="avatar">
-                                                <span class="form-info-input-img"><img src="public/images/account-reg.png" alt=""></span>
-                                                <label for="avatar" class="form-info-lable">Dụng lượng file tối đa 1 MB
-                                                            Định dạng:.JPEG, .PNG</label>
-                                            </div>
-
                                             <div class="form-info-right">
                                                 <div class="form-info-row">
                                                     <div class="form-info-lable">
@@ -239,46 +244,6 @@
                                                     </div>
                                                     <div class="form-info-input-content">
                                                         <input type="text" name="email_user" id="email_user" class="read-only" readonly value="Jemis.Kevin@qtctek.com">
-                                                    </div>
-                                                </div>
-                                                <div class="form-info-row form-info-row-radio">
-                                                    <div class="form-info-lable">
-                                                        <label class="fw-400 lh-12rem">Giới tính</label>
-                                                    </div>
-
-                                                    <div class="form-info-input-content form-info-input-radio">
-                                                        <input type="radio" id="male" name="gender" value="male" checked>
-                                                        <label for="male">Nam</label>
-                                                        <input type="radio" id="female" name="gender" value="female">
-                                                        <label for="female">Nữ</label>
-                                                        <input type="radio" id="other" name="gender" value="other">
-                                                        <label for="other">Khác</label>
-                                                    </div>
-
-                                                </div>
-                                                <div class="form-info-row">
-                                                    <div class="form-info-lable">
-                                                        <label class="fw-400 lh-12rem">Ngày sinh</label>
-                                                    </div>
-                                                    <div class="form-info-input-content">
-                                                        <select name="day" id="day" class="form-info-select">
-                                                                <option value="0">Ngày</option>
-                                                                <option value="1">01</option>
-                                                                <option value="2">02</option>
-                                                                <option value="3">03</option>
-                                                            </select>
-                                                        <select name="month" id="month" class="form-info-select">
-                                                                <option value="0">Tháng</option>
-                                                                <option value="1">01</option>
-                                                                <option value="2">02</option>
-                                                                <option value="3">03</option>
-                                                            </select>
-                                                        <select name="year" id="year" class="form-info-select">
-                                                                <option value="0">Năm</option>
-                                                                <option value="1">01</option>
-                                                                <option value="2">02</option>
-                                                                <option value="3">03</option>
-                                                            </select>
                                                     </div>
                                                 </div>
                                             </div>

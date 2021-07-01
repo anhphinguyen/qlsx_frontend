@@ -54,7 +54,7 @@
                     <div class="box-text">
                         <a href="my-order.html">Đơn hàng của tôi</a>
                         <a href="my-info.html">Tài khoản của tôi</a>
-                        <a href="my-notify.html">Thông báo của tôi</a>
+                        <a href="my-announce.html">Thông báo của tôi</a>
                         <a href="index.html">Đăng xuất</a>
                     </div>
                 </div>
@@ -111,6 +111,18 @@
                 </div>
                 <div class="logo">
                     <a href="#"><img src="public/images/logo.png" alt=""></a>
+                </div>
+                <div class="respon-header">
+                    <button class="respon-btn"></button>
+                    <ul class="respon-menu">
+                        <li class="item"><a href="cart.html">Xem giỏ hàng</a><span class="amount ml-2">4</span></li>
+                        <hr>
+                        <li class="item active"><a href="my-order.html">Đơn hàng của tôi</a></li>
+                        <li class="item"><a href="my-info.html">Tài khoản của tôi</a></li>
+                        <li class="item"><a href="my-announce.html">Thông báo của tôi</a></li>
+                        <li class="item"><a href="index.html">Đăng xuất</a></li>
+                    </ul>
+
                 </div>
             </nav>
         </div>
@@ -240,30 +252,65 @@
                                     </div>
                                     <!-- product item -->
                                     <div class="box-product">
-                                        <a href="detail_product.html" class="item-title d-flex product-item py-2">
+                                        <a href="detail_product.html" class="item-title d-flex flex-start product-item py-2">
                                             <span class="fw-600 fz-125rem thumb-nail w-10">
                                                 <img src="public/images/product_4.png" alt="">
                                             </span>
-                                            <span class="fw-600 fz-125rem mg-l-125rem">Bao bì kem 2 dòng</span>
-                                            <span class="fw-400 fz-1rem t-right">
-                                                <span class="d-block t-right">99.000 đ</span>
-                                            <span class="d-block t-right">x2 Cái</span>
+                                            <span class="fw-600 fz-125rem mg-l-125rem t-left">Bao bì kem 2 dòng
+                                            <!-- unit -->
+                                            <span class="d-flex py-2 align-item-center">
+                                                <span class="t-lable mr-3">x1000 </span>
+                                            </span>
+                                            <span class="d-flex py-2 align-item-center">
+                                                <span class="fz-075rem t-lable mr-3">Đơn vị sản phẩm:</span>
+                                            <span class="fz-075rem">Ly</span>
+                                            </span>
+                                            <span class="d-flex py-2 align-item-center">
+                                                <span class="fz-075rem t-lable mr-3">Đơn vị đóng gói:</span>
+                                            <span class="fz-075rem">Thùng</span>
+                                            </span>
+                                            <span class="d-flex py-2 align-item-center">
+                                                <span class="fz-075rem t-lable mr-3">Quy cách đóng:</span>
+                                            <span class="fz-075rem">300 Cái/Thùng</span>
+                                            </span>
+                                            <span class="d-flex py-2 align-item-center">
+                                                <span class="t-lable mr-3">99.000d</span>
+                                            </span>
                                             </span>
                                         </a>
-                                        <a href="detail_product.html" class="item-title d-flex product-item py-2">
+                                    </div>
+                                    <!-- product item -->
+                                    <div class="box-product">
+                                        <a href="detail_product.html" class="item-title d-flex flex-start product-item py-2">
                                             <span class="fw-600 fz-125rem thumb-nail w-10">
                                                 <img src="public/images/product_4.png" alt="">
                                             </span>
-                                            <span class="fw-600 fz-125rem mg-l-125rem">Bao bì kem 2 dòng</span>
-                                            <span class="fw-400 fz-1rem t-right">
-                                                <span class="d-block t-right">99.000 đ</span>
-                                            <span class="d-block t-right">x2 Cái</span>
+                                            <span class="fw-600 fz-125rem mg-l-125rem t-left">Bao bì kem 2 dòng
+                                            <!-- unit -->
+                                            <span class="d-flex py-2 align-item-center">
+                                                <span class="t-lable mr-3">x1000 </span>
+                                            </span>
+                                            <span class="d-flex py-2 align-item-center">
+                                                <span class="fz-075rem t-lable mr-3">Đơn vị sản phẩm:</span>
+                                            <span class="fz-075rem">Ly</span>
+                                            </span>
+                                            <span class="d-flex py-2 align-item-center">
+                                                <span class="fz-075rem t-lable mr-3">Đơn vị đóng gói:</span>
+                                            <span class="fz-075rem">Thùng</span>
+                                            </span>
+                                            <span class="d-flex py-2 align-item-center">
+                                                <span class="fz-075rem t-lable mr-3">Quy cách đóng:</span>
+                                            <span class="fz-075rem">300 Cái/Thùng</span>
+                                            </span>
+                                            <span class="d-flex py-2 align-item-center">
+                                                <span class="t-lable mr-3">99.000d</span>
+                                            </span>
                                             </span>
                                         </a>
                                     </div>
                                     <!-- total money-->
-                                    <div class="box-money w-100">
-                                        <div class="d-flex justify-content-space-between py-2">
+                                    <div class="box-money w-100 border-bottom color-main">
+                                        <!-- <div class="d-flex justify-content-space-between py-2">
                                             <span class="fw-400 d-inline-block t-right w-80">Tổng tiền hàng:</span>
                                             <span class="fw-400 d-inline-block t-right w-20" id="total_money_order">198.000 đ</span>
                                         </div>
@@ -274,11 +321,14 @@
                                         <div class="d-flex justify-content-space-between py-2">
                                             <span class="fw-400 d-inline-block t-right w-80">Giảm giá:</span>
                                             <span class="fw-400 d-inline-block t-right w-20" id="sale_price">0 đ</span>
-                                        </div>
+                                        </div> -->
                                         <div class="d-flex justify-content-space-between py-2" id="total_money_final">
                                             <span class="fw-400 d-inline-block t-right w-80">Tổng:</span>
                                             <strong class="d-inline-block t-right w-20">223.000 đ</strong>
                                         </div>
+                                    </div>
+                                    <div class="t-right py-2">
+                                        <button class="btn bg-F6 t-label">Hủy đơn</button>
                                     </div>
 
 

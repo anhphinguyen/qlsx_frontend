@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    $(".respon-header .respon-btn").click(function() {
+        $(this).parent().toggleClass("active");
+        // alert("ok");
+    })
+
     $("ul#main-menu li.item a").click(function() {
         $("ul#main-menu li.item").removeClass("active");
         $(this).parent().addClass('active');

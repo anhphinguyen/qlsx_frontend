@@ -1,6 +1,6 @@
 img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .w-100 {
@@ -53,6 +53,10 @@ img {
 
 .w-80 {
     width: 80%!important;
+}
+
+.bg-F6 {
+    background-color: #f6f6f6;
 }
 
 .bg-green-top {
@@ -263,6 +267,10 @@ a:hover {
     justify-content: space-between!important;
 }
 
+.flex-start {
+    justify-content: flex-start!important;
+}
+
 .flex-end {
     justify-content: flex-end!important;
 }
@@ -427,7 +435,7 @@ a:hover {
 }
 
 .t-label {
-    color: #818181;
+    color: #818181!important;
 }
 
 .t-black {

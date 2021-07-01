@@ -157,5 +157,8 @@ header {
                 @include wh(5.85%, 72.22%);
             }
         }
+        .respon-header {
+            display: none;
+        }
     }
 }

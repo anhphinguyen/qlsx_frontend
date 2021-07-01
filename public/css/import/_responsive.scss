@@ -1,0 +1,417 @@
+/* Ipad ngang (1024 x 768) */
+
+@media screen and (max-width: 1024px) {
+    @mixin line-camp($a) {
+        white-space: normal;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: $a;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+    img {
+        height: auto;
+    }
+    html {
+        font-size: 14px;
+    }
+    header #wp-header .logo {
+        width: 14.24vw;
+        left: 40vw;
+    }
+    .top-header {
+        visibility: hidden;
+    }
+    .bot-header #main-menu,
+    .bot-header .dir-user {
+        visibility: hidden;
+    }
+    header #wp-header .respon-header {
+        display: block;
+        clear: both;
+        width: 150px;
+        z-index: 1000;
+        position: absolute;
+        top: 34%;
+        left: -150px;
+        background-color: #333333;
+        .respon-btn::before {
+            width: 50px;
+            height: 50px;
+            background-color: #333333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            color: #fff;
+            box-shadow: 0px 0px 5px #2b2929;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f0c9"; //f00d
+            position: absolute;
+            top: 0;
+            right: -50px;
+        }
+        .respon-menu {
+            width: 100%;
+            float: left;
+            color: #fff;
+            padding: 10px 0;
+            .item {
+                padding: 5px 10px;
+                a {
+                    color: #fff;
+                    font-size: 1.25em;
+                }
+                &:hover,
+                &.active {
+                    background-color: #3c3a3ad4;
+                    a {
+                        font-weight: 600;
+                        color: #FDF100;
+                    }
+                }
+            }
+        }
+        transition: all 0.5s;
+    }
+    header #wp-header .respon-header.active {
+        left: 0;
+        .respon-btn::before {
+            content: "\f00d"; //f00d
+        }
+        .respon-menu {
+            box-shadow: 0px 0px 5px #2b2929;
+            transition: all 0.5s;
+        }
+        transition: all 0.5s;
+    }
+    #wrapper {
+        .top-content {
+            min-height: auto;
+        }
+        .wp-content {
+            padding: 30px 5.85% 0 5.85%;
+            .box-content {
+                margin-top: 33px;
+                .box-left {
+                    width: 100%;
+                }
+                .box-right {
+                    width: 100%;
+                    margin-top: 5px;
+                }
+                .box-item {
+                    width: 42.54%;
+                    .item-content {
+                        p {
+                            white-space: normal;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 4;
+                            -webkit-box-orient: vertical;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // about us
+    #wrapper.about-us .wp-content .box-content .box-item {
+        height: 258px;
+    }
+    // product
+    #wrapper.product {
+        .top-content {
+            background-size: 100%;
+            .wp-content {
+                .box-title {
+                    .empty {
+                        min-height: 130px;
+                    }
+                }
+            }
+        }
+        .bot-content {
+            .wp-content {
+                .box-content {
+                    min-height: auto;
+                    .box-right {
+                        .box-item {
+                            min-height: 47%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // service
+    #wrapper.service {
+        .bot-content {
+            .box-content {
+                padding-left: 0;
+                padding-right: 0;
+                .box-item {
+                    width: 46.5%;
+                }
+            }
+        }
+    }
+    // register
+    .register {
+        .bot-content {
+            .wp-content {
+                .box-content {
+                    .box-left {
+                        display: none;
+                    }
+                    .box-right {
+                        width: 74.05%;
+                    }
+                }
+            }
+        }
+    }
+    // footer
+    footer .wp-container .box-content {
+        width: 23.05vw;
+    }
+    footer .wp-container .box-content .title {
+        min-height: auto;
+    }
+    footer .wp-container .box-content .title h4 {
+        font-size: 1.75em!important;
+    }
+    // ===========================
+    // Header customer
+    // ===========================
+    header #wp-header.header-customer .bot-header .search {
+        left: 20.22%;
+    }
+    header #wp-header.header-customer .bot-header .search button {
+        width: 20.25%;
+    }
+    header #wp-header.header-customer .bot-header .logo {
+        width: 8.85%;
+    }
+    header #wp-header.header-customer .bot-header .dir-user {
+        visibility: visible;
+        .dir-tx,
+        .arrow-down {
+            display: none;
+        }
+    }
+    header #wp-header.header-customer .bot-header .dir-box {
+        left: 74.6%;
+    }
+    header #wp-header.header-customer .bot-header .dir-box.header-cart-box .btn-submit {
+        width: 48.3%;
+    }
+    // Content
+    .customer-home .box-item {
+        min-height: 346px !important;
+        max-height: 700px!important;
+    }
+    .customer-home .box-item .thumb-nail {
+        overflow: hidden;
+        width: 100%;
+    }
+    #wrapper.customer-home .wp-content .box-content .box-item .item-content {
+        overflow-wrap: anywhere;
+        width: 100%;
+        padding: 10px !important;
+        margin: 0px!important;
+    }
+    #wrapper.customer-home .wp-content .box-content .box-item .item-content>div span+span {
+        max-width: 70%;
+        text-align: right;
+        @include line-camp(3);
+    }
+    #wrapper .wp-container .bot-content .wp-content .box-content .side-bar .box-item .item-title {
+        width: 60%;
+    }
+    .rcontent {
+        width: 100%;
+    }
+    #wrapper .wp-container .bot-content .wp-content .box-content .rcontent .box-item .item-title {
+        width: 100%;
+    }
+    // modal
+    .modal .modal-box {
+        width: 70vw!important;
+    }
+    .modal .box-item {
+        margin: 0!important;
+    }
+    .modal .box-item .item-title {
+        width: 100%!important;
+    }
+    .form-info .form-info-content .form-info-left {
+        display: none;
+    }
+    .modal .modal-box .box-content {
+        margin-top: 10px;
+        max-height: 100vh;
+        .box-item {
+            margin: 0;
+        }
+    }
+    #show_info_file {
+        min-height: auto!important;
+        height: 30px!important;
+    }
+    .box-head.d-flex.justify-content-space-between.mg-b-1rem {
+        min-height: 300px!important;
+        .thumb-nails.w-30+div.w-60 {
+            min-height: 300px!important;
+        }
+    }
+    // cart
+    #cart_product {
+        &>.t-right.w-55.my-3 {
+            width: 100%!important;
+        }
+        .box-content {
+            .box-left,
+            .box-right {
+                width: 100%!important;
+            }
+        }
+    }
+}
+
+
+/* Ipad dọc (768 x 1024) */
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 12px;
+    }
+    // header
+    header #wp-header .logo {
+        width: 18.24%;
+    }
+    // contact
+    .contact .bot-content .wp-content .box-title,
+    .register .bot-content .wp-content .box-title {
+        padding: 0.5rem;
+    }
+    // header customer
+    header #wp-header.header-customer .bot-header .dir-user {
+        display: none;
+    }
+    header #wp-header.header-customer .bot-header .header-cart {
+        display: none;
+    }
+    header #wp-header.header-customer .respon-header {
+        display: block;
+        top: 10%;
+    }
+    header #wp-header.header-customer .bot-header .logo {
+        left: 20.09%;
+    }
+    header #wp-header.header-customer .bot-header .search {
+        left: 42%;
+        button.input {
+            width: 11.25%;
+            justify-content: center;
+            align-items: center;
+            span.icon {
+                width: 1.25em;
+            }
+            span+span {
+                display: none!important;
+            }
+        }
+    }
+    #wrapper .wp-container #slide-home .carousel-control-prev,
+    #wrapper .wp-container #slide-home .carousel-control-next {
+        top: 17.13%;
+    }
+    // content customer
+    .customer-home .box-item {
+        width: 40% !important;
+    }
+    // empty item
+    .empty-item::before {
+        background-size: 14vw;
+    }
+    // btn
+    .btn {
+        width: 22vw !important;
+    }
+}
+
+
+/* Tablet nhỏ (480 x 640) */
+
+@media screen and (max-width: 667px) {
+    header #wp-header .logo {
+        width: 23.24%;
+    }
+    // header customer
+    header #wp-header.header-customer .bot-header .logo {
+        display: none;
+    }
+    header #wp-header.header-customer .bot-header .search {
+        left: 11.22%;
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 10px;
+    }
+    header #wp-header .logo {
+        width: 30.24%;
+        left: 34vw;
+    }
+    #wrapper .wp-content .box-content .box-item {
+        width: 64.54vw;
+        height: auto!important;
+    }
+    // product
+    #wrapper.product .top-content .wp-content .box-title .empty {
+        min-height: 26px;
+    }
+    #wrapper .bot-content {
+        margin-top: 30px;
+    }
+    #wrapper.product .bot-content .wp-content .box-content .box-left {
+        width: 80%;
+    }
+    #wrapper.product .bot-content .wp-content .box-content .box-right {
+        width: 80%;
+    }
+    // header customer
+    header #wp-header.header-customer .bot-header .search {
+        left: 19.22%;
+        width: 74vw;
+    }
+    #wrapper .wp-container #slide-home .carousel-control-prev {
+        top: 9.13%;
+        left: -24px;
+        width: 32px;
+        height: 61px;
+    }
+    #wrapper .wp-container #slide-home .carousel-control-next {
+        top: 9.13%;
+        right: -24px;
+        width: 32px;
+        height: 61px;
+    }
+    .px-35rem {
+        padding-left: 1.5rem!important;
+        padding-right: 1.5rem!important;
+    }
+    // content customer
+    .customer-home .box-item {
+        width: 65vw !important;
+    }
+    // btn
+    .btn {
+        width: 42vw !important;
+    }
+}

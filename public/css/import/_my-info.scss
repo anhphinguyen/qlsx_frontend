@@ -151,8 +151,13 @@
 
 #my_detail_invoice .box-product .product-item {
     position: relative;
+    &>span:first-child {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
     &>span:last-child {
-        position: absolute;
+        position: relative;
         top: 0;
         right: 0;
     }

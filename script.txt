@@ -1,0 +1,5 @@
+Ngày 1-7-2021
+ các file thay đổi :
+    bổ sung responsive.css
+    product.scss
+    header.html đi kèm với các file khác chứa header
